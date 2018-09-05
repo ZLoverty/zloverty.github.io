@@ -1,6 +1,6 @@
 # Y-channel Gallery
 ## 1. Viscometer skematics and image analysis
-![fig-1](https://zloverty.github.io/y-channel/image/Fig-1-v2.png)
+![fig-1](https://zloverty.github.io/y-channel/image/Fig-1.png)
 ## 2. Viscosity of bacterial suspensions and controls
 ![fig-2](https://zloverty.github.io/y-channel/image/Fig-2.svg.png)
 ## 3. Reynolds number as a function of shear rate (mostly monotonic)
