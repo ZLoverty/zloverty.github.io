@@ -3,7 +3,7 @@ Self-propelled particles, such as bacteria, can reduce the apparent viscosity of
 
 ## The Y-channel viscometer
 Viscosity of the same bacterial suspension is measured using Y-channel viscometers with different heights.
-![Image of Y-channel viscometer](https://zloverty.github.io/y-channel/image/thin_channel.png)
+![Image of Y-channel viscometer](https://zloverty.github.io/image/thin_channel.png)
 We have shown that this device works pretty well in measuring the viscosity of common fluids like ethanol and glycerol. No matter what the height is, the viscosity measurements are always accurate. Below are the results of some control experiments.
 ![Calibration](https://zloverty.github.io/y-channel/image/calibration_curve.png)
 ![Passive](https://zloverty.github.io/y-channel/image/passive.png)
