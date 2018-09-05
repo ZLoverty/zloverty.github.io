@@ -16,3 +16,6 @@ Is the viscosity measurements of viscometers of different heights consistent?
 ## Preliminary result
 The figure below shows viscosity measurements with Y-channels in 4 different heights. As can be seen, in two large channels (50 um and 128 um), the viscosity of the bacteria suspension show no difference on the response to external shear rate. However, in smaller channels ( 25 um and 37 um), the change in geometry starts to modify the rheological behavior of bacterial suspensions. 
 ![Preliminary data](http://zloverty.github.io/image/12202017.png)
+
+## More figures
+I have made some more figures to show this geometry-dependent-viscosity phenomenon which is unique for active fluids. See [Gallery](https://zloverty.github.io/y-channel/gallery).
