@@ -16,4 +16,4 @@ The figure below shows viscosity measurements with Y-channels in 4 different hei
 ![Preliminary data](http://zloverty.github.io/image/12202017.png)
 
 ## More figures
-I have made some more figures to show this geometry-dependent-viscosity phenomenon which is unique for active fluids. See [Gallery](https://zloverty.github.io/y-channel/gallery).
+I have made some more figures to show this geometry-dependent-viscosity phenomenon which is unique for active fluids. See [Gallery](https://zloverty.github.io/y-channel/Gallery).
