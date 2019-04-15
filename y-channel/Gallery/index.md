@@ -1,13 +1,29 @@
-# Y-channel Gallery
-## 1. Viscometer skematics and image analysis
-![fig-1](https://zloverty.github.io/y-channel/image/Fig-1.png)
-## 2. Viscosity of bacterial suspensions and controls
-![fig-2](https://zloverty.github.io/y-channel/image/Fig-2.svg.png)
-## 3. Reynolds number as a function of shear rate (mostly monotonic)
-![Reynolds](https://zloverty.github.io/y-channel/image/Re_SR.png)
-## 4. Viscosity measured in small channels collapse on flow rate
-![Visc-FR](https://zloverty.github.io/y-channel/image/Visc_FR_long.png)
-## 5. Zoom in small flow rate regime (viscosity-flow rate)
-![Visc-FR-short](https://zloverty.github.io/y-channel/image/Visc_FR_short.png)
-## 6. Viscosity as a function of rescaled shear rate
-![Visc-rSR](https://zloverty.github.io/y-channel/image/Visc_rescaledSR_2.png)
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hank Quinlan, Horrible Cop</title>
+		<link rel="stylesheet" type="text/css" href="gallery.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+	        	<li><a href="/about">About</a></li>
+        		<li><a href="/cv">CV</a></li>
+        		<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+        		<h1>Hi there, I'm Hank Quinlan!</h1>
+				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>
+        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
