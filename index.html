@@ -30,12 +30,14 @@
 		}
 		#myInfo{
 		display: flex;
+		flex-direction: row;
 		border-style: solid;
 		border-width: 1em;
 		}
 		#myHistory{
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		align-items: left;
 		justify-content: center;
 		}
 		#myPhoto{
@@ -43,6 +45,14 @@
 		}
 		.proj-icon:hover {
 		background-color: red;
+		}
+		.horizontal{
+			display: flex;
+			flex-direction: row;
+		}
+		.vertical{
+			display: flex;
+			flex-direction: column;
 		}
 	</style>
 </head>
@@ -53,13 +63,34 @@
 		<a href="https://zloverty.github.io/research/"><div class="proj-icon">RESEARCH</div></a>
 		<a href="https://zloverty.github.io/learn"><div class="proj-icon">LEARN</div></a>
 	</div>
-	
+
 	<div id="myInfo">
 		<img src="https://zloverty.github.io/zhengyang_liu2.png" alt="pic">
 		<div id="myHistory">
-		<b>B.E.</b> &nbsp Polymer Science and Engineering, Tsinghua University, Beijing, 2014
+			<h4>Education</h4>
+			<div class="horizontal">
+				&nbsp&nbsp<b>B E</b> &nbsp Polymer Science and Engineering, Tsinghua University, 2014
+			</div>
+			<div class="horizontal">
+				&nbsp&nbsp<b>Ph D</b> &nbsp Chemical Engineering, University of Minnesota, Expected 2020
+			</div>
+			<h4>Research Interest</h4>
+			&nbsp&nbsp[Active matter][Rheology][Particle tracking]
+			<h4>Contact Information</h4>
+			<div class="horizontal">
+				&nbsp&nbsp<b>Email</b> &nbsp liux3141@umn.edu
+			</div>
+			<div class="horizontal">
+				&nbsp&nbsp<b>Cell</b> &nbsp +1 612-404-5702
+			</div>
 		</div>
 	</div>
-	
+	<h2> Publications </h2>
+	<ol>
+		<li><b>Z. Liu</b>, K. Zhang, X. Cheng, Rheology of bacterial suspensions under confinement, <i>Rheol. Acta</i> <b>58</b>, 439-541 (2019)
+		<li>O. Yang, Y. Peng, <b>Z. Liu</b>, C. Tang, X. Xu, and X. Cheng, Dynamics of ellipsoidal tracers in swimming algal suspensions, <i>Phys. Rev. E</i> <b>94</b>, 042601 (2017)
+		<li><b>Z. Liu</b>, R. Guo, G. Xu, Z. Huang, L.-T. Yan, Entropy-mediated mechanical response of the interfacial nanoparticle patterning, <i>Nano Lett.</i> <b>14</b>, 6910-6916 (2014)
+		<li>R. Guo, <b>Z. Liu</b>, X.-M. Xie, L.-T. Yan, Harnessing dynamic covalent bonds in patchy nanoparticles: creating shape-shifting building blocks for rational and responsive self-assembly, <i>J. Phys. Chem. Lett.</i> <b>4</b>, 1221-1226 (2013)
+</ol>
 </body>
 </html>
