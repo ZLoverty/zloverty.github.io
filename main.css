@@ -9,6 +9,7 @@ h1 {
 		border-color: black;
 		border-width: 1px;
 		padding: 10px 20px 10px 20px;
+		margin: 10px 10px 10px 10px;
 		position: relative;
 	}
 .gallery:hover {
