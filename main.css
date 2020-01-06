@@ -7,7 +7,7 @@ h1 {
 		border-style: solid;
 		border-color: black;
 		border-width: 1px;
-		margin: 10px 20px 10px 20px;
+		padding: 10px 20px 10px 20px;
 		position: relative;
 	}
 .gallery:hover {
