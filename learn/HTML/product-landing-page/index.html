@@ -1,0 +1,168 @@
+<!-- Product landing page -->
+<!-- URL: https://codepen.io/anon/pen/KExNxj?editors=1100 -->
+<head>
+  <title>Product landing page</title>
+  <link rel="stylesheet" type="text/css" href="plp.css">
+  <style>
+    @media screen and (min-width: 480px){
+      #header{
+        display: flex;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        width: 100%;
+        background-color: white;
+      }
+      #header-img{
+        display: flex;
+        height: 40px;
+      }
+      #nav-bar{
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav-link{
+        font-family: inherit;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      #howitworks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #798;
+      }
+      #feature-video{
+
+        padding: 40px 40px 40px 40px;
+      }
+      #features{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 40px 20px 40px;
+        background-color: #8203;
+      }
+      #features-item{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #999999;
+        margin: 5px 0px 5px 0px;
+      }
+      #features-item-art{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+      }
+      #features-item-space{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+      }
+      #features-item-text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 70%;
+      }
+      #pricing{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px 20px 50px;
+        background-color: #187;
+      }
+      #pricing-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 5px 0px 5px;
+        height: 300px;
+        width: 200px;
+        background-color: #5984;
+        font-size: 50px;
+        font-family: helvetica;
+      }
+      #form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px 40px 0px;
+        padding: 10px 30% 10px 30%;
+        flex-direction: column;
+      }
+      #submit{
+        width: 20%;
+        height: 20px;
+      }
+
+    }
+</style>
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header">
+  <img id="header-img" src="https://zloverty.github.io/icon.svg">
+  <nav id="nav-bar">
+    <a class="nav-link" href="#features">Features</a>
+    <a class="nav-link" href="#howitworks">How It Works</a>
+    <a class="nav-link" href="#pricing">Pricing</a>
+  </nav>
+</header>
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input name="email" id="email" placeholder="email" type="email">
+  <input id="submit" type="submit">
+</form>
+<h2>Features</h2>
+<div id="features">
+  <div id="features-item">
+    <div id="features-item-art">
+      <img id="header-img" src="https://zloverty.github.io/icon.svg">
+    </div>
+    <div id="features-item-space"></div>
+    <div id="features-item-text">在你需要嵌入的地方粘贴下面这段代码即可(替换为你的cid和aid)</div>
+  </div>
+  <div id="features-item">
+    <div id="features-item-art">
+      <img id="header-img" src="https://zloverty.github.io/icon.svg">
+    </div>
+    <div id="features-item-space"></div>
+    <div id="features-item-text">Bilibili好在无广告，速度也挺快，无奈B站官方的视频嵌入是Flash的形式，但B站又是支持HTML5播放的，那么问题来了，外站如何嵌入HTML5的播放形式呢？</div>
+  </div>
+  <div id="features-item">
+    <div id="features-item-art">
+      <img id="header-img" src="https://zloverty.github.io/icon.svg">
+    </div>
+    <div id="features-item-space"></div>
+    <div id="features-item-text">不好意思，这篇文章有些历史了，有些参数已经失效了。当时的初衷就是用上HTML5播放器并且可以实现全屏(没有右侧弹幕框)。参考了文章里得那篇文章再加上`as_wide=1`参数实现全屏html5player.html 不加cid会是失效的 [参考](https://www.bilibili.com/ht...
+然而现在发现该参数在html5player.html页下已失效，在embed页下是有效了。</div>
+  </div>
+</div>
+
+<h2>How It Works</h2>
+<div id="howitworks">
+  <div id="feature-video">
+    <iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/RD0xLwNGmfY"></iframe>
+  </div>
+</div>
+
+<h2>Pricing</h2>
+<div id="pricing">
+  <div id="pricing-item">FREE</div>
+  <div id="pricing-item">FREE</div>
+  <div id="pricing-item">FREE</div>
+</div>
+</body>
