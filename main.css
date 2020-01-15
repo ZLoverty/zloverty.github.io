@@ -49,10 +49,66 @@ h1 {
 #hl {
 		background-color: #faffef;
 	}
-.header{
+
+#banner {
+display: flex;
+background-color: #b45dff;
+height: 10em;
+align-items: center;
+justify-content: space-around;
+font-family: sans-serif;
+border-radius: 3em;
+}
+.proj-icon {
+display: flex;
+background-color: #fff0b9;
+height: 8em;
+width: 8em;
+border-style: solid;
+border-color: #000000;
+border-radius: 5em;
+border-width: .5em;
+align-items: center;
+justify-content: center;
+font-family: sans-serif;
+font-size: 20px;
+font-style: bold;
+text-decoration: none;
+}
+#myInfo{
+display: flex;
+flex-direction: row;
+border-style: solid;
+border-width: 1em;
+justify-content: center;
+border-radius: 3em;
+margin: 10px 0px 10px 0px;
+}
+#myHistory{
+display: flex;
+flex-direction: column;
+align-items: left;
+justify-content: center;
+}
+#myPhoto{
+display: flex;
+}
+.proj-icon:hover {
+background-color: red;
+}
+.horizontal{
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 10px;
+}
+.vertical{
+	display: flex;
+	flex-direction: column;
+}
+.hspace{
+	width: 20px;
+}
+.profile-pic{
+	border-radius: 20em;
 }
 .title{
 	font-size: 40px;
@@ -75,4 +131,75 @@ h1 {
 }
 .prog-img{
 	border-radius: 20px;
+}
+#header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	background-color: #b45dff;
+	margin-bottom: 5px;
+}
+#header-icon{
+	display: flex;
+	width: 20%;
+}
+#title{
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	font-family: helvetica;
+	width: 60%;
+}
+#nav{
+	display: flex;
+	flex-direction: column;
+	justify: space-between;
+	width: 20%;
+	text-align: right
+}
+#nav-item{
+	font-size: 14px;
+	text-decoration: none;
+	color: #BBBBBB
+}
+#main{
+	display: flex;
+	background-color: green;
+	margin: 5px 10% 5px 10%;
+	flex-direction: column;
+}
+#topics{
+	display: flex;
+	flex-direction: column;
+	width: 100%
+}
+#topics-row{
+	display: flex;
+	background-color: blue;
+	width: 100%;
+	height: 40px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 3px 0px 3px 0px;
+}
+#topics-item{
+	display: flex;
+	justify-content: space-around;
+	width: 28%;
+	background-color: red;
+	height: 100%;
+}
+#topics-item-icon{
+	display: flex;
+	margin: 3px 3px 3px 3px;
+	background-color: orange;
+	width: 20%;
+}
+#topics-item-name{
+	display: flex;
+	margin: 3px 3px 3px 3px;
+	background-color: orange;
+	width: 70%;
 }
