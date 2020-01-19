@@ -139,13 +139,18 @@ background-color: red;
 	justify-content: space-between;
 	align-items: center;
 	top: 0;
-	/*background-color: #BBBBBB;*/
+	height: 50px;
+	background-color: #BBBBBB;
+	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
 }
 #header-icon{
 	display: flex;
-	align-items: center;
-	padding: 5px 5px 5px 5px;
+	align-items: stretch;
+	width: 20%;
+	/*padding: -5px -5px -5px -5px;*/
+	height: 100%;
+	background-color: green;
 }
 #title{
 	display: flex;
@@ -153,18 +158,23 @@ background-color: red;
 	font-size: 40px;
 	font-family: helvetica;
 	width: 60%;
+	background-color: red;
 }
 #nav{
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify: space-around;
+	height: 100%;
+	/*flex-direction: column;
 	justify: space-between;
 	width: 20%;
-	text-align: right
+	text-align: right;*/
+	background-color: green;
 }
 #nav-item{
 	font-size: 12px;
 	text-decoration: none;
-	color: #555
+	color: #555;
 }
 #main{
 	display: flex;
