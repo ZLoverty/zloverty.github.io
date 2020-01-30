@@ -142,13 +142,13 @@ background-color: red;
 	height: 50px;
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 5px;
+	background-color: #A13646;
 }
 #header-icon{
 	display: flex;
 	align-items: stretch;
 	width: 20%;
 	/*padding: -5px -5px -5px -5px;*/
-	background-color: green;
 }
 #title{
 	display: flex;
@@ -156,28 +156,27 @@ background-color: red;
 	font-size: 40px;
 	font-family: helvetica;
 	width: 60%;
-	background-color: red;
 }
 #nav{
 	display: flex;
-	flex-wrap: wrap;
 	justify: space-around;
 	height: 100%;
-	/*flex-direction: column;
+	flex-direction: column;
 	justify: space-between;
 	width: 20%;
-	text-align: right;*/
-	background-color: green;
+	text-align: right;
+
 }
 #nav-item{
 	font-size: 12px;
 	text-decoration: none;
-	color: #555;
+	color: #BBBBBB;
+	font-size: 11px;
 }
 #main{
 	display: flex;
 	/*background-color: #3C8D2F;*/
-	border-style: dashed;
+
 	border-width: 1.5px;
 	border-color: #3C8D2F;
 	margin: 5px 10% 5px 10%;
@@ -187,7 +186,6 @@ background-color: red;
 	display: flex;
 	flex-direction: column;
 	width: 100%
-	border-style: dashed;
 	border-width: 1.5px;
 	border-color: #3C8D2F;
 }
@@ -199,7 +197,6 @@ background-color: red;
 	justify-content: space-around;
 	align-items: center;
 	margin: 3px 0px 3px 0px;
-	border-style: dashed;
 	border-width: 1.5px;
 	border-color: #3C8D2F;
 }
@@ -209,19 +206,21 @@ background-color: red;
 	width: 28%;
 	/*background-color: #A13646;*/
 	height: 100%;
-	border-style: dashed;
 	border-width: 1.5px;
 	border-color: #A13646;
 }
 #topics-item-icon{
 	display: flex;
 	margin: 3px 3px 3px 3px;
-	background-color: orange;
 	width: 20%;
+	justify-content: center;
+	align-items: center;
 }
 #topics-item-name{
 	display: flex;
 	margin: 3px 3px 3px 3px;
-	background-color: orange;
 	width: 70%;
+	font-size: 17px;
+	align-items: center;
+	font-family: sans-serif;;
 }
