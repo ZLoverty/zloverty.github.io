@@ -224,3 +224,29 @@ background-color: red;
 	align-items: center;
 	font-family: sans-serif;;
 }
+
+p {
+	font-size: 20;
+	font-family: serif;
+}
+
+#figure{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px 0.5in 0px 0.5in;
+}
+#figure-cap{
+	text-align: left;
+
+}
+
+#puzzle{
+	color: red;
+}
+
+#code-link{
+	border-style: dashed;
+	border-width: 1px;
+}
