@@ -44,16 +44,18 @@
 		<p> where \(l\) is subsystem size, \(d\) is chamber thickness and \(c\) is the overall concentration. The fluctuation of bacteria numbers \(\Delta N\), i.e. the standard deviation of bacteria numbers, can be calculated as follows (use \(\Delta\) to denote standard deviation):
 		</p>
 		$$ N_i=l^2dc_i=l^2d\frac{1}{\epsilon d}\log_{10}\frac{I_0}{I_i}=\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i}$$
-		$$ \Delta N = \Delta(\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i})=\frac{l^2}{\epsilon}\Delta\log_{10}\textcolor{red}{I_0}$$
-		<p> Note that \(\textcolor{red}{I_0}\) depends on the intensity of the illumination light. For different concentration samples, in order to achieve good image quality, I need to adjust the light intensity. \(\textcolor{red}{I_0}\) is thus different for different concentration measurements, which leads to different baselines for \(\Delta N\)-\(N\) curves (as shown in Fig.1).
+		$$ \Delta N = \Delta(\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i})=\frac{l^2}{\epsilon}\Delta\log_{10}\textcolor{red}{I_i}$$
+		<p> Note that \(\textcolor{red}{I_i}\) depends on the intensity of the illumination light \(I_0\). For different concentration samples, in order to achieve good image quality, I need to adjust the light intensity. The scale of \(\textcolor{red}{I_i}\) is thus different for different concentration measurements, which leads to different baselines for \(\Delta N\)-\(N\) curves (as shown in Fig.1).
 		</p>
 		<div id='figure'>
-			<img src='I:\Github\zloverty.github.io\research\DF\img\DF_dynamics.png' width=100%>
+			<img src='https://zloverty.github.io/research/DF/img/DF_dynamics.png' width=100%>
 			<div id='figure-cap'><b>Fig.1</b> Giant number fluctuation for 3D bacterial suspensions at various concentrations. \(L\) is the smallest confinement length scale (in this case 140 \(\mu\)m). \(l\) is subsystem size. Dashed lines indicate the slope of each curve on log-log scale when \(l^2/L^2< 0.05\). \(\Delta N\) denotes the standard deviation of bacterial number \(N\) and \(N\) denotes the average number of bacteria in all subsystems.</div>
 		</div>
 		<p>
 			<div id='puzzle'>Since \(I_0\) is not measured during experiment, the absolute number fluctuation is not attainable. However, since the degree of fluctuation (slope of \(\Delta N\)-\(N\) curve) is not a function of \(I_0\), it can still be measured and compared.</div>
 		</p>
+
+		<h2> 2. Spatial correlation </h2>
 	</div>
 
 </body>
