@@ -253,3 +253,13 @@ p {
 	border-style: dashed;
 	border-width: 1px;
 }
+
+.research-item{
+	background: gray;
+	font-size: 20px;
+	padding: 5px 0px 5px 0px;
+	border-radius: 10px;
+	border-width: 10px;
+	border-color: yellow;
+	margin: 5px 0px 5px 0px;
+}
