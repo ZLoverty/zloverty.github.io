@@ -23,39 +23,44 @@
 		<a href="https://zloverty.github.io/research/DF/progress">
 			<div class="nbelement">Progress</div>
 		</a>
+		<a href="https://zloverty.github.io/research/DF/blogs">
+			<div class="nbelement" >Blog</div>
+		</a>
 	</div>
 
 	<div id='main'>
-		<h2> Method </h2>
-		<h3>1. Density fluctuation </h3>
-		<div id='code-link'>
-			Links: <a href='https://github.com/ZLoverty/Python/blob/55946abf992e86e10bb41cd6f711caa6424f83cc/mylib/corrLib.py#L157'>code</a>
-		</div>
-		<p>
-			<a href='https://en.wikipedia.org/wiki/Beer%E2%80%93Lambert_law'>Beer–Lambert law</a> is used to convert pixel intensity to local bacterial concentration:
-		</p>
-		$$-\log_{10}\frac{I}{I_0}=\epsilon cd$$
-		<p>
-			rearrange to get
-		</p>
-		$$ c = \frac{1}{\epsilon d}\log_{10}\frac{I_0}{I}$$
-		<p> The average number of bacteria in each subsystem can be calculated from the overall concentration \(c\)</p>
-		$$ N=l^2dc$$
-		<p> where \(l\) is subsystem size, \(d\) is chamber thickness and \(c\) is the overall concentration. The fluctuation of bacteria numbers \(\Delta N\), i.e. the standard deviation of bacteria numbers, can be calculated as follows (use \(\Delta\) to denote standard deviation):
-		</p>
-		$$ N_i=l^2dc_i=l^2d\frac{1}{\epsilon d}\log_{10}\frac{I_0}{I_i}=\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i}$$
-		$$ \Delta N = \Delta(\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i})=\frac{l^2}{\epsilon}\Delta\log_{10}\textcolor{red}{I_i}$$
-		<p> Note that \(\textcolor{red}{I_i}\) depends on the intensity of the illumination light \(I_0\). For different concentration samples, in order to achieve good image quality, I need to adjust the light intensity. The scale of \(\textcolor{red}{I_i}\) is thus different for different concentration measurements, which leads to different baselines for \(\Delta N\)-\(N\) curves (as shown in Fig.1).
-		</p>
-		<div id='figure'>
-			<img src='https://zloverty.github.io/research/DF/img/DF_dynamics.png' width=100%>
-			<div id='figure-cap'><b>Fig.1</b> Giant number fluctuation for 3D bacterial suspensions at various concentrations. \(L\) is the smallest confinement length scale (in this case 140 \(\mu\)m). \(l\) is subsystem size. Dashed lines indicate the slope of each curve on log-log scale when \(l^2/L^2< 0.05\). \(\Delta N\) denotes the standard deviation of bacterial number \(N\) and \(N\) denotes the average number of bacteria in all subsystems.</div>
-		</div>
-		<p>
-			<div id='puzzle'>Since \(I_0\) is not measured during experiment, the absolute number fluctuation is not attainable. However, since the degree of fluctuation (slope of \(\Delta N\)-\(N\) curve) is not a function of \(I_0\), it can still be measured and compared.</div>
-		</p>
+		<div id='main-column-mid'>
+			<h2> Method </h2>
+			<h3>1. Density fluctuation </h3>
+			<div id='code-link'>
+				Links: <a href='https://github.com/ZLoverty/Python/blob/55946abf992e86e10bb41cd6f711caa6424f83cc/mylib/corrLib.py#L157'>code</a>
+			</div>
+			<p>
+				<a href='https://en.wikipedia.org/wiki/Beer%E2%80%93Lambert_law'>Beer–Lambert law</a> is used to convert pixel intensity to local bacterial concentration:
+			</p>
+			$$-\log_{10}\frac{I}{I_0}=\epsilon cd$$
+			<p>
+				rearrange to get
+			</p>
+			$$ c = \frac{1}{\epsilon d}\log_{10}\frac{I_0}{I}$$
+			<p> The average number of bacteria in each subsystem can be calculated from the overall concentration \(c\)</p>
+			$$ N=l^2dc$$
+			<p> where \(l\) is subsystem size, \(d\) is chamber thickness and \(c\) is the overall concentration. The fluctuation of bacteria numbers \(\Delta N\), i.e. the standard deviation of bacteria numbers, can be calculated as follows (use \(\Delta\) to denote standard deviation):
+			</p>
+			$$ N_i=l^2dc_i=l^2d\frac{1}{\epsilon d}\log_{10}\frac{I_0}{I_i}=\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i}$$
+			$$ \Delta N = \Delta(\frac{l^2}{\epsilon}\log_{10}\frac{I_0}{I_i})=\frac{l^2}{\epsilon}\Delta\log_{10}\textcolor{red}{I_i}$$
+			<p> Note that \(\textcolor{red}{I_i}\) depends on the intensity of the illumination light \(I_0\). For different concentration samples, in order to achieve good image quality, I need to adjust the light intensity. The scale of \(\textcolor{red}{I_i}\) is thus different for different concentration measurements, which leads to different baselines for \(\Delta N\)-\(N\) curves (as shown in Fig.1).
+			</p>
+			<div id='figure'>
+				<img src='https://zloverty.github.io/research/DF/img/DF_dynamics.png' width=100%>
+				<div id='figure-cap'><b>Fig.1</b> Giant number fluctuation for 3D bacterial suspensions at various concentrations. \(L\) is the smallest confinement length scale (in this case 140 \(\mu\)m). \(l\) is subsystem size. Dashed lines indicate the slope of each curve on log-log scale when \(l^2/L^2< 0.05\). \(\Delta N\) denotes the standard deviation of bacterial number \(N\) and \(N\) denotes the average number of bacteria in all subsystems.</div>
+			</div>
+			<p>
+				<div id='puzzle'>Since \(I_0\) is not measured during experiment, the absolute number fluctuation is not attainable. However, since the degree of fluctuation (slope of \(\Delta N\)-\(N\) curve) is not a function of \(I_0\), it can still be measured and compared.</div>
+			</p>
 
-		<h2> 2. Spatial correlation </h2>
+			<h2> 2. Spatial correlation </h2>
+		</div>
 	</div>
 
 </body>
