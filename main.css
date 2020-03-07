@@ -270,15 +270,20 @@ background-color: red;
 }
 
 #footer{
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 40px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 #footer-column{
 	display: flex;
 	flex-direction: row;
-	width: 1000px;
+	width: 800px;
 	height: 100%;
 	background-color: #A13646;
 
@@ -337,4 +342,8 @@ background-color: red;
 }
 #docs-link:hover{
 	text-decoration-line: underline;
+}
+
+#libs-panel{
+
 }
