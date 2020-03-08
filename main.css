@@ -347,6 +347,7 @@ background-color: red;
 #libs-panel{
 	display: flex;
 	justify-content: center;
+	margin: 10px 10px 10px 10px;
 }
 #libs-panel-item{
 	display: inline-block;
