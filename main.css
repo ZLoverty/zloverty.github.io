@@ -353,13 +353,11 @@ background-color: red;
 	height: 180px;
 	width: 150px;
 	margin: 0 10px 0 10px;
-	background-color: black;
 }
 
 #libs-panel-item-thumbnail{
 	height: 150px;
 	width: 100%;
-	background-color: blue;
 	display: flex;
 	align-items: center;
 }
