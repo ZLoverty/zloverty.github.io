@@ -283,7 +283,7 @@ background-color: red;
 #footer-column{
 	display: flex;
 	flex-direction: row;
-	width: 800px;
+	width: 900px;
 	height: 100%;
 	background-color: #A13646;
 
@@ -345,5 +345,29 @@ background-color: red;
 }
 
 #libs-panel{
+	display: flex;
+	justify-content: center;
+	margin: 10px 10px 10px 10px;
+}
+#libs-panel-item{
+	display: inline-block;
+	height: 180px;
+	width: 150px;
+	margin: 0 10px 0 10px;
+}
 
+#libs-panel-item-thumbnail{
+	height: 150px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#libs-panel-item-caption{
+	display: flex;
+	height: 30px;
+	background-color: orange;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
 }
