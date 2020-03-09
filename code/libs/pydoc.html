@@ -13176,7 +13176,7 @@ output_folder = I:\Github\Python\Correlation\test_images\cl\ac_result</code></pr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Bandpass-filter">Bandpass filter<a class="anchor-link" href="#Bandpass-filter">&#182;</a></h3><p><code>bpass.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/generic_proc/bpass.py">src</a></p>
+<h3 id="Bandpass-filter">Bandpass filter<a class="anchor-link" href="#Bandpass-filter">&#182;</a></h3><p><code>bpass.py</code> <a href="https://https://github.com/ZLoverty/Python/blob/master/generic_proc/py_files/bpass.py">src</a></p>
 <p>Convert *.nd2 file to image sequence and apply bandpass filter to each image. Save this image sequence in a subfolder under the same folder as the *.nd2 file with corresponding name as the *.nd2 file name.</p>
 <h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
 <pre><code>python bpass.py nd2Dir bpassLow bpassHigh</code></pre>
@@ -13193,7 +13193,7 @@ bpassHigh = 100</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Convert-nd2-files-to-8-bit-image-sequences">Convert nd2 files to 8-bit image sequences<a class="anchor-link" href="#Convert-nd2-files-to-8-bit-image-sequences">&#182;</a></h3><p><code>to8bit.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/generic_proc/to8bit.py">src</a></p>
+<h3 id="Convert-nd2-files-to-8-bit-image-sequences">Convert nd2 files to 8-bit image sequences<a class="anchor-link" href="#Convert-nd2-files-to-8-bit-image-sequences">&#182;</a></h3><p><code>to8bit.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/generic_proc/py_files/to8bit.py">src</a></p>
 <p>Convert *.nd2 file to image sequence of 8-bit grayscale images. Save this image sequence in a subfolder under the same folder as the *.nd2 file with corresponding name as the *.nd2 file name.</p>
 <h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
 <pre><code>python to8bit.py nd2Dir</code></pre>
@@ -13294,6 +13294,22 @@ boxsize = 40</code></pre>
 <h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
 <pre><code>Tue Mar  3 16:08:28 2020 // time series is saved!
 Tue Mar  3 16:08:28 2020 // autocorrelation is saved!</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Convert-nd2-files-to-both-8-bit-and-16-bit-images-sequences,-without-changing-contrast">Convert nd2 files to both 8-bit and 16-bit images sequences, without changing contrast<a class="anchor-link" href="#Convert-nd2-files-to-both-8-bit-and-16-bit-images-sequences,-without-changing-contrast">&#182;</a></h3><p><code>to_tif.py</code> <a href="https://https://github.com/ZLoverty/Python/blob/master/generic_proc/py_files/to_tif.py">src</a></p>
+<p>Convert <em>.nd2 file to image sequence of 8-bit grayscale images. Save this image sequence in a subfolder under the same folder as the </em>.nd2 file with corresponding name as the *.nd2 file name.</p>
+<p>This script does not apply auto-contrast and save both 16-bit and 8-bit images.</p>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python to_tif.py nd2Dir</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>nd2Dir = I:\Github\Python\generic_proc\test_images\test.nd2</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>Tue Jan 14 20:54:03 2020 // Frame 00000 converted</code></pre>
 
 </div>
 </div>
