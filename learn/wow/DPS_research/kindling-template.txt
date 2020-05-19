@@ -1,0 +1,99 @@
+# 油炸老豆腐 - Fire - 2020-05-18 22:52 - CN/死亡之翼
+# SimC Addon 1.12.5
+# Requires SimulationCraft 820-01 or newer
+
+mage="油炸老豆腐"
+level=120
+race=pandaren
+region=cn
+server=死亡之翼
+role=spell
+professions=alchemy=175/engineering=175
+talents=3131131
+spec=fire
+
+azerite_essences=4:3/300573/27:4/300575/300576/22:3/300577/312927/35:3/312928
+# azerite_essences_available=4:3/5:4/6:4/12:4/14:3/15:1/22:3/23:3/27:4/28:4/32:3/35:3/36:4/37:3
+
+head=,id=159279,bonus_id=5448/1647/4786/6511/4775,context=35,azerite_powers=215/193/459/468/13
+neck=,id=158075,bonus_id=6316/4932/4933/1656,context=11,azerite_level=93
+shoulder=,id=174117,bonus_id=4824/1517/4786/6512/4775,context=6,azerite_powers=168/215/30/44/13
+back=,id=169223,bonus_id=6586/1472,context=11
+chest=,id=174119,bonus_id=4824/1517/4786/6510/4775,context=6,azerite_powers=215/582/31/468/13
+shirt=,id=169878
+wrist=,id=159240,bonus_id=6536/42/6578/6579/6548/6515/1647/4786,context=35
+hands=,id=173491,gem_id=168641,bonus_id=6412/6578/6579/6473/6470/1527/4786/6514,context=55
+waist=,id=173812,gem_id=168641,bonus_id=6412/4802/6513/6578/6579/6472/6462/1527/4786,context=55
+legs=,id=174127,bonus_id=4824/6516/6513/1517/4786,context=6
+feet=,id=159243,gem_id=168641,bonus_id=6536/6578/6579/6564/1637/4786/6514,context=16
+finger1=,id=162548,enchant_id=6109,gem_id=168641,bonus_id=6536/6578/6579/6439/6470/1637/4786/6514,context=16
+finger2=,id=174533,enchant_id=6109,gem_id=168641,bonus_id=4824/6516/1517/4786/6514,context=6
+trinket1=,id=172669,gem_id=168641,bonus_id=6388/6377/1577/4786/6514,context=25
+trinket2=,id=159630,bonus_id=6536/6513/1647/4786,context=35
+main_hand=,id=159137,enchant_id=5949,gem_id=168641,bonus_id=6536/6578/1647/4786/6514,context=35
+off_hand=,id=159667,gem_id=168641,bonus_id=6536/42/6578/6579/6439/6470/1637/4786/6514,context=16
+
+### Gear from Bags
+#
+# 超线程护腕 (465)
+# wrist=,id=168989,gem_id=168641,bonus_id=6536/4802/43/6516/6513/1522/4786,context=16
+#
+# 卑劣操纵者的腕轮 (455)
+# wrist=,id=173490,bonus_id=6412/4803/6515/6578/6579/6550/1512/4786,context=43
+#
+# 矿井鼠的防寒手套 (465)
+# hands=,id=159231,bonus_id=6536/6578/6579/6548/6515/1637/4786,context=16
+#
+# 卑劣操纵者的护手 (465)
+# hands=,id=173507,bonus_id=6412/6515/6578/6579/6476/6470/1522/4786,context=54
+#
+# 卑劣操纵者之握 (445)
+# hands=,id=173491,bonus_id=6412/4803/6513/6578/6579/6559/1502/4786,context=28
+#
+# 止血手套 (475)
+# hands=,id=159253,gem_id=168642,bonus_id=6536/4802/6578/6579/6573/6513/1647/4786,context=35
+#
+# 卑劣操纵者的腰布 (465)
+# waist=,id=173813,bonus_id=6412/6513/6578/6579/6543/1522/4786,context=54
+#
+# 竞技场之王的徽带 (465)
+# waist=,id=168958,bonus_id=6536/6578/6579/6439/6470/6513/1522/4786,context=16
+#
+# 鱼饵覆盖的护腿 (475)
+# legs=,id=158302,bonus_id=6536/6578/6579/6563/6515/1647/4786,context=35
+#
+# 卑劣操纵者的软鞋 (470)
+# feet=,id=173515,bonus_id=6412/6513/6578/6579/6439/6470/1527/4786,context=55
+#
+# 乞讨者的污渍便鞋 (465)
+# feet=,id=169049,gem_id=168641,bonus_id=6536/4802/6516/6513/1522/4786,context=16
+#
+# 超线程布靴 (465)
+# feet=,id=168964,bonus_id=6536/6578/6579/6546/6513/1522/4786,context=16
+#
+# 维克雷斯勋爵之戒 (460)
+# finger1=,id=158362,bonus_id=6532/6516/6515/1632/4786,context=16
+#
+# 仪式束缚者之戒 (465)
+# finger1=,id=159459,enchant_id=6109,gem_id=168641,bonus_id=6534/4802/42/6578/6515/1637/4786,context=16
+#
+# 脉动血管指环 (475)
+# finger1=,id=159463,enchant_id=6109,bonus_id=6536/6578/6579/6479/6470/6513/1647/4786,context=35
+#
+# 嗡鸣的黑龙鳞片 (475)
+# trinket1=,id=174044,bonus_id=4824/6515/1517/4786,context=6
+#
+# 艾萨拉的能量之泉 (430)
+# trinket1=,id=169314,bonus_id=4799/1502/4786,context=5
+#
+# 癫狂宣言 (470)
+# trinket1=,id=174103,bonus_id=4823/6513/1502/4786,context=5
+#
+# 心智切割器 (475)
+# trinket1=,id=174060,gem_id=168641,bonus_id=4824/41/1517/4786/6514,context=6
+#
+# 血污仪式短刃 (475)
+# main_hand=,id=172201,enchant_id=5949,bonus_id=4824/6578/6515/1517/4786,context=6
+#
+# 索林娜的警醒藏品 (475)
+# off_hand=,id=159669,gem_id=168641,bonus_id=6536/6578/6579/6539/1647/4786/6514,context=35
