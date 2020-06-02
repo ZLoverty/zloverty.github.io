@@ -49,19 +49,12 @@
 	</div>
 	<div id='main'>
 		<div id='main-column-mid'>
-			<h1> Choosing appropriate time interval for calculating concentration difference </h1>
-			<p>I chose 10 frames as the time interval for calculating concentration difference in the previous post <a href='https://zloverty.github.io/research/DF/blogs/intensity_autocorrelations.html'>Intensity autocorrelation</a>. After a quick test, I found 10 frames may not be a good choice, because the subtraction field does not show any noticeable feature (see below).</p>
-			<img src='https://zloverty.github.io/research/DF/img/appropriate_time_interval/0000-0010.png' height=200px>
-			<p>So I am doing an experiment to see at what time interval features will come out.</p>
+			<h1> Include advection term and compare with $\nabla\cdot(c\boldsymbol{v})$</h1>
+			<p>The previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a> shows that the concentration subtraction term alone does not correlate with the source term $\nabla\cdot(c\boldsymbol{v})$ well. According to the particle conservation equation:</p>
+			$$ \frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc-D\nabla_x^2c=-U_0\nabla\cdot(c\boldsymbol{n})$$
+			<p> The advection term $\boldsymbol{u}\cdot \nabla_xc$ can also be significant. Thus, I will compare $\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc$ with $\nabla\cdot(c\boldsymbol{v})$ in the following. I still neglect the diffusion term for simplicity. </p>
 
-			<h2> Experiment:</h2>
-				<p> Try different time intervals, and calculate correlations between velocity divergence field and subtraction with various time intervals. Divergence field:</p>
-		  	<img src='https://zloverty.github.io/research/DF/img/appropriate_time_interval/original_divv.png' height=200px>
-				<p> Correlate with subtraction field with various time intervals: </p>
-				<!-- insert correlation animation -->
-				<img src='https://zloverty.github.io/research/DF/img/appropriate_time_interval/80-1_time-interval-exp.gif' height=400px>
-			<h2> Comments </h2>
-				<p> The highest correlation between $\nabla\cdot(c\boldsymbol{v})$ and $\Delta c$ is 0.02. This is on the same order of the noise in the concentration time series data. Therefore, there is no appropriate time interval, and no correlation can be claimed between the $\nabla\cdot(c\boldsymbol{v})$ and $\Delta c$. </p>
+
 		</div>
 	</div>
 
