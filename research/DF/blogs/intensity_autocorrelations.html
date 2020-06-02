@@ -47,10 +47,27 @@
 			</div>
 		</a>
 	</div>
-	<h1> Intensity autocorrelations </h1>
-	<p>The concentration (in our case image intensity) shows long tail, decaying logarithmically rather than the much more rapid $t^{-1}$ decay, which happens in thermal systems. This intrinsic time scale, which varies with concentration, makes the analysis on $\frac{\partial c}{\partial t}$ not simply the subtraction between adjacent frames. In order to choose an appropriate time interval, we analyze the autocorrelation of intensity at 20, 40, 60, 80 and 100 n$_0$.</p>
-  <h2> 20 n$_0$</h2>
-  <p>
+	<div id='main'>
+		<div id='main-column-mid'>
+			<h1> Intensity autocorrelations </h1>
+			<p>The concentration (in our case image intensity) shows long tail, decaying logarithmically rather than the much more rapid $t^{-1}$ decay, which happens in thermal systems. This intrinsic time scale, which varies with concentration, makes the analysis on $\frac{\partial c}{\partial t}$ not simply the subtraction between adjacent frames. In order to choose an appropriate time interval, we analyze the autocorrelation of intensity at 20, 40, 60, 80 and 100 n$_0$.</p>
+		  <h2> 20 n$_0$</h2>
+			<img src="https://zloverty.github.io/research/DF/img/intensity_autocorr/20.png" height=200px>
+			<h2> 40 n$_0$</h2>
+				<img src="https://zloverty.github.io/research/DF/img/intensity_autocorr/40.png" height=200px>
+			<h2> 60 n$_0$</h2>
+				<img src="https://zloverty.github.io/research/DF/img/intensity_autocorr/60.png" height=200px>
+			<h2> 80 n$_0$</h2>
+				<img src="https://zloverty.github.io/research/DF/img/intensity_autocorr/80.png" height=200px>
+			<h2> 100 n$_0$</h2>
+				<img src="https://zloverty.github.io/research/DF/img/intensity_autocorr/100.png" height=200px>
+
+			<h2> Comments </h2>
+		  <p>
+				The characteristic time scale increases with concentration. The variance of the correlation time across the field of view also increases. For high concentrations, such as 80 and 100 n$_0$, which are of our interest, we find 10 frames is a good time interval, because most autocorrelation drops to 0 around 10 frames. Too long time interval can result in random results.
+			</p>
+		</div>
+	</div>
 
 
 </body>
