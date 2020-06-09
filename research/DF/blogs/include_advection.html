@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-	<title> Progress </title>
+	<title> Include advection </title>
 	<link rel="stylesheet" type="text/css" href="https://zloverty.github.io/main.css">
-	<!-- Enable inline math with $ -->
-	<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-	</script>
-
-	<script type="text/javascript"
-	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
 </head>
 <body>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -50,29 +37,38 @@
 	<div id='main'>
 		<div id='main-column-mid'>
 			<!-- Title of this blog -->
-			<h1> Include advection term and compare with $\nabla\cdot(c\boldsymbol{v})$</h1>
-				<p>The previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a> shows that the concentration subtraction term alone does not correlate with the source term $\nabla\cdot(c\boldsymbol{v})$ well. According to the particle conservation equation:</p>
+			<h1> Include advection term and compare with \(\nabla\cdot(c\boldsymbol{v})\)</h1>
+				<p>The previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a> shows that the concentration subtraction term alone does not correlate with the source term \(\nabla\cdot(c\boldsymbol{v})\) well. According to the particle conservation equation:</p>
 				$$ \frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc-D\nabla_x^2c=-U_0\nabla\cdot(c\boldsymbol{n})$$
-				<p> The advection term $\boldsymbol{u}\cdot \nabla_xc$ can also be significant. Thus, I will compare $\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc$ with $\nabla\cdot(c\boldsymbol{v})$ in the following. I still neglect the diffusion term for simplicity. </p>
-			<h2> Numerical implementation </h2>
-				<p> Numerically, the term $\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc$ is implemented as the following:</p>
+				<p> The advection term \(\boldsymbol{u}\cdot \nabla_xc\) can also be significant. Thus, I will compare \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) with \(\nabla\cdot(c\boldsymbol{v})\) in the following. I still neglect the diffusion term for simplicity. </p>
+			<h2> 1. Numerical implementation </h2>
+				<p> Numerically, the term \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) is implemented as the following:</p>
 					\[ \frac{\Delta c}{\Delta t} + u_x \frac{c_{x+\Delta x}-c_x}{\Delta x} + u_y\frac{c_{y+\Delta y}-c_y}{\Delta y}\]
-				<p> where the choice of $\Delta t$, $\Delta x$ and $\Delta y$ is not unique. Here, we choose $\Delta t$ to be 10 frames, which is on the order of the characteristic time scale of the system, so that density change resulting from velocity field can be captured. $\Delta x$ and $\Delta y$ are chosen, according to the best PIV box size, to be 25 pixels (8.3 um). </p>
+				<p> where the choice of \(\Delta t\), \(\Delta x\) and \(\Delta y\) is not unique. Here, we choose \(\Delta t\) to be 10 frames, which is on the order of the characteristic time scale of the system, so that density change resulting from velocity field can be captured. \(\Delta x\) and \(\Delta y\) are chosen, according to the best PIV box size, to be 25 pixels (8.3 um). </p>
 				<p> We need to unify the units of different terms:</p>
 					$$ \frac{\Delta c}{\Delta t}[\mbox{/frame}] + u_x[\mbox{pixel/frame}]\frac{c_{x+\Delta x}-c_x}{\Delta x}[\mbox{/pixel}] + u_y[\mbox{pixel/frame}]\frac{c_{y+\Delta y}-c_y}{\Delta y}[\mbox{/pixel}]$$
-				<p> if we use pixel/frame as the unit for velocity $u$, and frame as the unit for $\Delta t$, the units are unified. </p>
-				<p> To connect concentration $c$ to image intensity $I$, let's do a little bit math here. Earlier we experimentally verified that concentration and image intensity follows a linear relation:</p>
+				<p> if we use pixel/frame as the unit for velocity \(u\), and frame as the unit for 、\(\Delta t\), the units are unified. </p>
+				<p> To connect concentration \(c\) to image intensity \(I\), let's do a little bit math here. Earlier we experimentally verified that concentration and image intensity follows a linear relation:</p>
 					$$ c = aI + b $$
-				<p> plug this equation into $\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc$, we get </p>
+				<p> plug this equation into \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\), we get </p>
 					$$ \frac{\Delta_t aI}{\Delta t} + u_x\frac{\Delta_x aI}{\Delta x} + u_y\frac{\Delta_y aI}{\Delta y}$$
-				<p> where $\Delta_t$ denotes the difference along time axis, similar are $\Delta_x$ and $\Delta_y$. All the $b$'s are cancelled, so using $I$ directly in this term should give a field proportional to the actual field calculated using $c$. Therefore, in the following calculation, I am going to use $I$ directly as concentration.
-			<h2> Results </h2>
-				<div id='code-link'>
-					<a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/dc_adv.py'>batch code</a> // Job file: 06022020/01.pbs
-				</div>
-				<p>The figure below plots the correlation between $\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc$ and $\nabla\cdot(c\boldsymbol{v})$ (data 02042020/80-1). </p>
-				<img src='https://zloverty.github.io/research/DF/img/include_advection/corr.png' height=200px>
-				<p> the mean of the correlations through out the whole video is 0.026, significantly higher than the correlation between $\frac{\partial c}{\partial t}$ and $\nabla\cdot(c\boldsymbol{v})$ in the previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a>. 
+				<p> where \(\Delta_t\) denotes the difference along time axis, similar are \(\Delta_x\) and \(\Delta_y\). All the \(b\)'s are cancelled, so using \(I\) directly in this term should give a field proportional to the actual field calculated using \(c\). Therefore, in the following calculation, I am going to use $I$ directly as concentration.
+			<h2> 2. Results </h2>
+				<h3> a. Correlation in same frame </h3>
+					<div id='code-link'>
+						<a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/dc_adv.py'>batch code</a> // Job file: 06022020/01.pbs
+					</div>
+					<p>The figure below plots the correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot(c\boldsymbol{v})\) (data 02042020/80-1). \(\Delta t\) is chosen to be 10 frames in the calculation.</p>
+					<div id='figure'>
+						<img src='https://zloverty.github.io/research/DF/img/include_advection/corr.png' width=100%>
+						<div id='figure-cap'><b>Fig.1</b> Correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot(c\boldsymbol{v})\).</div>
+					</div>
+
+					<p> the mean of the correlations through out the whole video is 0.026, significantly higher than the correlation between \(\frac{\partial c}{\partial t}\) and \(\nabla\cdot(c\boldsymbol{v})\) in the previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a>.</p>
+				<h3> b. Autocorrelation: appropriate \(\Delta t\) </h3>
+					<p> Since we have chosen an arbitrary \(\Delta t=10\) frames in part a and did not see a good correlation, we hereby explore a larger range of \(\Delta t\) to determine what time scale makes the two quantities most correlated. The video is 1000 frames long. We explore 100 different frame intervals ranging from 10 to 990. We will still use the batch code in part <i>a</i>. By changing the 'interval' argument, we get correlations for different intervals.</p>
+
+
 		</div>
 	</div>
 
