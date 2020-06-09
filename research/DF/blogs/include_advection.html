@@ -3,6 +3,7 @@
 <head>
 	<title> Include advection </title>
 	<link rel="stylesheet" type="text/css" href="https://zloverty.github.io/main.css">
+	<link rel="stylesheet" type="text/css" href="I:\Github\zloverty.github.io\main.css">
 </head>
 <body>
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -38,9 +39,12 @@
 		<div id='main-column-mid'>
 			<!-- Title of this blog -->
 			<h1> Include advection term and compare with \(\nabla\cdot(c\boldsymbol{v})\)</h1>
+
 				<p>The previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a> shows that the concentration subtraction term alone does not correlate with the source term \(\nabla\cdot(c\boldsymbol{v})\) well. According to the particle conservation equation:</p>
 				$$ \frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc-D\nabla_x^2c=-U_0\nabla\cdot(c\boldsymbol{n})$$
 				<p> The advection term \(\boldsymbol{u}\cdot \nabla_xc\) can also be significant. Thus, I will compare \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) with \(\nabla\cdot(c\boldsymbol{v})\) in the following. I still neglect the diffusion term for simplicity. </p>
+
+
 			<h2> 1. Numerical implementation </h2>
 				<p> Numerically, the term \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) is implemented as the following:</p>
 					\[ \frac{\Delta c}{\Delta t} + u_x \frac{c_{x+\Delta x}-c_x}{\Delta x} + u_y\frac{c_{y+\Delta y}-c_y}{\Delta y}\]
@@ -53,7 +57,10 @@
 				<p> plug this equation into \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\), we get </p>
 					$$ \frac{\Delta_t aI}{\Delta t} + u_x\frac{\Delta_x aI}{\Delta x} + u_y\frac{\Delta_y aI}{\Delta y}$$
 				<p> where \(\Delta_t\) denotes the difference along time axis, similar are \(\Delta_x\) and \(\Delta_y\). All the \(b\)'s are cancelled, so using \(I\) directly in this term should give a field proportional to the actual field calculated using \(c\). Therefore, in the following calculation, I am going to use $I$ directly as concentration.
+
+
 			<h2> 2. Results </h2>
+
 				<h3> a. Correlation in same frame </h3>
 					<div id='code-link'>
 						<a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/dc_adv.py'>batch code</a> // Job file: 06022020/01.pbs
@@ -63,12 +70,19 @@
 						<img src='https://zloverty.github.io/research/DF/img/include_advection/corr.png' width=100%>
 						<div id='figure-cap'><b>Fig.1</b> Correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot(c\boldsymbol{v})\).</div>
 					</div>
-
 					<p> the mean of the correlations through out the whole video is 0.026, significantly higher than the correlation between \(\frac{\partial c}{\partial t}\) and \(\nabla\cdot(c\boldsymbol{v})\) in the previous post <a href='https://zloverty.github.io/research/DF/blogs/appropriate_time_interval.html'>Choosing appropriate time interval for calculating concentration difference</a>.</p>
+
 				<h3> b. Autocorrelation: appropriate \(\Delta t\) </h3>
 					<p> Since we have chosen an arbitrary \(\Delta t=10\) frames in part a and did not see a good correlation, we hereby explore a larger range of \(\Delta t\) to determine what time scale makes the two quantities most correlated. The video is 1000 frames long. We explore 100 different frame intervals ranging from 10 to 990. We will still use the batch code in part <i>a</i>. By changing the 'interval' argument, we get correlations for different intervals.</p>
-
-
+					<p id='issue'> The calculation of the autocorrelation currently has some unresolved issues, resulting in slow speed and sometimes errors. Typical errors, according to the error message and log, include io.imread error <code>ValueError: cannot reshape array of size 0 into shape (1,1,1,2048,2048,1)</code> and increasing processing time over time.</p>
+					<p> To save time, I will estimate the relative contribution of the terms \(\frac{\partial c}{\partial t}\) and \(\boldsymbol{u}\cdot \nabla_xc\), see if one is significantly more important than the other. According to data 02042020/80-1, \(\Delta c \approx 0.65\), \(\Delta t \approx 10\) frames, \(u_x \approx u_y \approx 0.5\) pixels/frame, \(c_{x+\Delta x}-c_x \approx 0.8\) and \(\Delta x = 25 \) pixels. As a result,
+						$$ \frac{\partial c}{\partial t} \approx \frac{\Delta c}{\Delta t} \approx \frac{0.65}{10} = 0.065 \mbox{ frame}^{-1}$$
+						$$ \boldsymbol{u}\cdot \nabla_xc \approx 2u_x \frac{c_{x+\Delta x}-c_x}{\Delta x} \approx 2 \times 0.5 \times \frac{0.8}{25} = 0.032 \mbox{ frame}^{-1}$$
+					<p> This result suggests that the two terms are on the same order of magnitude, and thus have similar contributions to the sum. Since the big batch calculation (10 to 990) ran into issues, here I switch to a smaller scale to test the code.
+					<div id='code-link'>
+						 Job file: 06092020/00.pbs
+					</div>
+					
 		</div>
 	</div>
 
