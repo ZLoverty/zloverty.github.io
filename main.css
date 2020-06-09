@@ -246,6 +246,7 @@ background-color: red;
 	margin: 0px 0.5in 0px 0.5in;
 }
 #figure-cap{
+	justify-content: left;
 	text-align: left;
 
 }
