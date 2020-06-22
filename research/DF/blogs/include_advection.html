@@ -80,9 +80,14 @@
 						$$ \boldsymbol{u}\cdot \nabla_xc \approx 2u_x \frac{c_{x+\Delta x}-c_x}{\Delta x} \approx 2 \times 0.5 \times \frac{0.8}{25} = 0.032 \mbox{ frame}^{-1}$$
 					<p> This result suggests that the two terms are on the same order of magnitude, and thus have similar contributions to the sum. Since the big batch calculation (10 to 990) ran into issues, here I switch to a smaller scale to test the code.
 					<div id='code-link'>
-						 Job file: 06092020/00.pbs
+						 Job file: 06222020/00.pbs 01.pbs
 					</div>
-					
+					<p> We vary \(\Delta t\) and look at its effect on the cross-correlations. </p>
+					<div id='figure'>
+						<img src='https://zloverty.github.io/research/DF/img/include_advection/dt/sample_2.png' width=90%><br>
+						<div id='figure-cap'> <b>Fig.2</b> Correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot(c\boldsymbol{v})\)</div>
+					</div>
+
 		</div>
 	</div>
 
