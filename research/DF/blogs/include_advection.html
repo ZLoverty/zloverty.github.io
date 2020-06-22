@@ -79,14 +79,31 @@
 						$$ \frac{\partial c}{\partial t} \approx \frac{\Delta c}{\Delta t} \approx \frac{0.65}{10} = 0.065 \mbox{ frame}^{-1}$$
 						$$ \boldsymbol{u}\cdot \nabla_xc \approx 2u_x \frac{c_{x+\Delta x}-c_x}{\Delta x} \approx 2 \times 0.5 \times \frac{0.8}{25} = 0.032 \mbox{ frame}^{-1}$$
 					<p> This result suggests that the two terms are on the same order of magnitude, and thus have similar contributions to the sum. Since the big batch calculation (10 to 990) ran into issues, here I switch to a smaller scale to test the code.
+
 					<div id='code-link'>
 						 Job file: 06222020/00.pbs 01.pbs
 					</div>
+
 					<p> We vary \(\Delta t\) and look at its effect on the cross-correlations. </p>
+
 					<div id='figure'>
-						<img src='https://zloverty.github.io/research/DF/img/include_advection/dt/sample_2.png' width=80%><br>
-						<div id='figure-cap'> <b>Fig.2</b> Correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot(c\boldsymbol{v})\)</div>
+						<img src='https://zloverty.github.io/research/DF/img/include_advection/dt/sample_2.png' width=80%>
+						<div id='figure-cap'> <b>Fig.2</b> Correlation between \(\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc\) and \(\nabla\cdot\boldsymbol{v}\)</div>
 					</div>
+
+					<p> Despite the fact that the magnitudes of correlations at all concentrations are small, they do show a pronounced increasing trend (upon concentration). The divergence of velocity field is more correlated with the concentration change at higher concentrations, suggesting that the small correlation magnitudes are not trivial random noise. Moreover, the increase of correlation in the small \(\Delta t\) limit is consistent with our observation, where small \(\Delta t\)'s lead to noisy \(\frac{\partial c}{\partial t}\) without outstanding patterns. As \(\Delta t\) is getting larger, concentration patterns start to show up. </p>
+
+					<p> Apart from the correlation \((\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc) \star \nabla\cdot\boldsymbol{v}\)<sup><a href='#fn1' id='ref1'>1</a></sup>, we looked into three other correlations, namely \((\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc) \star \nabla\cdot(c\boldsymbol{v})\), \(\frac{\partial c}{\partial t}  \star \nabla\cdot\boldsymbol{v}\) and \(\frac{\partial c}{\partial t}  \star \nabla\cdot(c\boldsymbol{v})\). Note 1) in our analysis, \(\boldsymbol{u}=\boldsymbol{v}\), although they represent difference velocity in the kinetic theory; 2) \(c\boldsymbol{v}\) corresponds to \(c\boldsymbol{n}\) in the theory equation, since the degree of local alignment is proportional (?) to the velocity magnitude. See the correlations as functions of \(\Delta t\) in Fig.3.</p>
+
+					<div id='figure'>
+						<img src='https://zloverty.github.io/research/DF/img/include_advection/dt/80-2.png' width=80%>
+						<div id='figure-cap'> <b>Fig.3</b> Other correlations. Concentration is fixed at 80 n\(_0\).</div>
+					</div>
+
+					<p> I find that \((\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc) \star \nabla\cdot\boldsymbol{v}\), which was shown in Fig.2, has the highest magnitude. \((\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc) \star \nabla\cdot(c\boldsymbol{v})\) and \(\frac{\partial c}{\partial t}  \star \nabla\cdot\boldsymbol{v}\) also show non-trivial magnitudes, and peak at similar \(\Delta t\) as \((\frac{\partial c}{\partial t} + \boldsymbol{u}\cdot \nabla_xc) \star \nabla\cdot\boldsymbol{v}\). In contrast, \(\frac{\partial c}{\partial t}  \star \nabla\cdot(c\boldsymbol{v})\) barely shows meaningful correlation. </p>
+
+					<hr></hr>
+					<sup id="fn1">1. I use \(\star\) to denote cross-correlation, following the convention of signal processing<a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
 
 		</div>
 	</div>
