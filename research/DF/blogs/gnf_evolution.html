@@ -43,18 +43,26 @@
 
 			<h2> Experiment </h2>
 
-				<p>55 n\(_0\) light-controlled E. coli suspension is sealed into a glass slide chamber and put on microscope. The light voltage is increased from 4V to 9.5V at \(t=0\). The video is shot at 10 fps and the pixel size of the video is 0.33 um (data 05282020/00).</p>
+				<p>55 n\(_0\) light-controlled E. coli suspension is sealed into a glass slide chamber and put on microscope. The light voltage is increased from 0V to 12V at \(t=5s\). The video is shot at 10 fps and is played 20 times faster of real time (data 060232020/01).</p>
 				<div id='figure'>
-					<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/gnf-animation.gif' width=30%>
-					<div id='figure-cap'><b>Movie.1</b> 55 n\(_0\) light-controlled E. coli suspension. Light voltage is increased from 4V to 9.5V at \(t=0\).</div>
+					<iframe width="640" height="376" src="https://www.youtube.com/embed/nQXKSiHEWLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-
 			<h2> Analysis </h2>
 				<div id='code-link'>
-
+					Links: <a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/df2_kinetics.py'>code</a> <a href='https://github.com/ZLoverty/Python/blob/master/job_files/06232020/01.pbs'>job file</a>
 				</div>
-				<p>
 
+				<p>I use the temporal variance -> spatial average procedure to calculate the giant number flucutation exponents at each time interval of 100 frames (10 seconds). The result is shown below:</p>
+
+				<div id='figure'>
+					<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/400.png' width=80%>
+				</div>
+
+				<p> The evolving process can be seen clearly from the increase of \(\alpha\) after the light is on. However, the fluctuation magnitude at the "steady-state" is large and is not satisfactory. To explore whether the result can be presented better, I use various lengths of video to calculate \(\alpha\) over time (25, 50, 75 frames).</p>
+
+				<div id='code-link'>
+					Links: <a href='https://github.com/ZLoverty/Python/blob/master/job_files/06292020/00.pbs'>job file</a>
+				</div>
 		</div>
 	</div>
 
