@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13443,13 +13404,13 @@ Tue Jun  9 12:16:50 2020 // Output data</code></pre>
     <span class="n">xx</span> <span class="o">=</span> <span class="n">subdata</span><span class="o">.</span><span class="n">n</span> <span class="o">/</span> <span class="p">(</span><span class="n">lb</span><span class="o">/</span><span class="n">mpp</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
     <span class="n">yy</span> <span class="o">=</span> <span class="n">subdata</span><span class="o">.</span><span class="n">d</span> <span class="o">/</span> <span class="n">subdata</span><span class="o">.</span><span class="n">n</span><span class="o">**.</span><span class="mi">5</span>
     <span class="n">yy</span> <span class="o">=</span> <span class="n">yy</span> <span class="o">/</span> <span class="n">yy</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">xx</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">yy</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">yy</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;{:d}-{:d}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">seg_length</span><span class="p">,</span> <span class="n">idx</span><span class="o">*</span><span class="n">seg_length</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>                        <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">mfc</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">mec</span><span class="o">=</span><span class="n">wowcolor</span><span class="p">(</span><span class="n">k</span><span class="p">),</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">xx</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">yy</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">yy</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">-</span><span class="si">{:d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">seg_length</span><span class="p">,</span> <span class="n">idx</span><span class="o">*</span><span class="n">seg_length</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>                        <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">mfc</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">mec</span><span class="o">=</span><span class="n">wowcolor</span><span class="p">(</span><span class="n">k</span><span class="p">),</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
     <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$l^2/l_b^2$&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\Delta N/\sqrt{N}$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\Delta N/\sqrt</span><span class="si">{N}</span><span class="s1">$&#39;</span><span class="p">)</span>
 
 <span class="c1"># guide of the eye slope</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">])</span>
@@ -13478,6 +13439,44 @@ folder_out = r'I:\Github\Python\Correlation\test_images\divvXdcadv\result'</code
 <h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
 <pre><code>Mon Jun 22 11:36:25 2020 // dt=3 calculated
 Mon Jun 22 11:36:25 2020 // dt=7 calculated</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Overall-intensity-of-each-image-in-an-image-sequence">Overall intensity of each image in an image sequence<a class="anchor-link" href="#Overall-intensity-of-each-image-in-an-image-sequence">&#182;</a></h3><p><code>overall_intensity.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/overall_intensity.py">src</a></p>
+<p>Compute the overall intensity (average pixel intensity) of an image sequance. The result is a pandas.DataFrame with columns [frame, intensity].</p>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python overall_intensity.py folder folder_out</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>folder = E:\Github\Python\Correlation\test_images\cl
+folder_out = E:\Github\Python\Correlation\test_images\cl\overall_intensity</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>Tue Jun 23 20:45:52 2020 // image 100-2 computed
+Tue Jun 23 20:45:52 2020 // image 40-2 computed
+Tue Jun 23 20:45:52 2020 // image 60-2 computed
+Tue Jun 23 20:45:52 2020 // image 80-2 computed</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Temporal-evolution-of-flow-energy-and-order">Temporal evolution of flow energy and order<a class="anchor-link" href="#Temporal-evolution-of-flow-energy-and-order">&#182;</a></h3><p><code>overall_intensity.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/energy_order.py">src</a></p>
+<p>Compute the temporal evolution of flow energy and order from a sequence of PIV data. The result is a pandas.DataFrame with columns [t, E, OP].</p>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python energy_order.py folder_piv folder_out mpp fps</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>folder_piv = E:\Github\Python\Correlation\test_images\energy_order\piv_data
+folder_out = E:\Github\Python\Correlation\test_images\energy_order\out
+mpp = 0.33
+fps = 10</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>Thu Jul  2 17:02:10 2020 // t = 90.00 s calculated
+Thu Jul  2 17:02:10 2020 // t = 90.20 s calculated</code></pre>
 
 </div>
 </div>
