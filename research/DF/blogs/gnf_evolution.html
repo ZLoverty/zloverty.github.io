@@ -85,22 +85,44 @@
 			<h2> Flow energy and flow order </h2>
 			<div id='code-link'>
 				Links:
-				<a href=''>energy code</a>
-				<a href=''>order code</a>
-				<a href=''>job file</a>
+				<a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/energy_order.py'>energy/order code</a>
+				<a href='https://github.com/ZLoverty/Python/blob/master/job_files/07022020/00.pbs'>job file</a>
 			</div>
 			<p>Following Peng's work, I compare the kinetics of GNF with that of flow energy and flow order. </p>
 			<p>I calculate the flow energy using the formula, assuming the mass of the suspension \(m_i\) is the same at each location </p>
 				$$ E = \frac{1}{n}\sum^n_{i=1} \frac{1}{2} \boldsymbol{v_i}^2$$
 			<p>The flow order is defined in the following schematic</p>
+
 			<div id='figure' >
 				<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/energy_order.png' style='border-style: solid; border-width: 3px' width=80%>
 			</div>
 
+			<p>The evolution of flow energy, flow order and GNF together is shown in the plot below:</p>
 
+			<div id='figure'>
+				<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/kinetics_E_OP/60n0.png' width=80%>
+			</div>
 
+			<h2> Normalizing the image intensities </h2>
 
+			<p> I noticed that the initial large value of \(\alpha\) is likely a result of overall illumination change. Hence, I modified the calculation of GNF by normalizing the original image intensity: </p>
+			$$ I'=I/\langle I \rangle$$
+			<p> as such, all the modified images now have the same average intensity 1, and the overall illumination variation cannot affect the calculation of \(\alpha\). </p>
 
+			<div id='code-link'>
+				Links:
+				<a href='https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/df2_kinetics.py'>modified kinetics code</a>
+				<a href='https://github.com/ZLoverty/Python/blob/master/job_files/07062020/00.pbs'>job file</a>
+				Note that the modified code has an additional argument "normalize" which takes value 0 or 1.
+			</div>
+
+			<p> The \(\alpha\) kinetics curve calculated from normalized images is shown below:</p>
+
+			<div id='figure'>
+				<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/kinetics_E_OP/60n0_norm.png' width=80%>
+			</div>
+
+			<p> The initial high \(\alpha\) is still there, because merely normalizing does not exclude the sudden change from a uniform no light image to an actual bacterial suspension image with large spatial variation in intensity.</p>
 		</div>
 	</div>
 
