@@ -123,6 +123,23 @@
 			</div>
 
 			<p> The initial high \(\alpha\) is still there, because merely normalizing does not exclude the sudden change from a uniform no light image to an actual bacterial suspension image with large spatial variation in intensity.</p>
+
+			<h2> Improve statistics </h2>
+
+			<p> Previously, in order to avoid expensive computation, I set the step for sampling images at 1000 pixels, resulting in very few (4) samples per image. This made the \(\alpha\) signal noisy, especially the initial part. By reducing the step from 1000 to 500 pixels, the number of samples increases from 4 to 9 in each image. This has led to an improvement in the data, where the initial values of \(\alpha\) remains low until the increase of flow energy (see the plot below). </p>
+
+			<div id='figure'>
+				<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/kinetics_E_OP/60n0_sample-more.png' width=80%>
+			</div>
+
+			<p> I further decrease the step to 250 pixels, and let's see if it can reduce the fluctuations of \(\alpha\) further. See below:</p>
+
+			<div id='figure'>
+				<img src='https://zloverty.github.io/research/DF/img/gnf_evolution/kinetics_E_OP/60n0_36-samples.png' width=80%>
+			</div>
+
+			<p> turns out that smaller step does result in a smoother kinetics curve. All other data, which may be affected by the lack of statistics, will be recalculated with 250-pixel step.</p>
+
 		</div>
 	</div>
 
