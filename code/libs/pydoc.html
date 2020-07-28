@@ -13172,7 +13172,15 @@ bpassHigh = 100</code></pre>
 <h3 id="PIV-for-image-sequence">PIV for image sequence<a class="anchor-link" href="#PIV-for-image-sequence">&#182;</a></h3><p><code>piv_imseq.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/PIV/src/py_files/piv_imseq.py">src</a></p>
 <p>Perform PIV analysis on given image sequence.</p>
 <h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
-<pre><code>python piv_imseq.py input_folder output_folder winsize overlap fps</code></pre>
+<pre><code>python piv_imseq.py input_folder output_folder winsize overlap fps smooth
+
+input_folder -- folder of images
+output_folder -- folder to save PIV data (x, y, u, v)
+winsize -- window size of PIV analysis
+overlap -- number of overlap between adjacent window
+fps -- frames per second of input video
+smooth -- whether smooth the velocity field before output, 1 for yes and 0 for no
+</code></pre>
 <h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
 <pre><code>input_folder = I:\Github\Python\PIV\test_images\imseq
 output_folder = I:\Github\Python\PIV\test_images\imseq\pivData
@@ -13190,7 +13198,7 @@ Mon Feb 10 17:43:36 2020 // 0003 calculated</code></pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Velocity-and-orientation-spatial-correlation">Velocity and orientation spatial correlation<a class="anchor-link" href="#Velocity-and-orientation-spatial-correlation">&#182;</a></h3><p><code>cav_imseq.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/cav_imseq.py">src</a></p>
-<p>Perform orientation and velocity spatial correlation analysis.</p>
+<p>Perform orientation and velocity spatial correlation analysis. Input is a folder of PIV data, output is tables of (x, y, CA, CV).</p>
 <h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
 <pre><code>python cav_imseq.py input_folder output_folder</code></pre>
 <h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
@@ -13394,31 +13402,7 @@ Tue Jun  9 12:16:48 2020 // Segment 4: frame 0006-0008, generate sequence
 Tue Jun  9 12:16:49 2020 // Segment 4: frame 0006-0008, calculate GNF for each box size and box number
 Tue Jun  9 12:16:50 2020 // Segment 4: frame 0006-0008, take spatial average
 Tue Jun  9 12:16:50 2020 // Output data</code></pre>
-<h4 id="Example-code-for-plotting-kinetics-data">Example code for plotting kinetics data<a class="anchor-link" href="#Example-code-for-plotting-kinetics-data">&#182;</a></h4><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;I:\Github\Python\Correlation\test_images\df2_kinetics\out\kinetics_data.csv&#39;</span><span class="p">)</span>
-<span class="n">lb</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">mpp</span> <span class="o">=</span> <span class="mf">0.33</span>
-<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">seg_length</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">segment</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">():</span>
-    <span class="n">subdata</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">segment</span><span class="o">==</span><span class="n">idx</span><span class="p">]</span>
-    <span class="n">xx</span> <span class="o">=</span> <span class="n">subdata</span><span class="o">.</span><span class="n">n</span> <span class="o">/</span> <span class="p">(</span><span class="n">lb</span><span class="o">/</span><span class="n">mpp</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">subdata</span><span class="o">.</span><span class="n">d</span> <span class="o">/</span> <span class="n">subdata</span><span class="o">.</span><span class="n">n</span><span class="o">**.</span><span class="mi">5</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">yy</span> <span class="o">/</span> <span class="n">yy</span><span class="o">.</span><span class="n">iat</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">xx</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">yy</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">yy</span><span class="p">):</span><span class="mi">3</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{:d}</span><span class="s1">-</span><span class="si">{:d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">seg_length</span><span class="p">,</span> <span class="n">idx</span><span class="o">*</span><span class="n">seg_length</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>                        <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">mfc</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">mec</span><span class="o">=</span><span class="n">wowcolor</span><span class="p">(</span><span class="n">k</span><span class="p">),</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;$l^2/l_b^2$&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;$\Delta N/\sqrt</span><span class="si">{N}</span><span class="s1">$&#39;</span><span class="p">)</span>
-
-<span class="c1"># guide of the eye slope</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">])</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mf">0.5</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.8</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mf">0.2</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="s1">&#39;0.5&#39;</span><span class="p">)</span>
-</pre></div>
-
+<h4 id="Example-code-for-plotting-kinetics-data">Example code for plotting kinetics data<a class="anchor-link" href="#Example-code-for-plotting-kinetics-data">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13465,10 +13449,17 @@ Tue Jun 23 20:45:52 2020 // image 80-2 computed</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Temporal-evolution-of-flow-energy-and-order">Temporal evolution of flow energy and order<a class="anchor-link" href="#Temporal-evolution-of-flow-energy-and-order">&#182;</a></h3><p><code>overall_intensity.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/energy_order.py">src</a></p>
+<h3 id="Temporal-evolution-of-flow-energy-and-order">Temporal evolution of flow energy and order<a class="anchor-link" href="#Temporal-evolution-of-flow-energy-and-order">&#182;</a></h3><p><code>energy_order.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/energy_order.py">src</a></p>
 <p>Compute the temporal evolution of flow energy and order from a sequence of PIV data. The result is a pandas.DataFrame with columns [t, E, OP].</p>
 <h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
-<pre><code>python energy_order.py folder_piv folder_out mpp fps</code></pre>
+<pre><code>python energy_order.py folder_piv folder_out mpp fps
+
+folder_piv -- folder containing PIV data in the form of .csv files
+folder_out -- folder to save the energy and order data
+mpp -- microns per pixel
+fps -- frames per second
+
+</code></pre>
 <h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
 <pre><code>folder_piv = E:\Github\Python\Correlation\test_images\energy_order\piv_data
 folder_out = E:\Github\Python\Correlation\test_images\energy_order\out
