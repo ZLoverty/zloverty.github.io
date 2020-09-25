@@ -13086,7 +13086,81 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Correlation-analysis">Correlation analysis<a class="anchor-link" href="#Correlation-analysis">&#182;</a></h2>
+<h2 id="1.-Content">1. Content<a class="anchor-link" href="#1.-Content">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Generic image processing:</strong></p>
+
+<pre><code>bpass.py -- bandpass filter (FFT)    
+to8bit.py -- convert .nd2 to .tif image sequence (deprecated)
+to_tif.py -- convert .nd2 to .tif image sequence, with illumination correction by background subtraction
+small_imseq.py -- convert image sequences to the coarse-grained version and save them as numpy binary data
+
+</code></pre>
+<p><strong>Correlation analysis:</strong></p>
+
+<pre><code>corr_imseq.py -- image intensity spatial correlation
+autocorr_imseq.py -- image intensity temporal correlation
+cav_imseq.py -- velocity spatial correlation
+i_div_autocorr.py -- intensity divergence temporal correlation (Schaller 2013)
+div_x_dcadv.py -- correlation between divergence and intensity change (Saintillan 2008)
+concgrad_velocity.py -- Concentration gradient - velocity correlation
+
+</code></pre>
+<p><strong>Flow field analysis:</strong></p>
+
+<pre><code>piv_imseq.py -- PIV analysis on .tif image sequence (dependent on openpiv)
+div.py -- plot concentration, velocity and divergence fields (does not work on MSI, not fixed yet)
+div2.py -- calculate divergence field from velocity field 
+dc_adv.py -- calculate the density change plus advection term fields (kinda useless)
+piv_overlay.py -- draw PIV overlay images in .jpg sequence
+energy_order.py -- calculate energy and order parameter sequence
+flow_derivs.py -- compute divergence, vorticity, convection and div(cn), save data in .npy binary files
+
+</code></pre>
+<p><strong>Giant number fluctuations analysis:</strong></p>
+
+<pre><code>df_imseq.py -- spatial GNF analysis with bpass (deprecated, because of spatial inhomogeneity in nonmotile sample)
+df2_nobp.py -- temporal GNF analysis without bpass
+df2_kinetics.py -- temporal evolution of temporal GNF
+overall_intensity.py -- average image intensity, time series
+local_df.py -- compute temporal evolution of local concentration fluctuations, save data in .npy binary files
+
+</code></pre>
+<p><strong>Not documented:</strong></p>
+
+<pre><code>illumination_noise.py -- generate artificial random image supplemented with global random noise (test the effect of illumination fluctuations)
+mls_2d.py -- smoothing PIV with moving least square technique, 2d (developing)
+mls_3d.py -- smoothing PIV with moving least square technique, 3d (developing)
+bpass_mh.py -- bandpass filter (FFT), then match histogram with original image (similar to bpass)</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-Plans">2. Plans<a class="anchor-link" href="#2.-Plans">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+<pre><code>None</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.-Scripts">3. Scripts<a class="anchor-link" href="#3.-Scripts">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13116,20 +13190,6 @@ step = 20</code></pre>
 <h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
 <pre><code>input_folder = I:\Github\Python\Correlation\test_images\cl
 output_folder = I:\Github\Python\Correlation\test_images\df_result</code></pre>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Intensity-autocorrelation">Intensity autocorrelation<a class="anchor-link" href="#Intensity-autocorrelation">&#182;</a></h3><p><code>autocorr_imseq.py</code><a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/autocorr_imseq.py">src</a></p>
-<p>Calculate temporal correlation (autocorrelation) of average intensity in a box centered at (500, 500), box size is 40 (px).</p>
-<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
-<pre><code>python autocorr_imseq.py input_folder output_folder</code></pre>
-<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
-<pre><code>input_folder = I:\Github\Python\Correlation\test_images\cl
-output_folder = I:\Github\Python\Correlation\test_images\cl\ac_result</code></pre>
 
 </div>
 </div>
@@ -13468,6 +13528,192 @@ fps = 10</code></pre>
 <h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
 <pre><code>Thu Jul  2 17:02:10 2020 // t = 90.00 s calculated
 Thu Jul  2 17:02:10 2020 // t = 90.20 s calculated</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Generate-PIV-overlay-images">Generate PIV overlay images<a class="anchor-link" href="#Generate-PIV-overlay-images">&#182;</a></h3><p><code>piv_overlay.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/PIV/src/py_files/piv_overlay.py">src</a></p>
+<p>Compute the temporal evolution of flow energy and order from a sequence of PIV data. The result is a pandas.DataFrame with columns [t, E, OP].</p>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python piv_overlay.py pivDataFolder imgFolder output_folder sparcity
+
+pivDataFolder -- folder containing PIV data in the form of .csv files
+imgFolder -- folder containing .tif images
+output_folder -- folder to save the PIV overlay images in .jpg files (rescaled to 360 pixels in width)
+sparcity -- density of PIV arrows, higher value corresponds to sparcer arrows
+
+</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>pivDataFolder = E:\Github\Python\PIV\test_images\piv_overlay\pivdata
+imgFolder = E:\Github\Python\PIV\test_images\piv_overlay\img
+output_folder = E:\Github\Python\PIV\test_images\piv_overlay\output
+sparcity = 2</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>Mon Feb 17 15:34:54 2020 // 900 calculated
+Mon Feb 17 15:34:55 2020 // 902 calculated</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compute-divergence,-vorticity,-convection-and-div(cn)">Compute divergence, vorticity, convection and div(cn)<a class="anchor-link" href="#Compute-divergence,-vorticity,-convection-and-div(cn)">&#182;</a></h3><p><code>flow_derivs.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/flow_derivs.py">src</a></p>
+<p>Compute divergence, vorticity, convection and div(cn), save data in .npy binary files.</p>
+<h4 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h4>
+<pre><code>compute divergence, vorticity, convection and div(cn), save data in .npy binary files.
+All quantities are saved in subfolders under 'flow_folder'
+
+Here, divcn is computed by assuming the relation between intensity and concentration to be the calibration curve:
+c = 186 - 0.19I
+
+function vorticity, divergence divcn and convection should be defined
+
+</code></pre>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python flow-derivs.py piv_folder img_folder flow_folder winsize step
+
+piv_folder -- PIV data folder 
+img_folder -- .tif image sequence folder 
+flow_folder -- output folder, with subfolders  
+winsize -- PIV window size 
+step -- PIV step size
+
+</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>piv_folder: E:\Github\Python\Correlation\test_images\dc+adv\piv
+img_folder: E:\Github\Python\Correlation\test_images\dc+adv\img
+flow_folder: E:\Github\Python\Correlation\test_images\dc+adv\flow_derivs
+winsize: 50
+step: 25</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>piv_folder: E:\Github\Python\Correlation\test_images\dc+adv\piv
+img_folder: E:\Github\Python\Correlation\test_images\dc+adv\img
+flow_folder: E:\Github\Python\Correlation\test_images\dc+adv\flow_derivs
+winsize: 50
+step: 25
+Tue Sep  1 15:35:07 2020\0000-0001 done
+Tue Sep  1 15:35:07 2020\0002-0003 done</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Local-density-fluctuations">Local density fluctuations<a class="anchor-link" href="#Local-density-fluctuations">&#182;</a></h3><p><code>local_df.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/local_df.py">src</a></p>
+<p>Compute local concentration fluctuations, and save data in .npy binary files.</p>
+<h4 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h4>
+<pre><code>Compute local concentration fluctuations, and save data in .npy binary files.
+
+</code></pre>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python local_df.py img_folder save_folder seg_length winsize step
+
+img_folder: .tif image sequence folder 
+save_folder: output folder
+seg_length: length of each segment 
+winsize: PIV window size 
+step: PIV step size
+
+</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>img_folder: E:\Github\Python\Correlation\test_images\df2_kinetics\img
+save_folder: E:\Github\Python\Correlation\test_images\df2_kinetics\local_df
+seg_length: 50
+winsize: 50
+step: 25
+
+</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>img_folder: E:\Github\Python\Correlation\test_images\df2_kinetics\img
+save_folder: E:\Github\Python\Correlation\test_images\df2_kinetics\local_df
+seg_length: 2
+winsize: 50
+step: 25
+Tue Sep  1 15:59:22 2020 // computation starts!
+Tue Sep  1 15:59:23 2020 // computation ends!</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Coarse-grained-image-stacks">Coarse-grained image stacks<a class="anchor-link" href="#Coarse-grained-image-stacks">&#182;</a></h3><p><code>small_imseq.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/generic_proc/py_files/small_imseq.py">src</a></p>
+<p>Compute local concentration fluctuations, and save data in .npy binary files.</p>
+<h4 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h4>
+<pre><code>Concentration has always been derived from the bright field images. While images are typically 1280*1080, the data we use are always coarse-grained down to 50*42. Although the down sizing step takes only several milliseconds, repeating the process over and over for hundreds of thousands of times (all images) takes a lot of time. Thus, I decide to convert the image sequences to the coarse-grained version and save them as numpy binary data. In this way, the 3000 frame video will be down sized to 3000*50*42 float16 numbers, which in total is 60M instead of the 4.64G. By saving this down sized data, the data also gets more portable because of the small size, while all the useful information is retained.
+
+</code></pre>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python small_imseq.py img_folder out_folder wsize step
+
+img_folder -- folder of image sequence
+out_folder -- folder to save the numpy array
+wsize -- window size, assuming square, pixel
+step -- parameter of corrLib.divide_windows(), pixel
+
+Note: the array will be saved as file 'stack.npy'
+
+</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>img_folder -- E:\Github\Python\Correlation\test_images\autocorr\80
+out_folder -- E:\Github\Python\Correlation\test_images\autocorr\80\small_imseq
+wsize -- 50
+step -- 25
+
+</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>img_folder: E:\Github\Python\Correlation\test_images\autocorr\80
+out_folder: E:\Github\Python\Correlation\test_images\autocorr\80\small_imseq
+wsize: 50
+step: 25
+Sun Sep 20 13:41:29 2020 // Computation starts!
+Sun Sep 20 13:41:29 2020 // Computation finishes!</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Concentration-gradient---velocity-correlation">Concentration gradient - velocity correlation<a class="anchor-link" href="#Concentration-gradient---velocity-correlation">&#182;</a></h3><p><code>concgrad_velocity.py</code> <a href="https://github.com/ZLoverty/Python/blob/master/Correlation/src/py_files/concgrad_velocity.py">src</a></p>
+<p>Compute local concentration fluctuations, and save data in .npy binary files.</p>
+<h4 id="Description">Description<a class="anchor-link" href="#Description">&#182;</a></h4>
+<pre><code>Here, we compute the concentration gradient from bright field images. Since concentration is negetively proportional to image intensity, we use negative step size in function np.gradient() to make the value comply to convention. Once again, a bias towards positive correlation is desired.
+
+In 2d space, concentration gradient and velocity both have two components (x and y). In our data, the dcx and dcy data will be stored in a 2*m*n array, where the first dimension denotes the component x or y. The PIV data are originally stored in DataFrame's, and I will rearrange the data to conform with the structure of concentration gradients.
+
+In the final data, correlation on each frame will be the inner product between grad and piv, summing x and y direction up. In addition, the mean normalized by the standard deviation of the correlation matrix will be recorded as a single number measure of correlation for that moment. The normalized means will constitute a time series of correlation, which describes the evolution.
+
+</code></pre>
+<h4 id="Syntax">Syntax<a class="anchor-link" href="#Syntax">&#182;</a></h4>
+<pre><code>python concgrad_velocity.py small_img_folder piv_folder out_folder
+
+small_img_folder -- small_imseq folder, containing coarse-grained image stack as .npy file
+piv_folder -- piv folder
+out_folder -- output folder, saving correlation data
+
+</code></pre>
+<h4 id="Test-params">Test params<a class="anchor-link" href="#Test-params">&#182;</a></h4>
+<pre><code>small_img_folder -- E:\Github\Python\Correlation\test_images\test_corr\small_folder
+piv_folder -- E:\Github\Python\Correlation\test_images\test_corr\piv_folder
+out_folder -- E:\Github\Python\Correlation\test_images\test_corr\out_folder
+
+</code></pre>
+<h4 id="Log">Log<a class="anchor-link" href="#Log">&#182;</a></h4>
+<pre><code>small_img_folder E:\Github\Python\Correlation\test_images\test_corr\small_folder
+piv_folder: E:\Github\Python\Correlation\test_images\test_corr\piv_folder
+out_folder: E:\Github\Python\Correlation\test_images\test_corr\out_folder
+Sun Sep 20 15:42:52 2020 // Computation starts!
+Sun Sep 20 15:42:52 2020 // computing frame 3000
+Sun Sep 20 15:42:52 2020 // computing frame 3002
+Sun Sep 20 15:42:52 2020 // computing frame 3004
+Sun Sep 20 15:42:52 2020 // computing finishes!</code></pre>
 
 </div>
 </div>

@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13140,13 +13101,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">corrLib</span> <span class="k">import</span> <span class="n">corrS</span><span class="p">,</span> <span class="n">corrI</span><span class="p">,</span> <span class="n">divide_windows</span><span class="p">,</span> <span class="n">distance_corr</span><span class="p">,</span> <span class="n">corrIseq</span><span class="p">,</span> \
-                    <span class="n">readseq</span><span class="p">,</span> <span class="n">boxsize_effect_spatial</span><span class="p">,</span> <span class="n">density_fluctuation</span><span class="p">,</span> <span class="n">corrlength</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">corrLib</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">skimage</span> <span class="k">import</span> <span class="n">io</span>
+<span class="kn">from</span> <span class="nn">skimage</span> <span class="kn">import</span> <span class="n">io</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
@@ -13158,7 +13118,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
@@ -13188,7 +13148,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="n">CI</span> <span class="o">=</span> <span class="n">corrI</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">I</span><span class="p">)</span>
+<span class="n">XI</span><span class="p">,</span> <span class="n">YI</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">corrI</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">I</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13590,10 +13550,10 @@ divided image I size: (4, 4)
 
 
 
-<div id="94cb0a38-86fd-48f0-8b85-567572d216e6"></div>
+<div id="3cb6d4f6-f7ca-45fc-9d61-00298a49e8f9"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#94cb0a38-86fd-48f0-8b85-567572d216e6');
+var element = $('#3cb6d4f6-f7ca-45fc-9d61-00298a49e8f9');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -14689,15 +14649,18 @@ if (IPython.notebook.kernel != null) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="readdata(folder)">readdata(folder)<a class="anchor-link" href="#readdata(folder)">&#182;</a></h3><p>Find all *.csv file under folder.</p>
-<ul>
-<li>folder: a directory to look for .csv files.</li>
-</ul>
-<p>Return</p>
-<ul>
-<li>a dataframe containing columns ('Name', 'Dir), where Name is the file name and Dir is the full directories of the files.</li>
-</ul>
-<p>Example of use:</p>
+<h3 id="read-data-with-specified-extension-in-given-folder">read data with specified extension in given folder<a class="anchor-link" href="#read-data-with-specified-extension-in-given-folder">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">readdata</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">ext</span><span class="o">=</span><span class="s1">&#39;csv&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Read data files with given extensions in a folder.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    folder -- the folder to search in</span>
+<span class="sd">    ext -- (optional) file extension of data files looked for, default to &#39;csv&#39;</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    fileList -- a DataFrame with columns &#39;Name&#39; and &#39;Dir&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
 
 </div>
 </div>
@@ -14780,6 +14743,132 @@ if (IPython.notebook.kernel != null) {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="temporal-variation-based-density-fluctuation-analysis">temporal variation based density fluctuation analysis<a class="anchor-link" href="#temporal-variation-based-density-fluctuation-analysis">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">df2</span><span class="p">(</span><span class="n">imgstack</span><span class="p">,</span> <span class="n">size_min</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This is used for small scale test of temporal variation based density fluctuation analysis. </span>
+<span class="sd">    Here the input is a 3 dimensional array that contains all the images in a video [stack_index, height, width].</span>
+<span class="sd">    For larger scale application, use the script df2.py or a later implementation of df2 which can take directory as argument 1.</span>
+
+<span class="sd">    Args: </span>
+<span class="sd">    imgstack -- 3-D array with dimensions [stack_index, height, width]</span>
+<span class="sd">    size_min -- minimal box size to sample</span>
+<span class="sd">    step -- distance between adjacent boxes in a frame</span>
+<span class="sd">    method -- use pixel intensity directly as concentration (&#39;linear&#39;), or use the log of it (&#39;log&#39;)</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    average -- the spatial average of temporal variations    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="small-scale-test-of-gnf-analysis">small scale test of gnf analysis<a class="anchor-link" href="#small-scale-test-of-gnf-analysis">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_gnf</span><span class="p">(</span><span class="n">gnf_data</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Used for small scale test of gnf analysis. </span>
+<span class="sd">    It incorporates the guide of the eye slope already in the function, which usually needs further adjustment when preparing paper figures.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    gnf_data -- gnf data generated by df2()</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    ax -- axis on which the data are plotted</span>
+<span class="sd">    slope -- the slope of the gnf_data curve</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compute-vorticity-field-based-on-piv-data-(x,-y,-u,-v)">Compute vorticity field based on piv data (x, y, u, v)<a class="anchor-link" href="#Compute-vorticity-field-based-on-piv-data-(x,-y,-u,-v)">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">vorticity</span><span class="p">(</span><span class="n">pivData</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute vorticity field based on piv data (x, y, u, v)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    pivData -- DataFrame of (x, y, u, v)</span>
+<span class="sd">    step -- distance (pixel) between adjacent PIV vectors</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    vort -- vorticity field of the velocity field. unit: [u]/pixel, [u] is the unit of u, usually px/s</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compute-convection-term-u.grad(c)-based-on-piv-data-(x,-y,-u,-v)-and-image">Compute convection term u.grad(c) based on piv data (x, y, u, v) and image<a class="anchor-link" href="#Compute-convection-term-u.grad(c)-based-on-piv-data-(x,-y,-u,-v)-and-image">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convection</span><span class="p">(</span><span class="n">pivData</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">winsize</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute convection term u.grad(c) based on piv data (x, y, u, v) and image.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    pivData -- DataFrame of (x, y, u, v)</span>
+<span class="sd">    image -- the image corresponding to pivData</span>
+<span class="sd">    winsize -- coarse-graining scheme of image</span>
+<span class="sd">    step -- (optional) distance (pixel) between adjacent PIV vectors</span>
+<span class="sd">    shape -- (optional) shape of piv matrices</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    udc -- convection term u.grad(c). unit: [u][c]/pixel, [u] is the unit of u, usually px/s, [c] is the unit of concentration </span>
+<span class="sd">           measured from image intensity, arbitrary.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compute-divergence-field-based-on-piv-data-(x,-y,-u,-v)">Compute divergence field based on piv data (x, y, u, v)<a class="anchor-link" href="#Compute-divergence-field-based-on-piv-data-(x,-y,-u,-v)">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">divergence</span><span class="p">(</span><span class="n">pivData</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute divergence field based on piv data (x, y, u, v)</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    pivData -- DataFrame of (x, y, u, v)</span>
+<span class="sd">    step -- distance (pixel) between adjacent PIV vectors</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    vort -- vorticity field of the velocity field. unit: [u]/pixel, [u] is the unit of u, usually px/s</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Compute-local-density-fluctuations">Compute local density fluctuations<a class="anchor-link" href="#Compute-local-density-fluctuations">&#182;</a></h3><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">local_df</span><span class="p">(</span><span class="n">img_folder</span><span class="p">,</span> <span class="n">seg_length</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">winsize</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute local density fluctuations of given image sequence in img_folder</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    img_folder -- folder containing .tif image sequence</span>
+<span class="sd">    seg_length -- number of frames of each segment of video, for evaluating standard deviations</span>
+<span class="sd">    winsize --</span>
+<span class="sd">    step --</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    df -- dict containing &#39;t&#39; and &#39;local_df&#39;, &#39;t&#39; is a list of time (frame), &#39;std&#39; is a list of 2d array </span>
+<span class="sd">          with local standard deviations corresponding to &#39;t&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+
+</div>
+</div>
 </div>
     </div>
   </div>
