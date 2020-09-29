@@ -2,17 +2,28 @@
 <html>
 <head>
 	<title> Practice: tech doc </title>
-  <link rel="stylesheet" type="text/css" href="https://zloverty.github.io/learn/HTML/tech_doc/tech_doc.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://zloverty.github.io/learn/HTML/tech_doc/tech_doc.css"> -->
+	<link rel="stylesheet" type="text/css" href="tech_doc.css">
+	<style>
+	@media (max-width: 500px){
+	  #navbar{
+	    width: 100px;
+	  }
+	  body{
+	    display: flex;
+	  }
+	}
+	</style>
 </head>
 <body>
-
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <nav id='navbar'>
     <header> corrLib Documentation </header>
-    <a id='nav-link' href='#Introduction'> Introduction</a>
-    <a id='nav-link' href='#What-you-should-already-know'> What you should already know</a>
-    <a id='nav-link' href='#List-of-contents'> List of contents</a>
-    <a id='nav-link' href='#Details'> Details</a>
-    <a id='nav-link' href='#References'> References</a>
+    <a class='nav-link' href='#Introduction'> Introduction</a>
+    <a class='nav-link' href='#What_you_should_already_know'> What you should already know</a>
+    <a class='nav-link' href='#List_of_contents'> List of contents</a>
+    <a class='nav-link' href='#Details'> Details</a>
+    <a class='nav-link' href='#References'> References</a>
   </nav>
 
   <main id='main-doc'>
@@ -22,7 +33,7 @@
         <p> corrLib (appears as corrLib.py) is a function library, a collection of functions, written in python which does various jobs in the research project on giant number fluctuations in bacterial suspensions. Typical jobs include image preprocessing, data extraction and data analysis. </p>
     </section>
 
-    <section class='main-section' id='What-you-should-already-know'>
+    <section class='main-section' id='What_you_should_already_know'>
       <header> What you should already know </header>
       <p> This document assumes you have the following basic background: </p>
       <ul>
@@ -32,7 +43,7 @@
       </ul>
     </section>
 
-    <section class='main-section' id='List-of-contents'>
+    <section class='main-section' id='List_of_contents'>
       <header> List of contents </header>
       <p> The functions provided by corrLib are categorized and listed as the following: </p>
       <ul>
@@ -68,27 +79,107 @@
     <section class='main-section' id='Details'>
       <header> Details </header>
       <h3> Image preprocessing </h3>
-      <div id='details-item'>
-        <div id='item1'>
-          <code>readseq(folder)</code>
-        </div>
-        <div id='item2'>
-          Parameters
-        </div>
-        <div id='item3'>
-          <p>folder: the full directory of folder from which image sequence of *.tif files are read.</p>
-        </div>
-        <div id='item4'>
-          Returns
-        </div>
-        <div id='item5'>
-          <p>fileList: a DataFrame containing columns (Name, Dir), where Name is the file name of each *.tif image without '.tif', and Dir is the full path of each corresponding image.</p>
-        </div>
-      </div>
+	      <div id='details-item'>
+	        <div id='item1'>
+	          <code>readseq(folder)</code>
+	        </div>
+	        <div id='item2'>
+	          Parameters
+	        </div>
+	        <div id='item3'>
+	          <p>folder: the full directory of folder from which image sequence of *.tif files are read.</p>
+	        </div>
+	        <div id='item4'>
+	          Returns
+	        </div>
+	        <div id='item5'>
+	          <p>fileList: a DataFrame containing columns (Name, Dir), where Name is the file name of each *.tif image without '.tif', and Dir is the full path of each corresponding image.</p>
+	        </div>
+	      </div>
+
+				<div id='details-item'>
+	        <div id='item1'>
+	          <code>readdata(folder, ext='csv')</code>
+	        </div>
+	        <div id='item2'>
+	          <p>Parameters</p>
+	        </div>
+	        <div id='item3'>
+	          <p>folder: the full directory of folder from which data files are read.</p>
+						<p>ext: (optional) the extension of data files you are looking for.</p>
+	        </div>
+	        <div id='item4'>
+	          Returns
+	        </div>
+	        <div id='item5'>
+	          <p>fileList: a DataFrame containing columns (Name, Dir), where Name is the file name of each data file without extension, and Dir is the full path of each corresponding data file.</p>
+	        </div>
+	      </div>
 
       <h3> Data extraction </h3>
+				<div id='details-item'>
+					<div id='item1'>
+						<code>corrS(X, Y, U, V)</code>
+					</div>
+					<div id='item2'>
+						<p>Parameters</p>
+					</div>
+					<div id='item3'>
+						<p>X, Y: coordinates </p>
+						<p>U, V: velocity in x and y directions</p>
+						<p>Note - all the variables need to be in the shape similar to the raw images.
+					</div>
+					<div id='item4'>
+						Returns
+					</div>
+					<div id='item5'>
+						<p>X, Y: coordinates, measure the distance between two points</p>
+						<p>CA: orientation correlation function</p>
+						<p>CV: velocity correlation function</p>
+					</div>
+				</div>
+
+				<div id='details-item'>
+					<div id='item1'>
+						<code>corrI(X, Y, I)</code>
+					</div>
+					<div id='item2'>
+						<p>Parameters</p>
+					</div>
+					<div id='item3'>
+						<p>X, Y: coordinates </p>
+						<p>I: pixel intensity </p>
+						<p>Note - all the variables need to be in the shape similar to the raw images.
+					</div>
+					<div id='item4'>
+						Returns
+					</div>
+					<div id='item5'>
+						<p>X, Y: coordinates, measure the distance between two points</p>
+						<p>C: pixel intensity correlation function</p>
+					</div>
+				</div>
 
       <h3> Data analysis </h3>
+				<div id='details-item'>
+					<div id='item1'>
+						<code>distance_corr(X, Y, C)</code>
+					</div>
+					<div id='item2'>
+						<p>Parameters</p>
+					</div>
+					<div id='item3'>
+						<p>X, Y: 2-D coordinates</p>
+						<p>C: correlation function</p>
+						<p>Note -- X, Y and C should be of the same shape</p>
+					</div>
+					<div id='item4'>
+						<p>Returns</p>
+					</div>
+					<div id='item5'>
+						<p>r_corr: DataFrame containing 2 columns (R, C). R is the 1-D distance and C is the value of correlation function at corresponding coordinates.</p>
+					</div>
+				</div>
     </section>
 
     <section class='main-section' id='References'>
