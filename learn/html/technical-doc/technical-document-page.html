@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Practice: tech doc </title>
+  <link rel="stylesheet" type="text/css" href="I:\Github\zloverty.github.io\learn\html\technical-doc\tech-doc.css">
+</head>
+<body>
+
+  <nav id='navbar'>
+    <header> corrLib Documentation </header>
+    <a id='nav-link' href='#Introduction'> Introduction</a>
+    <a id='nav-link' href='#What-you-should-already-know'> What you should already know</a>
+    <a id='nav-link' href='#List-of-contents'> List of contents</a>
+    <a id='nav-link' href='#Details'> Details</a>
+    <a id='nav-link' href='#References'> References</a>
+  </nav>
+
+  <main id='main-doc'>
+
+    <section class='main-section' id='Introduction'>
+      <header> Introduction </header>
+        <p> corrLib (appears as corrLib.py) is a function library, a collection of functions, written in python which does various jobs in the research project on giant number fluctuations in bacterial suspensions. Typical jobs include image preprocessing, data extraction and data analysis. </p>
+    </section>
+
+    <section class='main-section' id='What-you-should-already-know'>
+      <header> What you should already know </header>
+      <p> This document assumes you have the following basic background: </p>
+      <ul>
+        <li> General knowledge about python programming language </li>
+        <li> Basic understanding of statistical properties such as spatial and temporal correlation functions </li>
+        <li> Basics of image processing, such as smoothing and scaling. </li>
+      </ul>
+    </section>
+
+    <section class='main-section' id='List-of-contents'>
+      <header> List of contents </header>
+      <p> The functions provided by corrLib are categorized and listed as the following: </p>
+      <ul>
+        <li> Image preprocessing </li>
+          <ul>
+            <li> readseq</li>
+            <li> readdata</li>
+            <li> match_hist </li>
+            <li> divide_windows </li>
+          </ul>
+        <li> Data extraction </li>
+          <ul>
+            <li> corrI</li>
+            <li> corrS</li>
+            <li> corrIseq</li>
+            <li> density_fluctuation </li>
+            <li> div_field </li>
+            <li> df2 </li>
+            <li> vorticity </li>
+            <li> convection </li>
+            <li> divergence </li>
+            <li> local_df </li>
+          </ul>
+        <li> Data analysis </li>
+          <ul>
+            <li> distance_corr</li>
+            <li> boxsize_effect_spatial</li>
+            <li> plot_gnf </li>
+          </ul>
+      </ul>
+    </section>
+
+    <section class='main-section' id='Details'>
+      <header> Details </header>
+      <h3> Image preprocessing </h3>
+      <div id='details-item'>
+        <div id='item1'>
+          <code>readseq(folder)</code>
+        </div>
+        <div id='item2'>
+          Parameters
+        </div>
+        <div id='item3'>
+          <p>folder: the full directory of folder from which image sequence of *.tif files are read.</p>
+        </div>
+        <div id='item4'>
+          Returns
+        </div>
+        <div id='item5'>
+          <p>fileList: a DataFrame containing columns (Name, Dir), where Name is the file name of each *.tif image without '.tif', and Dir is the full path of each corresponding image.</p>
+        </div>
+      </div>
+
+      <h3> Data extraction </h3>
+
+      <h3> Data analysis </h3>
+    </section>
+
+    <section class='main-section' id='References'>
+      <header> References </header>
+      <p>This document is adapted form a <a href='https://zloverty.github.io/code/libs/corrLib_doc.html'>jupyter notebook version</a>.</p>
+    </section>
+
+
+  <div id='blank'></div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
