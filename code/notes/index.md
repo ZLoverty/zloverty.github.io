@@ -39,3 +39,9 @@ plt.savefig(r'I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf', format='pdf')
 ```
 This is the image where I compare original, pdf and svg savefig outcome:
 [compare](./img/svg-pdf-compare.pdf)
+
+## Cloud Storage
+1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
+  - [CLI reference](https://docs.globus.org/cli/reference/)
+  - [Globus CLI Batch Transfer Recipe](https://www.globus.org/blog/globus-cli-batch-transfer-recipe)
+  - [Automation examples](https://github.com/globus/automation-examples#getting-started)
