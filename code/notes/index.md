@@ -45,3 +45,10 @@ This is the image where I compare original, pdf and svg savefig outcome:
   - [CLI reference](https://docs.globus.org/cli/reference/)
   - [Globus CLI Batch Transfer Recipe](https://www.globus.org/blog/globus-cli-batch-transfer-recipe)
   - [Automation examples](https://github.com/globus/automation-examples#getting-started)
+
+## Git
+1. Latex writing with GitHub:
+  - [A Git workflow for writing](https://rvprasad.medium.com/a-git-workflow-for-writing-papers-in-latex-4cfb31be4b06)
+  - [Tips on collective writing](https://education.github.community/t/github-latex-for-collaborative-writing/35875)
+2. How to use branch?
+  - [Git Branching - Branches in a Nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
