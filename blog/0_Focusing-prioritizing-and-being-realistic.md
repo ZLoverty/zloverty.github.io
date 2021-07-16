@@ -54,3 +54,29 @@ One thing I am trying is to write a **note** whenever I want to do something.
 For example, I want to test a hypothesis in an experiment, I will start a note by describing the hypothesis, and follow up with experimental results.
 Coding is usually necessary when analyzing experimental results, and is the part where I usually got distracted (because I want to automate the analysis).
 The note, in this case, can keep remind me not to spend too much time on coding, but to aim at getting results.
+
+I also feel that using command line more helps me stay focusing on things I am working on.
+For example, when I used GitHub with the desktop App in the past, every time I commit I simply push everything in my local disk to the server.
+Very often, I forget the specific changes I have made in that commit, so in the commit comment I just leave a "1", which means "I don't know".
+Below is a bad example I did in the past:
+![](img/0/bad_commit_comments.png)
+
+In this way, GitHub has lost the most important functionality but only serves as a cloud storage.
+After I started using command line GitHub (I use it because I switched to an Ubuntu desktop and the App is unreasonably slow), I realize a difference:
+whenever I make a commit, I have to manually choose the files I want to track changes.
+Back then I did not know that by typing `git add .` I can track all files in the working tree.
+So I just add the files one by one by typing the names of the files.
+When I do this to a latex folder, the byproduct files (like .log .aux etc.) drive me crazy.
+Interestingly, this crazy experience makes me more aware of what GitHub is doing in the backend.
+I start to use `.gitignore`, which is especially useful for filtering latex byproduct files.
+I also start to commit with more descriptive comments, so when going back to file history, I can understand my changes better.
+
+There are two reasons I think command line helps me to focus.
+First, in command line I am not enabled to do many things at the very beginning.
+Only till I learn many enough commands can I be as powerful as using a GUI.
+So at beginning, I can slow down and pay attention to what happens after each command.
+In this way, I have a better idea of what GitHub is doing.
+Second, the single thread nature of command line interface forces me to finish one thing before starting another.
+I happens to me a lot that before making a commit to a code, I start to work on something else.
+After some time, I come back, but realize I forget the changes I made and just put "1" as the commit comment.
+In command line this can never happen, because whenever commit, a text editor pops up and I have to write the comment before doing other things.

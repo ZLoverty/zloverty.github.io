@@ -71,6 +71,29 @@ One thing I am trying is to write a <strong>note</strong> whenever I want to do 
 For example, I want to test a hypothesis in an experiment, I will start a note by describing the hypothesis, and follow up with experimental results.
 Coding is usually necessary when analyzing experimental results, and is the part where I usually got distracted (because I want to automate the analysis).
 The note, in this case, can keep remind me not to spend too much time on coding, but to aim at getting results.</p>
+<p>I also feel that using command line more helps me stay focusing on things I am working on.
+For example, when I used GitHub with the desktop App in the past, every time I commit I simply push everything in my local disk to the server.
+Very often, I forget the specific changes I have made in that commit, so in the commit comment I just leave a "1", which means "I don't know".
+Below is a bad example I did in the past:
+<img src="img/0/bad_commit_comments.png" alt=""></p>
+<p>In this way, GitHub has lost the most important functionality but only serves as a cloud storage.
+After I started using command line GitHub (I use it because I switched to an Ubuntu desktop and the App is unreasonably slow), I realize a difference:
+whenever I make a commit, I have to manually choose the files I want to track changes.
+Back then I did not know that by typing <code>git add .</code> I can track all files in the working tree.
+So I just add the files one by one by typing the names of the files.
+When I do this to a latex folder, the byproduct files (like .log .aux etc.) drive me crazy.
+Interestingly, this crazy experience makes me more aware of what GitHub is doing in the backend.
+I start to use <code>.gitignore</code>, which is especially useful for filtering latex byproduct files.
+I also start to commit with more descriptive comments, so when going back to file history, I can understand my changes better.</p>
+<p>There are two reasons I think command line helps me to focus.
+First, in command line I am not enabled to do many things at the very beginning.
+Only till I learn many enough commands can I be as powerful as using a GUI.
+So at beginning, I can slow down and pay attention to what happens after each command.
+In this way, I have a better idea of what GitHub is doing.
+Second, the single thread nature of command line interface forces me to finish one thing before starting another.
+I happens to me a lot that before making a commit to a code, I start to work on something else.
+After some time, I come back, but realize I forget the changes I made and just put "1" as the commit comment.
+In command line this can never happen, because whenever commit, a text editor pops up and I have to write the comment before doing other things.</p>
 </article></div><div style="background-color: #b4b2b2;width: 50px;height:50px;line-height: 50px;text-align: center;position: fixed;bottom: 10px;right: 10px;padding-top:5px;" onclick="document.documentElement.scrollTop = document.body.scrollTop =0;">
   <svg t="1533629773982" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1035" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40"><defs><style type="text/css">@font-face { font-family: uc-nexus-iconfont; src: url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff") format("woff"), url("chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf") format("truetype"); }
   </style></defs><path d="M536.255427 195.182354c-7.804756-7.804756-17.966187-11.615549-28.311813-11.615549-9.43693 0-18.874883 3.449565-26.496467 10.163477-2.360767 1.452071-4.356214 3.267417-6.352685 5.262864L218.47792 455.611735c-15.607466 15.60542-15.607466 40.834011 0 56.43943 15.607466 15.607466 41.558511 15.607466 57.167001 0l193.46013-192.733583 0 600.526219c0 22.1423 17.787108 39.927361 39.927361 39.927361 22.140253 0 39.927361-17.785062 39.927361-39.927361L548.959773 319.317583 737.15704 508.422522c15.607466 15.607466 40.469714 15.607466 56.078203 0 15.607466-15.607466 15.425318-40.834011-0.182149-56.441477L536.255427 195.182354 536.255427 195.182354z" p-id="1036" fill="#333"></path><path d="M101.784174 143.097092l816.674071 0c22.140253 0 39.925315-17.785062 39.925315-39.927361 0-22.140253-17.784038-39.925315-39.925315-39.925315L101.784174 63.244416c-22.140253 0-39.927361 17.785062-39.927361 39.925315C61.856813 125.31203 79.643921 143.097092 101.784174 143.097092L101.784174 143.097092z" p-id="1037" fill="#333"></path></svg>
