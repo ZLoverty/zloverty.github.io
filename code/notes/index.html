@@ -60,6 +60,19 @@ using the following command:</p>
 <a href="./img/svg-pdf-compare.pdf">compare</a></p>
 </li>
 </ol>
+<h2 id="linux">Linux</h2>
+<ol>
+<li>When I run many processes (&gt;3) in the background, my computer freezes and many processes are killed. This is due to <strong>resource starvation</strong>. A solution to this is to add <code>wait</code> command in between the commands of running processes. For example, I used to run a bash script like this<pre><code class="language-bash">python 1.py *** &amp;
+python 2.py *** &amp;
+python 3.py *** &amp;
+python 4.py *** &amp;</code></pre>
+My computer can run at maximum 3 processes in parallel. As a result, one of the processes is killed. If I add <code>wait</code> command after the third command<pre><code class="language-bash">python 1.py *** &amp;
+python 2.py *** &amp;
+python 3.py *** &amp;
+wait
+python 4.py *** &amp;</code></pre>
+my computer does not freeze and no process is killed.</li>
+</ol>
 <h2 id="cloud-storage">Cloud Storage</h2>
 <ol>
 <li>Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.<ul>

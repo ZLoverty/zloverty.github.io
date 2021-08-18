@@ -40,6 +40,24 @@ plt.savefig(r'I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf', format='pdf')
 This is the image where I compare original, pdf and svg savefig outcome:
 [compare](./img/svg-pdf-compare.pdf)
 
+## Linux
+1. When I run many processes (>3) in the background, my computer freezes and many processes are killed. This is due to **resource starvation**. A solution to this is to add `wait` command in between the commands of running processes. For example, I used to run a bash script like this
+```bash
+python 1.py *** &
+python 2.py *** &
+python 3.py *** &
+python 4.py *** &
+```
+My computer can run at maximum 3 processes in parallel. As a result, one of the processes is killed. If I add `wait` command after the third command
+```bash
+python 1.py *** &
+python 2.py *** &
+python 3.py *** &
+wait
+python 4.py *** &
+```
+my computer does not freeze and no process is killed.
+
 ## Cloud Storage
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
   - [CLI reference](https://docs.globus.org/cli/reference/)
