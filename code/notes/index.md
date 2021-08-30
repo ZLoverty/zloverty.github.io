@@ -58,6 +58,13 @@ python 4.py *** &
 ```
 my computer does not freeze and no process is killed.
 
+2. Ubuntu login loop: after inputting password, Ubuntu sends me back to the login screen again, like an infinite loop. After some searching, I find this a very common problem which is likely caused by incorrectly installed graphics drivers. I've tried several fixes, namely:
+  - modify `/etc/run/grub`
+  - turn off auto login
+  - remove installed Nvidia driver
+
+  But none of the above worked. What eventually worked for me was to enter commandline first by `Ctrl`+`Alt`+`F3`, then type `startx`.
+
 ## Cloud Storage
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
   - [CLI reference](https://docs.globus.org/cli/reference/)

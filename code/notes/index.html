@@ -62,16 +62,27 @@ using the following command:</p>
 </ol>
 <h2 id="linux">Linux</h2>
 <ol>
-<li>When I run many processes (&gt;3) in the background, my computer freezes and many processes are killed. This is due to <strong>resource starvation</strong>. A solution to this is to add <code>wait</code> command in between the commands of running processes. For example, I used to run a bash script like this<pre><code class="language-bash">python 1.py *** &amp;
+<li><p>When I run many processes (&gt;3) in the background, my computer freezes and many processes are killed. This is due to <strong>resource starvation</strong>. A solution to this is to add <code>wait</code> command in between the commands of running processes. For example, I used to run a bash script like this</p>
+<pre><code class="language-bash">python 1.py *** &amp;
 python 2.py *** &amp;
 python 3.py *** &amp;
 python 4.py *** &amp;</code></pre>
-My computer can run at maximum 3 processes in parallel. As a result, one of the processes is killed. If I add <code>wait</code> command after the third command<pre><code class="language-bash">python 1.py *** &amp;
+<p>My computer can run at maximum 3 processes in parallel. As a result, one of the processes is killed. If I add <code>wait</code> command after the third command</p>
+<pre><code class="language-bash">python 1.py *** &amp;
 python 2.py *** &amp;
 python 3.py *** &amp;
 wait
 python 4.py *** &amp;</code></pre>
-my computer does not freeze and no process is killed.</li>
+<p>my computer does not freeze and no process is killed.</p>
+</li>
+<li><p>Ubuntu login loop: after inputting password, Ubuntu sends me back to the login screen again, like an infinite loop. After some searching, I find this a very common problem which is likely caused by incorrectly installed graphics drivers. I've tried several fixes, namely:</p>
+<ul>
+<li>modify <code>/etc/run/grub</code></li>
+<li>turn off auto login</li>
+<li>remove installed Nvidia driver</li>
+</ul>
+<p>But none of the above worked. What eventually worked for me was to enter commandline first by <code>Ctrl</code>+<code>Alt</code>+<code>F3</code>, then type <code>startx</code>.</p>
+</li>
 </ol>
 <h2 id="cloud-storage">Cloud Storage</h2>
 <ol>
