@@ -40,6 +40,14 @@ plt.savefig(r'I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf', format='pdf')
 This is the image where I compare original, pdf and svg savefig outcome:
 [compare](./img/svg-pdf-compare.pdf)
 
+4. **Matplotlib colormap:** mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
+```python
+from matplotlib import cm
+viridis = cm.get_cmap('viridis', 8)
+```
+Then the colors in the colormap `viridis` can be accessed by `viridis(x)`, where `x` takes value between 0 and 1. For example, `viridis(0.5)` is `(0.122312, 0.633153, 0.530398, 1.0)` in RGBA. All colors can bee seen by calling `viridis`:
+![viridis colormap](../img/viridis.png)
+
 ## Cloud Storage
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
   - [CLI reference](https://docs.globus.org/cli/reference/)
