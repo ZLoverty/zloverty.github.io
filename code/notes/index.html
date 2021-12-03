@@ -112,27 +112,6 @@
   background-color: #3a3f4b;
 }
 
-pre.editor-colors .gutter .line-number {
-  /* Use CSS specificity to force errors to override warnings and info markers */
-  /* Use CSS specificity to force warnings to override info markes. */
-}
-pre.editor-colors .gutter .line-number.latex-error,
-pre.editor-colors .gutter .line-number.latex-error.latex-warning,
-pre.editor-colors .gutter .line-number.latex-error.latex-info,
-pre.editor-colors .gutter .line-number.latex-error.latex-warning.latex-info {
-  border-left: 2px solid #d13b2e;
-  padding-left: calc(0.5em - 2px);
-}
-pre.editor-colors .gutter .line-number.latex-warning,
-pre.editor-colors .gutter .line-number.latex-warning.latex-info {
-  border-left: 2px solid #ad7c0b;
-  padding-left: calc(0.5em - 2px);
-}
-pre.editor-colors .gutter .line-number.latex-info {
-  border-left: 2px solid #0f82e6;
-  padding-left: calc(0.5em - 2px);
-}
-
 .spell-check-misspelling .region {
   border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
 }
@@ -857,6 +836,17 @@ using the following command:</p>
 <p>Then the colors in the colormap <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">viridis</code> can be accessed by <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">viridis(x)</code>, where <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">x</code> takes value between 0 and 1. For example, <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">viridis(0.5)</code> is <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">(0.122312, 0.633153, 0.530398, 1.0)</code> in RGBA. All colors can bee seen by calling <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">viridis</code>:
 <img alt="viridis colormap" src="https://zloverty.github.io/code/notes/img/viridis.png"></p>
 </li>
+</ol>
+<h1 id="git">Git</h1>
+<ol>
+<li>To reset <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.git</code>: sometimes you want to ignore certain files, which are already tracked in the repository. At times like this, you need to reset the <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.git</code>, which contains the tracking information. First, untrack everything by typing (this removes any changed files from the index(staging area))<pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">git</span> rm <span class="syntax--entity syntax--other syntax--attribute-name">-r</span> <span class="syntax--entity syntax--other syntax--attribute-name">--cached</span> .</span></div></pre>
+then run<pre class="editor-colors lang-bash"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">git</span> add .</span></div></pre>
+This adds everything back, but according to the updated <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">.gitignore</code>. Commit this change and it's done.</li>
+</ol>
+<h2 id="ssh">SSH</h2>
+<ol>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">ssh</code> works when the device you are connecting to is in the same private network.</li>
+<li>VPN tools, such as OpenVPN, can create a virtual private network, allowing connection from outside a private network.</li>
 </ol>
 <h2 id="cloud-storage">Cloud Storage</h2>
 <ol>

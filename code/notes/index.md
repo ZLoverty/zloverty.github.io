@@ -48,6 +48,21 @@ viridis = cm.get_cmap('viridis', 8)
 Then the colors in the colormap `viridis` can be accessed by `viridis(x)`, where `x` takes value between 0 and 1. For example, `viridis(0.5)` is `(0.122312, 0.633153, 0.530398, 1.0)` in RGBA. All colors can bee seen by calling `viridis`:
 ![viridis colormap](https://zloverty.github.io/code/notes/img/viridis.png)
 
+# Git
+1. To reset `.git`: sometimes you want to ignore certain files, which are already tracked in the repository. At times like this, you need to reset the `.git`, which contains the tracking information. First, untrack everything by typing (this removes any changed files from the index(staging area))
+```bash
+git rm -r --cached .
+```
+then run
+```bash
+git add .
+```
+This adds everything back, but according to the updated `.gitignore`. Commit this change and it's done.
+
+## SSH
+1. `ssh` works when the device you are connecting to is in the same private network.
+2. VPN tools, such as OpenVPN, can create a virtual private network, allowing connection from outside a private network.
+
 ## Cloud Storage
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
   - [CLI reference](https://docs.globus.org/cli/reference/)
