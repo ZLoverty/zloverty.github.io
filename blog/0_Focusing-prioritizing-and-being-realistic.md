@@ -80,3 +80,19 @@ Second, the single thread nature of command line interface forces me to finish o
 I happens to me a lot that before making a commit to a code, I start to work on something else.
 After some time, I come back, but realize I forget the changes I made and just put "1" as the commit comment.
 In command line this can never happen, because whenever commit, a text editor pops up and I have to write the comment before doing other things.
+
+## Edit on Dec 22, 2021
+
+I'm glad that I have the chance to come back to my first and so far only blog to make some updates. Good news is that my GitHub commit message is becoming more and more meaningful. Below is a snapshot:
+
+![](img/Screenshot_2021-12-22_234719.png)
+
+After using a Ubuntu computer as my main work station for half a year, I have better command line knowledge of Linux and feel more comfortable with terminals and the concept of server/client.
+
+Motivated by the pain of transferring large image data back and forth, from desktop to external drive to laptop, I start to think about a solution that minimizes the file transferring. Up to now, a solution "personal server" has emerged. The concept is that all image data are copied only once (from microscope computer to my office desktop), then all image processing happens in my office desktop (server). Sometimes, I cannot be in the office, but want to access and keep processing the images. In these scenarios, I use `ssh` to remote login the command line and run code on images. Meanwhile, `WinSCP` is used to transfer files from and to the server. In this way, I can select only the most important data to copy to my local "client" computer, and no longer need to worry about storing/transferring large files many times.
+
+Using two computers together to process images has also been made possible by using Network File Sharing (NFS). I wrote a [gist blog](https://gist.github.com/ZLoverty/64f0d5de93d95ea12e98b3010ba37646) on it some time before when I was developing the system. By mounting the file system of main server computer to other server computers by NFS, other computers can access the files stored on the main server as if the files are local.
+
+Remote `ssh` and `SCP` access is made possible by VPN. Using the PMMH VPN, I'm able to login my "personal server" any time, as long as I have access to internet. In the future, after leaving PMMH, I will have to learn how to set up OpenVPN myself.
+
+This setup has been making me excited because it not only integrates computational power for image analysis, but also saves a lot of file transfer time.
