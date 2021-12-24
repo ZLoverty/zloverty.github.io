@@ -50,16 +50,17 @@ Eventually, links after links, I forget what I was originally reading about, and
 Knowing everything is certainly good, but is also simply impossible.
 
 After realizing this issue, I have been thinking what I can do to help myself focus.
-One thing I am trying is to write a **note** whenever I want to do something.
+One thing I am trying is to **write a note whenever I want to do something**.
 For example, I want to test a hypothesis in an experiment, I will start a note by describing the hypothesis, and follow up with experimental results.
-Coding is usually necessary when analyzing experimental results, and is the part where I usually got distracted (because I want to automate the analysis).
-The note, in this case, can keep remind me not to spend too much time on coding, but to aim at getting results.
+Coding is usually necessary when analyzing experimental results, and is the part where I usually got distracted (because I want to automate the analysis, and more importantly, I enjoy coding).
+The note, in this case, can remind me not to stray too far, but to aim at getting results. I wrote **a note on droplet size control** some time ago, and I found it helpful because I was able to think deeper along with the note, and eventually got some data that are still useful today.
 
-I also feel that using command line more helps me stay focusing on things I am working on.
+I also feel that **using command line more helps me stay focusing** on things I am working on.
 For example, when I used GitHub with the desktop App in the past, every time I commit I simply push everything in my local disk to the server.
 Very often, I forget the specific changes I have made in that commit, so in the commit comment I just leave a "1", which means "I don't know".
 Below is a bad example I did in the past:
-![](img/0/bad_commit_comments.png)
+
+![](img/bad_commit_comments.png)
 
 In this way, GitHub has lost the most important functionality but only serves as a cloud storage.
 After I started using command line GitHub (I use it because I switched to an Ubuntu desktop and the App is unreasonably slow), I realize a difference:
@@ -89,10 +90,19 @@ I'm glad that I have the chance to come back to my first and so far only blog to
 
 After using a Ubuntu computer as my main work station for half a year, I have better command line knowledge of Linux and feel more comfortable with terminals and the concept of server/client.
 
-Motivated by the pain of transferring large image data back and forth, from desktop to external drive to laptop, I start to think about a solution that minimizes the file transferring. Up to now, a solution "personal server" has emerged. The concept is that all image data are copied only once (from microscope computer to my office desktop), then all image processing happens in my office desktop (server). Sometimes, I cannot be in the office, but want to access and keep processing the images. In these scenarios, I use `ssh` to remote login the command line and run code on images. Meanwhile, `WinSCP` is used to transfer files from and to the server. In this way, I can select only the most important data to copy to my local "client" computer, and no longer need to worry about storing/transferring large files many times.
+Motivated by the pain of transferring large image data back and forth, from desktop to external drive to laptop, I start to think about a solution that minimizes the file transferring. Up to now, a solution "personal server" has emerged. The concept is that **all image data are copied only once** (from microscope computer to my office desktop), then all image processing happens in my office desktop (server). Sometimes, I cannot be in the office, but want to access and keep processing the images. In these scenarios, I use `ssh` to remote login the command line and run code on images. Meanwhile, `WinSCP` is used to transfer files from and to the server. In this way, I can select only the most important data to copy to my local "client" computer, and no longer need to worry about storing/transferring large files many times.
 
-Using two computers together to process images has also been made possible by using Network File Sharing (NFS). I wrote a [gist blog](https://gist.github.com/ZLoverty/64f0d5de93d95ea12e98b3010ba37646) on it some time before when I was developing the system. By mounting the file system of main server computer to other server computers by NFS, other computers can access the files stored on the main server as if the files are local.
+Using two computers together to process images has also been made possible by using **Network File Sharing (NFS)**. I wrote a [gist blog](https://gist.github.com/ZLoverty/64f0d5de93d95ea12e98b3010ba37646) on it some time before when I was developing the system. By mounting the file system of main server computer to other server computers by NFS, other computers can access the files stored on the main server as if the files are local.
 
 Remote `ssh` and `SCP` access is made possible by VPN. Using the PMMH VPN, I'm able to login my "personal server" any time, as long as I have access to internet. In the future, after leaving PMMH, I will have to learn how to set up OpenVPN myself.
 
 This setup has been making me excited because it not only integrates computational power for image analysis, but also saves a lot of file transfer time.
+
+## Edit on 23 Dec, 2021
+There is another major distraction when I write notes or blogs -- folders. I realize this while working with Cristian, when he tried hard to convince me to use *Obsidian*. Although I end up not using *Obsidian* as my main note manager due to the compatibility with GitHub, the idea of **fast notes** has changed the way I organize my research files. In this edit, I'm going to contrast my traditional method of file organizing and the current method.
+
+In the past, I believe it is very beneficial to put everything in categories (folders). For example, my *DE* project folder was initiated with *Code*, *Data*, *Illustrations* and *Notes*. At the beginning, I can put things in categories with no problem. However, sometimes it is nice to have code and notes together. For example, recently I'm writing PIV notes. To make the note more illustrative and interactive, I usually put a piece of *.py* file which can generate the figures and plots in the note. This code can be read alone in an interactive way. When I have new idea to test, I can go to this code directly. This example shows that there are files in my workflow that does not simply go to a single category. This makes things complicated when I force everything to be in only one category.
+
+The *fast notes* concept deemphasize the importance of categories. All notes goes into the same folder (root folder). All attachments, such as pictures and documents, goes into *attachments* folder. The attachments of different notes being mixed in the same folder used to look like a disaster to me because I feel it's easy to get lost in too many files. But recently I realize that the photo books in modern cell phones also don't put pictures in the same folder. I never have trouble with this system, but usually enjoy browsing the pictures and remember the stories behind the pictures. Even when I have thousands of pictures, I can scan very quickly to locate the picture I want, thanks to the image processing capability of human brain. My note illustrations can hardly get close to thousands, so saving them together should not be a problem, as long as I have a good way to scan over (like in an iPhone). The scan over can be more beneficial than it appears to be: learning can happen when browsing old pictures.
+
+*Fast notes* will be the new framework I adopt for note taking. I can envision how joyful it will be, when I browse a large collection of illustrations I have made over time.
