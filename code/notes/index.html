@@ -329,6 +329,13 @@ viridis <span class="token operator">=</span> cm<span class="token punctuation">
 <li>By default, closing a ssh session kills any user programs. To keep programs running after closing a session, we can install a software <code>screen</code> on the Linux system.</li>
 <li>Virtual machines can be used to test server behavior.</li>
 </ol>
+<h2 class="mume-header" id="ffmpeg">ffmpeg</h2>
+
+<ol>
+<li>Quick start</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">ffmpeg -y -framerate <span class="token number">50</span> -i %05d.jpg -vcodec h264 output.avi
+</pre><p><code>-y</code> means automatically replace existing file without asking. <code>-i</code> specifies input images. <em>Note that input images can be an image sequence with C style formatted strings as names.</em> <code>-vcodec</code> provides a lot of options of different encoders, among which <code>h264</code> is usually a safe choice. <em>Not many encoders does black and white encodings.</em> The last argument is always the output file name.</p>
 <h2 class="mume-header" id="cloud-storage">Cloud Storage</h2>
 
 <ol>

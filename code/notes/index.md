@@ -67,6 +67,13 @@ This adds everything back, but according to the updated `.gitignore`. Commit thi
 3. By default, closing a ssh session kills any user programs. To keep programs running after closing a session, we can install a software `screen` on the Linux system.
 4. Virtual machines can be used to test server behavior.
 
+## ffmpeg
+1. Quick start
+```bash
+ffmpeg -y -framerate 50 -i %05d.jpg -vcodec h264 output.avi
+```
+`-y` means automatically replace existing file without asking. `-i` specifies input images. _Note that input images can be an image sequence with C style formatted strings as names._ `-vcodec` provides a lot of options of different encoders, among which `h264` is usually a safe choice. _Not many encoders does black and white encodings._ The last argument is always the output file name.
+
 ## Cloud Storage
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
   - [CLI reference](https://docs.globus.org/cli/reference/)
