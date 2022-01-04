@@ -336,6 +336,9 @@ viridis <span class="token operator">=</span> cm<span class="token punctuation">
 </ol>
 <pre data-role="codeBlock" data-info="bash" class="language-bash">ffmpeg -y -framerate <span class="token number">50</span> -i %05d.jpg -vcodec h264 output.avi
 </pre><p><code>-y</code> means automatically replace existing file without asking. <code>-i</code> specifies input images. <em>Note that input images can be an image sequence with C style formatted strings as names.</em> <code>-vcodec</code> provides a lot of options of different encoders, among which <code>h264</code> is usually a safe choice. <em>Not many encoders does black and white encodings.</em> The last argument is always the output file name.</p>
+<ol start="2">
+<li><code>ffmpeg</code> image sequence formatted input only supports consecutive names, e.g. image0, image1, image2, ... Inconsecutive names such as image0, image2, image4 cannot be converted by default settings. On Linux build, there is an optional setting called &quot;Globbing&quot; that can be switched on by passing <code>-pattern_type glob</code>. However, such option is not included on Windows <code>ffmpeg</code>. <a href="https://video.stackexchange.com/questions/7300/how-to-get-ffmpeg-to-join-non-sequential-image-files-skip-by-3s/7320#7320">Source</a></li>
+</ol>
 <h2 class="mume-header" id="cloud-storage">Cloud Storage</h2>
 
 <ol>
