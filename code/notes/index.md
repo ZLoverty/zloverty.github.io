@@ -48,6 +48,10 @@ viridis = cm.get_cmap('viridis', 8)
 Then the colors in the colormap `viridis` can be accessed by `viridis(x)`, where `x` takes value between 0 and 1. For example, `viridis(0.5)` is `(0.122312, 0.633153, 0.530398, 1.0)` in RGBA. All colors can bee seen by calling `viridis`:
 ![viridis colormap](https://zloverty.github.io/code/notes/img/viridis.png)
 
+## Linux
+
+1. Disk activity monitor: `sudo iotop`
+
 ## Git
 
 1. To reset `.git`: sometimes you want to ignore certain files, which are already tracked in the repository. At times like this, you need to reset the `.git`, which contains the tracking information. First, untrack everything by typing (this removes any changed files from the index(staging area))
