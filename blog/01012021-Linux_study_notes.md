@@ -59,7 +59,20 @@ Then restart the network service by `systemctl restart network.service`. Now we 
 
 ![ping baidu and google](../images/2022/01/ping-baidu-and-google.png)
 
-## III. Text file operation
+### E. Disable Linux firewall
+1. `systemctl status firewalld`: query the status of firewall
+2. `systemctl disable firewalld`: from next login, disable the firewall permanently
+3. `systemctl stop firewalld`: make firewall inactive now. Note that if the `disable` command is not used, firewall will restart at the next login.
+
+### F. Remove software install restriction
+```bash
+vi /etc/selinux/config
+```
+![selinux config](../images/2022/01/selinux-config.png)
+
+Set `SELINUX` to `disabled`.
+
+## II. Text file operation
 ### A. `more` and `less`
 Load one page, allow user to move to other pages. Press `h` to see the commands. `less` has more powerful commands but is mostly the same as `more`.
 ### B. `head` and `tail`
@@ -90,13 +103,17 @@ echo 1234 >> example.txt
 - `vi +n xxx`: open xxx and put cursor at nth line
 - `I` and `A`: insert / append in the beginning or the end of a line.
 
-## IV. File transfer
-### A. `lrzsz`
+## III. File transfer
+### A. Windows to Linux: `lrzsz`
 Light weight uploading and downloading.
 
-
-
-
+### B. Linux to Linux: scp
+`scp src tar`: copy from `src` to `tar`
+- if either `src` or `tar` is on another computer, use `user@ip.addr.of.pc:/path/to/file`
+- transfer from one computer to another, using a third computer is possible by typing, but input password twice is a bit awkward...
+```
+scp root@192.168.118.101:/root/test root@192.168.118.102:/root
+```
 
 ## V. File system commands
 
