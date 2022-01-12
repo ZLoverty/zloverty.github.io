@@ -115,7 +115,7 @@ Light weight uploading and downloading.
 scp root@192.168.118.101:/root/test root@192.168.118.102:/root
 ```
 
-## V. File system commands
+## IV. File system commands
 
 ### A. `df` and `du`
 - `df`: partition information
@@ -133,3 +133,10 @@ scp root@192.168.118.101:/root/test root@192.168.118.102:/root
   - need installation with `yum`
   - `zip -r target source`
   - `unzip filename`
+
+## V. Network commands
+- `ifconfig`: network configuration
+- `netstat`: connection status
+- `ping`: ip connection
+- `telnet`: can connect to specific port?
+- `curl`: get info from given address
