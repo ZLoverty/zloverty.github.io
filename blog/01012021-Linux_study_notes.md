@@ -123,8 +123,6 @@ scp root@192.168.118.101:/root/test root@192.168.118.102:/root
 - `du`: specified file size
   - `--max-depth`: depth of search
 
-
-
 ### B. compress and decompress
 - `.tar.gz`: most linux compressed files are in this format
   - `tar -zxvf filename`: extract `.tar.gz`, `zx` is decompress, `v` is verbose and `f` is file.
@@ -134,9 +132,35 @@ scp root@192.168.118.101:/root/test root@192.168.118.102:/root
   - `zip -r target source`
   - `unzip filename`
 
-## V. Network commands
+## V. Network
+### A. Some frequently used network commands
 - `ifconfig`: network configuration
 - `netstat`: connection status
 - `ping`: ip connection
 - `telnet`: can connect to specific port?
 - `curl`: get info from given address
+
+### B. Login without password - ssh key file
+1. Generate rsa keys
+```bash
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+```
+On Windows system, use
+```bash
+ssh-keygen -t rsa -f .ssh\id_rsa
+```
+because `-P ''` will set `''` as a key-phrase, which will be required every time when logging into the target hosts. After this command, you will be prompted to enter a key-phrase, press enter to set _no key-phrase_.
+2. Send the pub key to target hosts.
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@node1
+```
+This will automatically create the file `~/.ssh/authorized_keys` and copy the string in `id_rsa.pub` to it.
+
+Alternatively, you can manually create the file `~/.ssh/authorized_keys` and copy the key.
+
+3. When using `ssh`, we typically use `ssh user@ip.address`, if `user` is omitted, the local username will be used. Below is an example, where "root" is assumed to be the username on the target host.
+```bash
+[root@basenode ~]# ssh node2
+Last login: Thu Jan 13 16:00:49 2022 from 192.168.118.100
+[root@node2 ~]# _
+```
