@@ -52,7 +52,7 @@ Then the colors in the colormap `viridis` can be accessed by `viridis(x)`, where
 
 1. Disk activity monitor: `sudo iotop`
 
-## Git
+## Git (GitHub)
 
 1. To reset `.git`: sometimes you want to ignore certain files, which are already tracked in the repository. At times like this, you need to reset the `.git`, which contains the tracking information. First, untrack everything by typing (this removes any changed files from the index(staging area))
 ```bash
@@ -63,6 +63,24 @@ then run
 git add .
 ```
 This adds everything back, but according to the updated `.gitignore`. Commit this change and it's done.
+
+2. Command line authentication: starting from summer 2021, GitHub no longer allow username and password authentication from command line interface. Token authentication becomes required for git operations ([original blog](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)). With this requirement implemented, when I try to clone my repositories using `git clone` on a new, unauthenticated computer, access is denied.
+
+![denied access](../../images/2022/01/denied-access.png)
+
+It's possible to get around this problem with a GUI. In my memory, it was just a set of well-guided steps, involving some clicks in a web browser, and that's it. However, when a GUI is not available, setting up the authentication is not so straightforward.
+
+One way to do it when only command line interface is available, is to generate a pair of SSH keys using `ssh-keygen`. This will generate a pair of key files with encrypted strings.
+
+![example key files](../../images/2022/01/example-key-files.png)
+
+Paste the content of the pub-key (id_rsa.pub) to the "SSH and GPG keys" tab in GitHub account settings page.
+
+![ssh keys page](../../images/2022/01/ssh-keys-page.png)
+
+Click on "New SSH key" and paste the pub key in the blank. Now, try to clone the repo again with `git clone ssh@url.copied.from.github`.
+
+![it works](../../images/2022/01/it-works.png)
 
 ## SSH
 
