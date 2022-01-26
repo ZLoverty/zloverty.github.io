@@ -48,6 +48,14 @@ viridis = cm.get_cmap('viridis', 8)
 Then the colors in the colormap `viridis` can be accessed by `viridis(x)`, where `x` takes value between 0 and 1. For example, `viridis(0.5)` is `(0.122312, 0.633153, 0.530398, 1.0)` in RGBA. All colors can bee seen by calling `viridis`:
 ![viridis colormap](https://zloverty.github.io/code/notes/img/viridis.png)
 
+There is no need to import `cm` again, since it's already included in `matplotlib.pyplot`, which I almost import every time. An example:
+```python
+set3 = plt.cm.get_cmap("Set3")
+```
+The "Set3" colormap is created where colors can be accessed by `set3()`.
+
+![set3 cmap](../../images/2022/01/set3-cmap.png)
+
 5. Convert date object to formatted string: ([reference](https://docs.python.org/3/library/datetime.html))
 ```python
 Timestamp('2022-01-17 00:00:00') -> '01172022'
