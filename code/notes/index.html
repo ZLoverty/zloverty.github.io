@@ -260,6 +260,9 @@ pre[data-line] .line-highlight[data-end]:after {
   color: #111111;
   font-family: helvetica;
 }
+@page {
+  size: A4;
+}
 .markdown-preview.markdown-preview h1,
 .markdown-preview.markdown-preview h2,
 .markdown-preview.markdown-preview h3,
@@ -325,12 +328,54 @@ using the following command:</p>
 viridis <span class="token operator">=</span> cm<span class="token punctuation">.</span>get_cmap<span class="token punctuation">(</span><span class="token string">&apos;viridis&apos;</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span>
 </pre><p>Then the colors in the colormap <code>viridis</code> can be accessed by <code>viridis(x)</code>, where <code>x</code> takes value between 0 and 1. For example, <code>viridis(0.5)</code> is <code>(0.122312, 0.633153, 0.530398, 1.0)</code> in RGBA. All colors can bee seen by calling <code>viridis</code>:
 <img src="https://zloverty.github.io/code/notes/img/viridis.png" alt="viridis colormap"></p>
+<p>There is no need to import <code>cm</code> again, since it&apos;s already included in <code>matplotlib.pyplot</code>, which I almost import every time. An example:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python">set3 <span class="token operator">=</span> plt<span class="token punctuation">.</span>cm<span class="token punctuation">.</span>get_cmap<span class="token punctuation">(</span><span class="token string">&quot;Set3&quot;</span><span class="token punctuation">)</span>
+</pre><p>The &quot;Set3&quot; colormap is created where colors can be accessed by <code>set3()</code>.</p>
+<p><img src="../../images/2022/01/set3-cmap.png" alt="set3 cmap"></p>
 <ol start="5">
 <li>Convert date object to formatted string: (<a href="https://docs.python.org/3/library/datetime.html">reference</a>)</li>
 </ol>
 <pre data-role="codeBlock" data-info="python" class="language-python">Timestamp<span class="token punctuation">(</span><span class="token string">&apos;2022-01-17 00:00:00&apos;</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token string">&apos;01172022&apos;</span>
 </pre><p>use</p>
 <pre data-role="codeBlock" data-info="python" class="language-python">date<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">&quot;%m%d%Y&quot;</span><span class="token punctuation">)</span>
+</pre><h2 class="mume-header" id="atom-configs">Atom configs</h2>
+
+<h5 class="mume-header" id="1-keymapcson">1. Keymap.cson</h5>
+
+<pre data-role="codeBlock" data-info="CSON" class="language-cson"><code>&quot;.platform-win32 atom-text-editor:not([mini])&quot;:
+  &quot;shift-ctrl-K&quot;: &quot;markdown-writer:insert-link&quot;
+  &quot;shift-ctrl-I&quot;: &quot;markdown-writer:insert-image&quot;
+  &quot;shift-ctrl-X&quot;: &quot;markdown-writer:toggle-taskdone&quot;
+  &quot;ctrl-i&quot;:       &quot;markdown-writer:toggle-italic-text&quot;
+  &quot;ctrl-b&quot;:       &quot;markdown-writer:toggle-bold-text&quot;
+  &quot;ctrl-&apos;&quot;:       &quot;markdown-writer:toggle-code-text&quot;
+  &quot;ctrl-h&quot;:       &quot;markdown-writer:toggle-strikethrough-text&quot;
+  &quot;ctrl-1&quot;:       &quot;markdown-writer:toggle-h1&quot;
+  &quot;ctrl-2&quot;:       &quot;markdown-writer:toggle-h2&quot;
+  &quot;ctrl-3&quot;:       &quot;markdown-writer:toggle-h3&quot;
+  &quot;ctrl-4&quot;:       &quot;markdown-writer:toggle-h4&quot;
+  &quot;ctrl-5&quot;:       &quot;markdown-writer:toggle-h5&quot;
+
+&quot;atom-text-editor&quot;:
+  &quot;alt-o&quot;: &quot;document-outline:toggle&quot;
+</code></pre><h5 class="mume-header" id="2-markdown-preview-enhanced-customized-style">2. Markdown-preview-enhanced customized style</h5>
+
+<pre data-role="codeBlock" data-info="less" class="language-less"><span class="token selector">.markdown-preview.markdown-preview</span> <span class="token punctuation">{</span>
+  <span class="token atrule">@page</span><span class="token punctuation">{</span>
+    <span class="token property">size</span><span class="token punctuation">:</span> A4<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token variable">@titlecolor<span class="token punctuation">:</span></span><span class="token hexcode color">#707fbaff</span><span class="token punctuation">;</span>
+  <span class="token variable">@bodycolor<span class="token punctuation">:</span></span> <span class="token hexcode color">#111111</span><span class="token punctuation">;</span>
+
+  <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">@bodycolor</span><span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> helvetica<span class="token punctuation">;</span>
+
+  <span class="token selector">h1,h2,h3,h4,h5</span> <span class="token punctuation">{</span>
+     <span class="token property">font-family</span><span class="token punctuation">:</span> Arial <span class="token string">&apos;[-]&apos;</span><span class="token punctuation">;</span>
+     <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">@titlecolor</span><span class="token punctuation">;</span>
+     <span class="token property">font-weight</span><span class="token punctuation">:</span> light<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </pre><h2 class="mume-header" id="linux">Linux</h2>
 
 <ol>

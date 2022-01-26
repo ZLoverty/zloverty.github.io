@@ -64,7 +64,46 @@ use
 ```python
 date.strftime("%m%d%Y")
 ```
+## Atom configs
+##### 1. Keymap.cson
+```CSON
+".platform-win32 atom-text-editor:not([mini])":
+  "shift-ctrl-K": "markdown-writer:insert-link"
+  "shift-ctrl-I": "markdown-writer:insert-image"
+  "shift-ctrl-X": "markdown-writer:toggle-taskdone"
+  "ctrl-i":       "markdown-writer:toggle-italic-text"
+  "ctrl-b":       "markdown-writer:toggle-bold-text"
+  "ctrl-'":       "markdown-writer:toggle-code-text"
+  "ctrl-h":       "markdown-writer:toggle-strikethrough-text"
+  "ctrl-1":       "markdown-writer:toggle-h1"
+  "ctrl-2":       "markdown-writer:toggle-h2"
+  "ctrl-3":       "markdown-writer:toggle-h3"
+  "ctrl-4":       "markdown-writer:toggle-h4"
+  "ctrl-5":       "markdown-writer:toggle-h5"
 
+"atom-text-editor":
+  "alt-o": "document-outline:toggle"
+```
+
+##### 2. Markdown-preview-enhanced customized style
+```less
+.markdown-preview.markdown-preview {
+  @page{
+    size: A4;
+  }
+  @titlecolor:#707fbaff;
+  @bodycolor: #111111;
+
+  color: @bodycolor;
+  font-family: helvetica;
+
+  h1,h2,h3,h4,h5 {
+     font-family: Arial '[-]';
+     color: @titlecolor;
+     font-weight: light;
+  }
+}
+```
 ## Linux
 
 1. Disk activity monitor: `sudo iotop`
