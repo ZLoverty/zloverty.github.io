@@ -64,6 +64,18 @@ use
 ```python
 date.strftime("%m%d%Y")
 ```
+
+6. To "stuff" a DataFrame with `np.nan`: when calculating MSD from particle trajectories, we want to have `frame` column to be continuous integer array. However, sometimes in the data, we have `frame = [0, 50, 100, ...]`. To fill all the frames without position data with `np.nan`, we can set `frame` as the index of the DataFrame, then reindex the DataFrame with continuous integers `np.arange(...)`. This creates a trajectory data with continuous frames:
+
+```python
+pos = traj.set_index('frame')[pos_columns]
+pos = pos.reindex(np.arange(pos.index[0], 1 + pos.index[-1]))
+```
+
+NOTE: I found this method in the `trackpy` function `_msd_gaps()`. This has led to a problem when I try to `plt.plot` the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
+
+
+
 ## Atom configs
 ##### 1. Keymap.cson
 ```CSON
