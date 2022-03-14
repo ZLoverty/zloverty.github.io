@@ -11,3 +11,4 @@ Here I try to use branch to mark every new version. A general workflow is:
 ### v0.1
 - *use a more graphical banner for the main page (an image from experiment)*
 - create a place for blogging (things I learn and think, that are not very relevant to my research projects)
+- Write docs for new code in .md
