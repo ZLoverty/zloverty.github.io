@@ -74,7 +74,31 @@ pos = pos.reindex(np.arange(pos.index[0], 1 + pos.index[-1]))
 
 NOTE: I found this method in the `trackpy` function `_msd_gaps()`. This has led to a problem when I try to `plt.plot` the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
 
+7. Animation in Jupyter notebook and JupyterLab
 
+I find animation a headache before, but was able to do it with `%matplotlib notebook` in Jupyter notebook (a bit laggy though due to massive `plt.imshow()`). However, now I switch to JupyterLab and the old method stopped working completely. Here is the new solution with `ipympl`. ([source](https://matplotlib.org/ipympl/examples/full-example.html))
+```python
+# load images and create frame number list
+img_stack = {}
+for num, i in l.iterrows():
+    img_stack[int(i.Name)] = io.imread(i.Dir)
+frame_numbers = params = l.Name.astype("int")
+# plot
+plt.ioff()
+fig = plt.figure()
+plt.ion()
+im = plt.imshow(img_stack[params.iloc[0]], cmap="gray")
+def update(change):
+    im.set_data(img_stack[change['new']])
+    fig.canvas.draw_idle()
+slider = widgets.IntSlider(value=params.iloc[0], min=params.iloc[0], max=params.iloc[-1])
+slider.observe(update, names='value')
+widgets.VBox([slider, fig.canvas])
+```
+This code generates a plot with a slider, which allows quick overview of an image stack by dragging the slider.
+![slider](../../images/2022/08/slider.png)
+
+One interesting thing to note in this method is the `set_data` function. Instead of calling `imshow` again and again, `set_data` can apply new data to a plot handle without remaking axes, saving computational power significantly.
 
 ## Atom configs
 ##### 1. Keymap.cson
