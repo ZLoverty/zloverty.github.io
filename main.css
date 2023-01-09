@@ -348,6 +348,7 @@ background-color: red;
 #libs-panel{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin: 10px 10px 10px 10px;
 }
 #libs-panel-item{
@@ -359,9 +360,8 @@ background-color: red;
 
 #libs-panel-item-thumbnail{
 	height: 150px;
-	width: 100%;
+	justify-content: center;
 	display: flex;
-	align-items: center;
 }
 
 #libs-panel-item-caption{
