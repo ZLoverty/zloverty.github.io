@@ -174,6 +174,16 @@ Click on "New SSH key" and paste the pub key in the blank. Now, try to clone the
 
 ![it works](../../images/2022/01/it-works.png)
 
+3. Build sphinx docs for my code: I used to use a GitHub workflow to automatically build my documentations on each commit to the repo. It worked fine for some time but recently I encounter numerous issues, including "theme not found". A workaround I found is to build the docs locally, and then manually push the docs to the gh-pages branch. Below is the workflow:
+
+  - `make html` in the docs folder
+  - copy all the contents in the `build/html` folder to another folder, e.g. desktop
+  - switch to gh-pages branch
+  - copy the contents in the html folder back to overwrite the html folder in this branch
+  - commit and sync to the repo
+
+  This procedure guarantees that as long as I can build the docs correctly locally, I can get correct documentations online. No worries about the failed build for various reasons.
+
 ## SSH
 
 1. `ssh` works when the device you are connecting to is in the same private network.
