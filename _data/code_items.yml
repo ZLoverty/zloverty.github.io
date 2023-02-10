@@ -1,0 +1,6 @@
+- name: Notes
+  link: /code/notes.html
+  img_link: /assets/images/icons/notes.png
+- name: Libraries
+  link: /code/libraries.html
+  img_link: /assets/images/icons/libraries.png

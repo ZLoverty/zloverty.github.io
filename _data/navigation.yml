@@ -1,0 +1,8 @@
+- name: Research
+  link: /research.html
+- name: Learn
+  link: /learn.html
+- name: Code
+  link: /code.html
+- name: Blog
+  link: /blog.html

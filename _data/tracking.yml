@@ -1,0 +1,3 @@
+- name: bwtrack
+  img_link: /assets/images/icons/bwtrack.gif
+  caption: a small particle tracking package that detects black and white particles in interfacial rheometer images.

@@ -1,0 +1,27 @@
+- name: Rheology
+  link: /research/rheology.html
+  img_link: /assets/images/icons/rheology.png
+- name: Chiral
+  link: /research/chiral.html
+  img_link: /assets/images/icons/chiral.png
+- name: GNF
+  link: /research/gnf.html
+  img_link: /assets/images/icons/gnf.png
+- name: turbulence
+  link: /research/turbulence.html
+  img_link: /assets/images/icons/turbulence.png
+- name: Crack
+  link: /research/crack.html
+  img_link: /assets/images/icons/crack.png
+- name: Double emulsion
+  link: /research/double_emulsion.html
+  img_link: /assets/images/icons/de_sketch.png
+- name: Porous media
+  link: /research/porous_media.html
+  img_link: /assets/images/icons/porous_media.png
+- name: Active nematics
+  link: /research/active_nematics.html
+  img_link: /assets/images/icons/active_nematics.png
+# - name: Active nematics
+#   link: /research/active_nematics.html
+#   img_link: /assets/images/icons/active_nematics.png

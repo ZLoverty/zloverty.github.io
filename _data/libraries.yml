@@ -1,0 +1,12 @@
+- name: myImageLib
+  link: https://zloverty.github.io/mylib/myImageLib.html
+  img_link: /assets/images/icons/myImageLib.png 
+- name: corrLib
+  link: https://zloverty.github.io/mylib/corrLib.html
+  img_link: /assets/images/icons/corrLib.png 
+- name: pivLib
+  link: https://zloverty.github.io/mylib/pivLib.html
+  img_link: /assets/images/icons/pivLib.png
+- name: script
+  link: https://zloverty.github.io/script
+  img_link: /assets/images/icons/script.png 
