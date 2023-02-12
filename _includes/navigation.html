@@ -1,5 +1,9 @@
-<nav>
+<nav class="navbar">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link }}" id="nbelement" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
   {% endfor %}
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/assets/images/icons/icon.svg" height="100%">
+    </a>
 </nav>

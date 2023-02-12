@@ -1,3 +1,11 @@
 - name: bwtrack
   img_link: /assets/images/icons/bwtrack.gif
-  caption: a small particle tracking package that detects black and white particles in interfacial rheometer images.
+  caption: a small particle tracking package that detects black and white particles in interfacial rheometer images. Key challenges are (i) accurately locate "white" particles, which appear as annular shapes, (ii) distinguish white particles from black particles. Details can be found in the <a href="https://zloverty.github.io/bwtrack/">documentation of bwtrack package</a>.
+- name: track bacteria
+  img_link: /assets/images/icons/tracking-bacteria.gif
+  caption: locate bacteria of various sizes and orientations using region properties.
+- name: find droplets
+- name: image orientation analysis
+- name: manTrack
+  img_link: /assets/images/icons/manTrack-ui.png
+  caption: a python GUI software that makes modifying particle tracking data easier. It allows (i) adding a particle by drawing on the image and (ii) removing a particle by clicking on the image. Details can be found in <a href="https://github.com/ZLoverty/manTrack">manTrack GitHub repository</a>

@@ -5,10 +5,11 @@ title: Particle tracking
 ---
 
 
-<div id='main'>
+{% for item in site.data.tracking %}
+    {% include tracking_item.html name=item.name img_link=item.img_link caption=item.caption %}
 
-    {% for item in site.data.tracking %}
-        {% include tracking_item.html name=item.name img_link=item.img_link caption=item.caption %}
-    {% endfor %}                
+    <hr>
 
-</div>
+{% endfor %}                
+
+

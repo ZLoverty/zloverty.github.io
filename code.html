@@ -4,12 +4,10 @@ layout: default
 title: Code
 ---
 
-
-<div id='main'>
-    <p> Collect my code libs and notes here for future reference. </p>
-    <div id='libs-panel'>
-        {% for item in site.data.code_items %}
-            {% include galleryitem.html name=item.name link=item.link imglink=item.img_link %}
-        {% endfor %}                
-    </div>
+Collect my code libs and notes here for future reference. 
+<div id='libs-panel'>
+    {% for item in site.data.code_items %}
+        {% include galleryitem.html name=item.name link=item.link imglink=item.img_link %}
+    {% endfor %}                
 </div>
+

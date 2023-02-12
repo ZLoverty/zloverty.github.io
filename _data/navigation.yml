@@ -1,8 +1,8 @@
-- name: Research
-  link: /research.html
-- name: Learn
-  link: /learn.html
+- name: Particle tracking
+  link: /particle_tracking.html
 - name: Code
   link: /code.html
 - name: Blog
   link: /blog.html
+- name: Research
+  link: /research.html

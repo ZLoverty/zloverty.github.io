@@ -103,3 +103,6 @@ E_1(k_x, k_y) = \frac{E_2(k_x, k_y)}{A}
 $$
 
 We show that the two methods are equivalent mathematically. Next, we test this equivalence using experimental data.
+
+![xiang1](/assets/images/2020/12/energy_spectrum_derivation_1.jpg){:width="600px"}
+![xiang2](/assets/images/2020/12/energy_spectrum_derivation_2.jpg){:width="600px"}
