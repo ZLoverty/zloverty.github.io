@@ -1,11 +1,16 @@
 - name: bwtrack
   img_link: /assets/images/icons/bwtrack.gif
   caption: a small particle tracking package that detects black and white particles in interfacial rheometer images. Key challenges are (i) accurately locate "white" particles, which appear as annular shapes, (ii) distinguish white particles from black particles. Details can be found in the <a href="https://zloverty.github.io/bwtrack/">documentation of bwtrack package</a>.
+  width: 800px
 - name: track bacteria
   img_link: /assets/images/icons/tracking-bacteria.gif
   caption: locate bacteria of various sizes and orientations using region properties.
 - name: find droplets
+  img_link: /assets/images/icons/corrected.gif
+  width: 300px
+  caption: this is an improvement of the opencv-python HoughCircle method for detecting droplets. The original method does not achieve subpixel accuracy, and are inconsistent when deciding what the edge should look like. I improved the method using cross-boundary fitting and emphasize that the boundary should always be a dark ring. See details in <a href="https://github.com/ZLoverty/DE/blob/main/Notes/2022-07-11_improve-droplet-tracking.pdf">this note</a>.
 - name: image orientation analysis
+  caption: detect image texture orientation based on Fast Fourier Transform (FFT) and anisotropic pattern recognition. 
 - name: manTrack
   img_link: /assets/images/icons/manTrack-ui.png
   caption: a python GUI software that makes modifying particle tracking data easier. It allows (i) adding a particle by drawing on the image and (ii) removing a particle by clicking on the image. Details can be found in <a href="https://github.com/ZLoverty/manTrack">manTrack GitHub repository</a>
