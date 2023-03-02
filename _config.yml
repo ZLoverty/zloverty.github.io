@@ -18,28 +18,3 @@ kramdown:
   syntax_highlighter: coderay
   coderay_line_numbers: ""
 
-plugins: ['jekyll/scholar']
-
-scholar:
-  style: apa
-  locale: en
-
-  sort_by: year, month
-  order: descending
-
-  group_by: none
-  group_order: ascending
-
-  source: /_bibliography
-  bibliography: my_pubs.bib
-  bibliography_template: ""
-
-  replace_strings: true
-  join_strings:    true
-
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
-
-  query: "@*"
-

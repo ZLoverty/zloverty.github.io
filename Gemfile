@@ -6,4 +6,3 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "kramdown-syntax-coderay", "~> 1.0"
-gem 'jekyll-scholar', group: :jekyll_plugins
