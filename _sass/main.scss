@@ -1,3 +1,8 @@
+:root {
+	--background: #f5ebeb;
+	--foreground: #304156;
+}
+
 h1 {
 		display:flex;
 		justify-content: center;
@@ -17,7 +22,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	text-align: start;
-	background-color: #f5ebeb;
+	background-color: var(--background);
 }
 
 .navbar, .footer {
@@ -154,6 +159,26 @@ hr {
 	background-color: #faffef;
 }
 
+#profile-picture-box {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+#narrative-box {
+	width: 30%;
+	color: var(--background);
+	flex-grow: 1;
+	padding: 10px;
+
+}
+#profile-pic{
+	flex-grow: 1;
+	height: 300px;
+}
+#profile-picture-box:hover {
+	background-color: var(--foreground);
+	transition: background-color 2s ease-out 100ms;
+}
 
 .proj-icon {
 display: flex;
@@ -209,10 +234,7 @@ background-color: red;
 #hspace{
 	width: 60px;
 }
-#profile-pic{
-	border-radius: 2em;
-	height: 300px;
-}
+
 .title{
 	font-size: 40px;
 	align-items: center;
