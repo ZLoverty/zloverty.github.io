@@ -1,68 +1,66 @@
 ---
 layout: cv
-title: Zhengyang Liu
+title: 刘政阳
 prepath: /assets/presentations/
 ---
 
-# Zhengyang Liu
-Physicist, trained as chemical engineer, with image analysis and computer vision bend
+# 刘政阳 简历
 
 <div id="webaddress">
 <a href="liuzy19911112@gmail.com">liuzy19911112@gmail.com</a>
-| <a href="https://zloverty.github.io/">My personal page</a>
+| <a href="https://zloverty.github.io/">个人主页</a>
 </div>
 
-## Currently
+## 目前职位
 
-Postdoctoral associate at Gulliver, ESPCI Paris
+博士后研究员，Gulliver 实验室，巴黎高等物理化工学院
 
-### Specialized in
+### 专精领域
 
-Active matter, rheology and rheometry, fluid mechanics, microorganism locomotion
+活性物质，流变学，流体力学，微生物运动，颗粒追踪
 
-### Research interests
+### 研究兴趣
 
-Pattern recognition, particle tracking, computer vision
+数据可视化，计算机视觉
 
-
-## Education 
+## 教育经历
 
 `2015-2021`
-__Department of Chemical Engineering and Material Sciences, Univerisity of Minnesota, Minnesota, USA__
+__化学工程与材料科学系, 明尼苏达大学__
 
-- Doctor of Philosophy, advised by Xiang Cheng
+- 博士，由程翔教授指导
 
 `2010-2014`
-__Polymer Material and Engineering, Tsinghua University, Beijing, China__
+__高分子材料与工程专业，清华大学__
 
-- Bachelor of Engineering, advised by Li-Tang Yan
+- 学士，由燕立唐教授指导
 
 
-## Appointments
+## 工作经历
 
-`2022-now`
-__Gulliver, ESPCI Paris, France__
+`2022 至今`
+__Gulliver实验室，巴黎高等物理化工学院__
 
-- Postdoctoral associate, supervised by Teresa Lopez-Leon
+- 博士后研究员, 由 Teresa Lopez-Leon 教授指导
 
 `2021-2022`
-__Laboratoire Physique et mécanique des milieux Hétérogènes (PMMH), ESPCI Paris, France__
+__异介质物理与力学实验室 (PMMH), 巴黎高等物理化工学院__
 
-- Postdoctoral associate, supervised by Eric Clement, Anke Lindner and Teresa Lopez-Leon
+- 博士后研究员, 由 Eric Clement, Anke Lindner 和 Teresa Lopez-Leon 教授指导
 
 
-## Awards
+## 荣誉奖项
 
 `2015`
-__Frank & Janis Bates Research Fellowship Fund__
-- University of Minnesota, Minneapolis, MN
+__Frank & Janis Bates 研究奖学金基金__
+- 明尼苏达大学
 
 
-## Publications
+## 发表成果
 
 <!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
 
-### Journals
+### 期刊文章
 
 `2022`
 __Crack patterns of drying dense bacterial suspensions__
@@ -102,13 +100,13 @@ __Entropy-Mediated Mechanical Response of the Interfacial Nanoparticle Patternin
 __Harnessing Dynamic Covalent Bonds in Patchy Nanoparticles: Creating Shape-Shifting Building Blocks for Rational and Responsive Self-Assembly__
 - Guo R, _Liu Z_, Xie X-M, Yan L-T.  [J. Phys. Chem. Lett. 4(8):1221–1226](https://pubs.acs.org/doi/abs/10.1021/jz4003789)
 
-### Thesis
+### 学位论文
 
 `2021`
 __Novel Properties and Emergent Collective Phenomena of Active Fluids__
 - _Liu Z_. [PhD thesis](https://conservancy.umn.edu/handle/11299/219307)
 
-## Conferences and Workshops
+## 会议展示
 
 `2023`
 __Active Nematics in Channel Networks__ 
