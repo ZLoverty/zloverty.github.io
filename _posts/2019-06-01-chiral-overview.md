@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: chiral
+language: en
 ---
 
 Chiral particles drift in shear flows because of their asymmetric shape. A simple case that helps to understand this drift is provided by Marcos et al. (PRL 2009) where a helical particle is aligned with a simple shear flow.

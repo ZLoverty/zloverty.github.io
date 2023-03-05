@@ -1,3 +1,9 @@
+---
+layout: post
+tag: life
+language: en
+---
+
 While searching for a job, I find it useful to outline my competencies and weaknesses, so that I can quickly compare with the qualifications of the jobs and assess my fit. The content of this post would be very much aligned with a cover letter of a job application. Hence, it could be reused in the near future!
 
 I got my batchelor's degree from the Polymer Material and Engineering Department at Tsinghua University. In an undergraduate research training program, I took on a computational study of a nanoparticle system which is responsive to external mechanical stimuli. Despite of the short time, this training left me with great values: (i) curiosity for scientific research, (ii) solid coding skills.

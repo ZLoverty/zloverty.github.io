@@ -3,20 +3,22 @@
 	--foreground: #304156;
 }
 
+
+
 h1 {
 		display:flex;
 		justify-content: center;
 		font-family: sans-serif;
-		color: #304156;
+		color: var(--foreground);
 	}
 
 h2, h3, h4, h5, p, #blog-title {
-	color: #304156;
+	color: var(--foreground);
 }
 
 p {
 	line-height: 1.5;
-	font-family: Georgia, serif;
+	font-family: 'source han serif cn', Georgia, serif;
 }
 body {
 	display: flex;
@@ -71,7 +73,7 @@ body {
 .current, #nbelement:hover {
 	// font-weight: bold;
 	// background-color: #faffef;
-	text-shadow: 0 0 2px #cccccc;
+	text-shadow: 0 0 2px var(--background);
 }
 
 //  {

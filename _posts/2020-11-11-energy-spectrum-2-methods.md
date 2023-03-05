@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: gnf
+language: en
 ---
 
 We have two methods for computing energy spectrum from spatial velocity data. In this post we should how they are related and point out quantitative details when converting between the results from these methods.

@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: learn
+language: en
 ---
 
 Linux has two main branches: **Debian and RedHat**. Debian is meant for personal use, with a popular example Ubuntu. RedHat is meant for server use, with a popular example of CentOS. I'm going to learn the basics of servers, so the distro of interest here will be **CentOS**. The reference of this note is [this video course](https://www.bilibili.com/video/BV1zL411T7YY). This course is intent for server setup.

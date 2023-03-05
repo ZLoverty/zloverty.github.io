@@ -4,9 +4,11 @@ title: blog
 ---
 <ul>
 {% for post in site.posts %}
-<li>
-    <h2><a id="blog-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-</li>
+    {% if post.language == "en" %}
+    <li>
+        <h2><a id="blog-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+    </li>
+    {% endif %}
 {% endfor %}
 </ul>

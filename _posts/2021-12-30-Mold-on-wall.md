@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: life
+language: en
 ---
 
 Here are some pictures of the apartment at 24 Boulevard Arago Paris 75013 during our stay, mainly taken in November and December 2021. The pictures show that there was a large fraction of wall surface covered by green and black mold colonies, likely caused by high humidity. We open all the windows for about 8 hours in the day, despite the cold weather in November, and use extra electricity to heat up the chamber, the mold problem persisted. We suspect that the apartment we stayed was not properly moisture proofed. Consequently, the walls of the apartment (at least the wall paper) were damaged and the apartment was humid, cold and had unpleasant smells, hence not suitable for accommodate people.

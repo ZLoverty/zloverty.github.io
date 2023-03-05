@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: tools
+language: en
 note: the original post was quite short and was not maintained very well. The majority of this post is rewritten on 2023-02-11 to recap the successful solution of personal server.
 ---
 

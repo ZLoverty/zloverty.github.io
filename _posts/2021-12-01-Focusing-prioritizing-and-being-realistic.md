@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: life
+language: en
 ---
 
 How many things can I do a day?

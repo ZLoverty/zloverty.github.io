@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: tools
+language: en
 ---
 
 I quit Mendeley today, after 5 years of use, because there are serious problems with duplicated files, lack of support for mobile platforms, small cloud drive and poor syncing quality. Solving these problems has been distracting me from focusing on reading, so that I decide to try out some alternatives and leave Mendeley.

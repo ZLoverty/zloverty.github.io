@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: gnf
+language: en
 ---
 
 Giant number fluctuation (GNF) is a key distinction of active matter compared to systems in equilibrium. Theories have predicted the deviation of number fluctuations in active matter in a quantitative way. Later on, the predictions are tested in experiment and were mostly true. Despite the success of the theories, the underlying mechanism of GNF still remains to be a hypothesis due to the difficulty of resolving individual active units and the interaction between individual active units in a crowded collection. A recent work by Peng et al. shows that in the transition to active turbulence, flow order and flow energy grow with different time scale. GNF also grows during the course of active turbulence transition, by look at the time scale of this transition, we could gain more insight into the mechanism of GNF.
