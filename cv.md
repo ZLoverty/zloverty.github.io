@@ -18,22 +18,22 @@ Postdoctoral associate at Gulliver, ESPCI Paris
 
 ### Specialized in
 
-Active matter, rheology and rheometry, fluid mechanics, microorganism locomotion
+Active matter, rheology and rheometry, fluid mechanics, microorganism locomotion, particle tracking
 
 ### Research interests
 
-Pattern recognition, particle tracking, computer vision
+Data visualization, computer vision
 
 
 ## Education 
 
 `2015-2021`
-__Department of Chemical Engineering and Material Sciences, Univerisity of Minnesota, Minnesota, USA__
+__Department of Chemical Engineering and Material Sciences, Univerisity of Minnesota__
 
 - Doctor of Philosophy, advised by Xiang Cheng
 
 `2010-2014`
-__Polymer Material and Engineering, Tsinghua University, Beijing, China__
+__Polymer Material and Engineering, Tsinghua University__
 
 - Bachelor of Engineering, advised by Li-Tang Yan
 
@@ -41,12 +41,12 @@ __Polymer Material and Engineering, Tsinghua University, Beijing, China__
 ## Appointments
 
 `2022-now`
-__Gulliver, ESPCI Paris, France__
+__Gulliver, ESPCI Paris__
 
 - Postdoctoral associate, supervised by Teresa Lopez-Leon
 
 `2021-2022`
-__Laboratoire Physique et mécanique des milieux Hétérogènes (PMMH), ESPCI Paris, France__
+__Laboratoire Physique et mécanique des milieux Hétérogènes (PMMH), ESPCI Paris__
 
 - Postdoctoral associate, supervised by Eric Clement, Anke Lindner and Teresa Lopez-Leon
 
