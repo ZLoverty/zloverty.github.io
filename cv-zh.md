@@ -15,13 +15,7 @@ prepath: /assets/presentations/
 
 博士后研究员，Gulliver 实验室，巴黎高等物理化工学院
 
-### 专精领域
 
-活性物质，流变学，流体力学，微生物运动，颗粒追踪
-
-### 研究兴趣
-
-数据可视化，计算机视觉
 
 ## 教育经历
 
@@ -58,7 +52,7 @@ __Frank & Janis Bates 研究奖学金基金__
 
 ## 发表成果
 
-<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+<!-- A list is also available [online](https://scholar.google.com/citations?user=3j7-27AAAAAJ&hl=en) -->
 
 ### 期刊文章
 
@@ -104,44 +98,84 @@ __Harnessing Dynamic Covalent Bonds in Patchy Nanoparticles: Creating Shape-Shif
 
 `2021`
 __Novel Properties and Emergent Collective Phenomena of Active Fluids__
-- _Liu Z_. [PhD thesis](https://conservancy.umn.edu/handle/11299/219307)
+- _Liu Z_. [博士论文](https://conservancy.umn.edu/handle/11299/219307)
 
 ## 会议展示
 
 `2023`
 __Active Nematics in Channel Networks__ 
-- Workshop Defects and Self-Organization, Paris. [Oral presentation]({{ page.prepath }}WDSO2023.pdf)
+- Workshop Defects and Self-Organization, Paris. [文稿]({{ page.prepath }}WDSO2023.pdf)
 
 `2022`
 __Collective Motion and Reversible Jamming in a Droplet__
-- Journées de Physique Statistique, Paris. [Oral presentation]({{ page.prepath }}JSP2022.pdf)
+- Journées de Physique Statistique, Paris. [文稿]({{ page.prepath }}JSP2022.pdf)
 
 __Collective bacterial dynamics in curved spaces__
-- CNRS Mission for Transversal and Interdisciplinary Initiatives, Paris. [Poster]({{ page.prepath }}MITI2022.pdf)
-- Active and Living Matter Days, Paris. [Poster]({{ page.prepath }}LMD2022.pdf)
+- CNRS Mission for Transversal and Interdisciplinary Initiatives, Paris. [海报]({{ page.prepath }}MITI2022.pdf)
+- Active and Living Matter Days, Paris. [海报]({{ page.prepath }}LMD2022.pdf)
 
 __Swimming in a 2D Porous Media__
-- Active Matter in Complex Media Summer School, Cargese. [Poster]({{ page.prepath }}AMCM-2022.pdf)
+- Active Matter in Complex Media Summer School, Cargese. [海报]({{ page.prepath }}AMCM-2022.pdf)
 
 `2020`
 __Imaging the Swarming Transition Using Light-Controlled Bacteria__
-- American Physical Society (APS) March Meeting 2020 (online). [Oral presentation]({{ page.prepath }}APS2020.pdf)
+- American Physical Society (APS) March Meeting 2020 (online). [文稿]({{ page.prepath }}APS2020.pdf)
 
 __Giant Number Fluctuations in 3D Bacterial Active Turbulence__
-- APS Division of Fluid Dynamics (DFD) Meeting 2020 (online). [Oral presentation]({{ page.prepath }}DFD2020.pdf)
+- APS Division of Fluid Dynamics (DFD) Meeting 2020 (online). [文稿]({{ page.prepath }}DFD2020.pdf)
 
 `2019`
 __Rheology of Confined Bacterial Suspensions__
-- 91th Society of Rheology (SOR) Meeting, Raleigh. [Oral presentation]({{ page.prepath }}SOR2019.pdf) [Poster]({{ page.prepath }}Liu-IPRIME_poster-resized_for_printing.pdf)
-- APS March Meeting 2019, Boston. [Oral presentation]({{ page.prepath }}APS-2019.pdf)
+- 91th Society of Rheology (SOR) Meeting, Raleigh. [文稿]({{ page.prepath }}SOR2019.pdf) [海报]({{ page.prepath }}Liu-IPRIME_poster-resized_for_printing.pdf)
+- APS March Meeting 2019, Boston. [文稿]({{ page.prepath }}APS-2019.pdf)
 
 `2018`
 __Viscosity of confined bacterial suspensions__
-- 90th SOR Meeting, Houston. [Oral presentation]({{ page.prepath }}SOR2018.pdf)
+- 90th SOR Meeting, Houston. [文稿]({{ page.prepath }}SOR2018.pdf)
 
 `2017`
 __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 - Georgetown Active Matter Summer School, Washington DC
+
+## 教学经历
+
+`2016`
+
+`2018`
+
+`2019`
+
+## 专精领域
+
+__生物物理，活性物质__
+
+博士研究课题，对领域内的实验和理论都有深入了解
+
+__流变学，流体力学__
+
+博士研究课题，有使用自制流变仪的研究经历
+
+__化工工艺，高分子材料__
+
+本科及博士专业，学习过传递现象原理、流体力学、高分子物理、高分子化学、高分子成型加工、生物化工等多门专业课程
+
+__微流体和微加工__
+
+博士研究中常自制微流体管道研究流体性质，熟悉微流体管道设计及CAD软件的使用，熟悉光刻和 3D 打印机的使用
+
+__微生物学，基因编辑__
+
+博士研究中为实现用光控制细菌游动，熟悉基因编辑技术和基因数据库的使用
+
+__图像处理，颗粒追踪__
+
+博士研究中的核心技术，精通 Python 和其科学计算包如 numpy，scipy，scikit-image，opencv，pandas，matplotlib 的使用
+
+__仿真建模__
+
+熟悉流体仿真方法，本科研究中做过以颗粒为基础的仿真，博士后研究中也接触了连续相流体仿真
+
+__人工智能__
 
 <!-- ### Footer
 
