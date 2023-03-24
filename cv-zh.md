@@ -43,11 +43,7 @@ __异介质物理与力学实验室 (PMMH), 巴黎高等物理化工学院__
 - 博士后研究员, 由 Eric Clement, Anke Lindner 和 Teresa Lopez-Leon 教授指导
 
 
-## 荣誉奖项
 
-`2015`
-__Frank & Janis Bates 研究奖学金基金__
-- 明尼苏达大学
 
 
 ## 发表成果
@@ -100,7 +96,7 @@ __Harnessing Dynamic Covalent Bonds in Patchy Nanoparticles: Creating Shape-Shif
 __Novel Properties and Emergent Collective Phenomena of Active Fluids__
 - _Liu Z_. [博士论文](https://conservancy.umn.edu/handle/11299/219307)
 
-## 会议展示
+### 会议展示
 
 `2023`
 __Active Nematics in Channel Networks__ 
@@ -137,45 +133,53 @@ __Viscosity of confined bacterial suspensions__
 __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 - Georgetown Active Matter Summer School, Washington DC
 
-## 教学经历
-
-`2016`
-
-`2018`
-
-`2019`
-
 ## 专精领域
 
 __生物物理，活性物质__
-
-博士研究课题，对领域内的实验和理论都有深入了解
+- 博士研究课题，对领域内的实验和理论都有深入了解。
 
 __流变学，流体力学__
-
-博士研究课题，有使用自制流变仪的研究经历
+- 博士研究课题，有使用自制流变仪的研究经历。
 
 __化工工艺，高分子材料__
-
-本科及博士专业，学习过传递现象原理、流体力学、高分子物理、高分子化学、高分子成型加工、生物化工等多门专业课程
+- 本科及博士专业，学习过传递现象原理、流体力学、高分子物理、高分子化学、高分子成型加工、生物化工等多门专业课程。
 
 __微流体和微加工__
-
-博士研究中常自制微流体管道研究流体性质，熟悉微流体管道设计及CAD软件的使用，熟悉光刻和 3D 打印机的使用
+- 博士研究中常自制微流体管道研究流体性质，熟悉微流体管道设计及CAD软件的使用，熟悉光刻和 3D 打印机的使用。
 
 __微生物学，基因编辑__
-
-博士研究中为实现用光控制细菌游动，熟悉基因编辑技术和基因数据库的使用
+- 博士研究中为实现用光控制细菌游动，熟悉基因编辑技术和基因数据库的使用。
 
 __图像处理，颗粒追踪__
-
-博士研究中的核心技术，精通 Python 和其科学计算包如 numpy，scipy，scikit-image，opencv，pandas，matplotlib 的使用
+- 博士研究中的核心技术，精通 Python 和其科学计算包如 numpy，scipy，scikit-image，opencv，pandas，matplotlib 的使用。
 
 __仿真建模__
-
-熟悉流体仿真方法，本科研究中做过以颗粒为基础的仿真，博士后研究中也接触了连续相流体仿真
+- 本科研究中做过以颗粒为基础的流体仿真（BD，DPD），博士后研究中也接触了连续相流体仿真。
 
 __人工智能__
+- 博士期间选修过人工智能课程，做过一个 [简单的项目实践](https://github.com/ZLoverty/Python/tree/master/ForFun/Reversi-AI) ，也在 coursera 平台上学习了机器学习、深度学习和神经网络的基础理论，从零搭建过 [简单的神经网络](https://github.com/ZLoverty/Python/blob/master/ForFun/Machine_learning/NN-1HL.ipynb) ，对 TensorFlow 框架有基本了解。
+
+__编程语言__
+
+精通 Python、Matlab，对 C、JAVA、Fortran、C++ 也有一定了解和使用经验。
+
+## 语言能力
+
+汉语（母语），英语（精通）
+
+## 荣誉奖项
+
+`2015`
+__Frank & Janis Bates 研究奖学金__
+- 明尼苏达大学
+
+## 业余爱好
+
+__制作个人网站__
+- [个人网站](https://zloverty.github.io/) 像是网络中的自家小院，可以凭自己喜好随意装饰摆放。最初制作是为了方便查看自己代码的 [文档](https://zloverty.github.io/code/libraries.html) 和 [笔记](https://zloverty.github.io/code/notes.html) ，属于工作相关，现在偶尔也会写写 [生活随笔](https://zloverty.github.io/blog.html) 。
+
+__写点兴趣代码__
+- 用代码解决生活问题是件很有成就感的事，在这方面我有些有趣的尝试，比如 [制作电子相册](https://github.com/ZLoverty/Python/blob/master/ForFun/Tools/collage_maker.ipynb) 和 [日期可视化](https://github.com/ZLoverty/Period-visualizer)。
 
 <!-- ### Footer
 
