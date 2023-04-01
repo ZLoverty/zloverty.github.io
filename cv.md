@@ -5,7 +5,6 @@ prepath: /assets/presentations/
 ---
 
 # Zhengyang Liu
-Physicist, trained as chemical engineer, with image analysis and computer vision bend
 
 <div id="webaddress">
 <a href="liuzy19911112@gmail.com">liuzy19911112@gmail.com</a>
@@ -16,27 +15,31 @@ Physicist, trained as chemical engineer, with image analysis and computer vision
 
 Postdoctoral associate at Gulliver, ESPCI Paris
 
-### Specialized in
+### Research experience
 
-Active matter, rheology and rheometry, fluid mechanics, microorganism locomotion, particle tracking
+__Biological systems: bacteria and algae__
+- I use microscopy, rheometry and microfluidic devices to study the transport properties, locomotion and collective motion of biological systems in controlled environments. Specifically, I have uncovered the confinement effect on the rheology of bacterial suspensions, the enhanced diffusivity in algal suspensions, and have characterized the kinetic pathways into collective motion and the flow-energy coupling in active turbulence. Currently, I'm studying the bacterial dynamics in curved spaces and the locomotion of bacteria in porous media.
+
+__Active matter logic: microtubule-kinesin at bifurcation__
+- I'm currently studying the behavior of microtubule-kinesin active matter system in microchannels with branches, as a prerequisite to achieve active matter logic. 
 
 ### Research interests
 
-Data visualization, computer vision
+__Collective motion in complex environment__
+- Some of my preliminary experiments show that bacteria exhibit oscillatory-like collective motion in spherical emulsion droplets. Similar observation in active nematic droplet suggests that topological constraints rectify the chaotic turbulence into a more regular form. Uncovering the interplay between confinement, topology and collective motion can help us understand real biological processes such as infection. 
 
+__Active polars and nematics in experiment__
+- In theoretical models, active particles can be either polars or nematics. In experiment, the categorization is not sufficient. For example, _E. coli_ bacteria are considered as polars because they always swim to the direction of their heads in dilute suspensions. However, in collective motion, they can also exhibit head-to-tail motion, and result in active turbulence that resembles their nematic counterpart. I'm interested in revealing how the polar-nematic transition happens and the new phases that could result from this transition.
 
-## Education 
+__Biofilm development characterization__
+- Understanding biofilm is critical to pathogen control, bioremediation of oil spill among other applications. 
+A remarkable feature of biofilm is the diversity of morphology and chemical composition. 
+I'm interested in how external physical parameters, such as flow and substrate properties, influence the biofilm development process.
+Such knowledge can help us understand how bacteria provide structure to the extracellular matrix and benefit from extracellular reactions.
 
-`2015-2021`
-__Department of Chemical Engineering and Material Sciences, Univerisity of Minnesota__
+### Specialized in 
 
-- Doctor of Philosophy, advised by Xiang Cheng
-
-`2010-2014`
-__Polymer Material and Engineering, Tsinghua University__
-
-- Bachelor of Engineering, advised by Li-Tang Yan
-
+Active matter, rheology, microfluidics, molecular biology, emulsions, microscopy, image analysis
 
 ## Appointments
 
@@ -50,13 +53,17 @@ __Laboratoire Physique et mécanique des milieux Hétérogènes (PMMH), ESPCI Pa
 
 - Postdoctoral associate, supervised by Eric Clement, Anke Lindner and Teresa Lopez-Leon
 
+## Education 
 
-## Awards
+`2015-2021`
+__Department of Chemical Engineering and Material Sciences, Univerisity of Minnesota__
 
-`2015`
-__Frank & Janis Bates Research Fellowship Fund__
-- University of Minnesota, Minneapolis, MN
+- Doctor of Philosophy, advised by Xiang Cheng
 
+`2010-2014`
+__Polymer Material and Engineering, Tsinghua University__
+
+- Bachelor of Engineering, advised by Li-Tang Yan
 
 ## Publications
 
@@ -145,8 +152,15 @@ __Viscosity of confined bacterial suspensions__
 __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 - Georgetown Active Matter Summer School, Washington DC
 
+
+
+
+## Awards
+
+`2015`
+__Frank & Janis Bates Research Fellowship Fund__
+- University of Minnesota, Minneapolis, MN
+
 <!-- ### Footer
 
 Last updated: May 2013 -->
-
-
