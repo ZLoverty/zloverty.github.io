@@ -15,7 +15,7 @@ prepath: /assets/presentations/
 
 Postdoctoral associate at Gulliver, ESPCI Paris
 
-### Research experience
+<!-- ### Research experience
 
 __Biological systems: bacteria and algae__
 - I use microscopy, rheometry and microfluidic devices to study the transport properties, locomotion and collective motion of biological systems in controlled environments. Specifically, I have uncovered the confinement effect on the rheology of bacterial suspensions, the enhanced diffusivity in algal suspensions, and have characterized the kinetic pathways into collective motion and the flow-energy coupling in active turbulence. Currently, I'm studying the bacterial dynamics in curved spaces and the locomotion of bacteria in porous media.
@@ -35,11 +35,11 @@ __Biofilm development characterization__
 - Understanding biofilm is critical to pathogen control, bioremediation of oil spill among other applications. 
 A remarkable feature of biofilm is the diversity of morphology and chemical composition. 
 I'm interested in how external physical parameters, such as flow and substrate properties, influence the biofilm development process.
-Such knowledge can help us understand how bacteria provide structure to the extracellular matrix and benefit from extracellular reactions.
+Such knowledge can help us understand how bacteria provide structure to the extracellular matrix and benefit from extracellular reactions. -->
 
 ### Specialized in 
 
-Active matter, rheology, microfluidics, molecular biology, emulsions, microscopy, image analysis
+Soft materials, suspension rheology, microfluidics, molecular biology
 
 ## Appointments
 
