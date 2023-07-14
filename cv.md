@@ -7,7 +7,7 @@ prepath: /assets/presentations/
 # Zhengyang Liu
 
 <div id="webaddress">
-<a href="liuzy19911112@gmail.com">liuzy19911112@gmail.com</a>
+<a href="zhengyang.liu@espci.fr">zhengyang.liu@espci.fr</a>
 | <a href="https://zloverty.github.io/">My personal page</a>
 </div>
 
@@ -39,19 +39,19 @@ Such knowledge can help us understand how bacteria provide structure to the extr
 
 ### Specialized in 
 
-Soft materials, suspension rheology, microfluidics, molecular biology
+active matter, microfluidic design & fabrication, rheology, microscopy, molecular biology, image analysis 
 
 ## Appointments
 
-`2022-now`
+`2022-2023`
 __Gulliver, ESPCI Paris__
 
-- Postdoctoral associate, supervised by Teresa Lopez-Leon
+- Postdoctoral associate, advised by Teresa Lopez-Leon
 
 `2021-2022`
 __Laboratoire Physique et mécanique des milieux Hétérogènes (PMMH), ESPCI Paris__
 
-- Postdoctoral associate, supervised by Eric Clement, Anke Lindner and Teresa Lopez-Leon
+- Postdoctoral associate, advised by Eric Clement, Anke Lindner and Teresa Lopez-Leon
 
 ## Education 
 
@@ -160,6 +160,19 @@ __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 `2015`
 __Frank & Janis Bates Research Fellowship Fund__
 - University of Minnesota, Minneapolis, MN
+
+## References
+
+__Xiang Cheng__
+- PhD advisor, <a href="xcheng@umn.edu">xcheng@umn.edu</a>
+
+__Eric Clement__
+- Postdoc advisor, <a href="eric.clement@upmc.fr">eric.clement@upmc.fr</a>
+
+__Teresa Lopez-Leon__
+- Postdoc advisor, <a href="Teresa.Lopez-Leon@espci.fr">teresa.Lopez-Leon@espci.fr</a>
+
+
 
 <!-- ### Footer
 
