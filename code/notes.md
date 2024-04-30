@@ -3,47 +3,42 @@ layout: default
 title: Code notes
 ---
 
-## Notepad++
-1. Set up “runPython” in Notepad++ after installing anaconda:
-- Run -> Run (F5)
-- S:\Anaconda\3\condabin\activate.bat base & S:\Anaconda\3\python.exe -i "$(FULL_CURRENT_PATH)"
-- Save as “runPython”, pick an easy-to-use shortcut
-- Now python can be run in Notepad++ with the shortcut created in step c.
-2. The run scripts of Notepad++ are saved in `C:\Users\[username]\AppData\Roaming\Notepad++\shortcuts.xml`
-
 ## Python
-1. Show all available font families in Python:
-  ```python
-  import matplotlib.font_manager
-  from IPython.core.display import HTML
-  def make_html(fontname):
-  return "<p>{font}: <span style='font-family:{font}; font-size:
-    24px;'>{font}</p>".format(font=fontname)
-  code = "\n".join([make_html(font) for font in sorted(set([f.name for f in
-  matplotlib.font_manager.fontManager.ttflist]))])
-  HTML("<div style='column-count: 2;'>{}</div>".format(code))
-  ```
 
+1. Show all available font families in Python:
+    ```python
+    import matplotlib.font_manager
+    from IPython.core.display import HTML
+
+    def make_html(fontname):
+        return "<p>{font}: <span style='font-family:{font}; font-size: 24px;'>{font}</p>".format(font=fontname)
+    code = "\n".join([make_html(font) for font in sorted(set([f.name for f in matplotlib.font_manager.fontManager.ttflist]))])
+    HTML("<div style='column-count: 2;'>{}</div>".format(code))
+    ```
+    To see just the names of available font families:
+    ```
+    sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
+    ```
 2. Get immediate subfolders (next function):
-  ```python
-  import os
-  folder = '~'
-  sfL = next(os.walk(folder))[1]
-  ```
+    ```python
+    import os
+    folder = '~'
+    sfL = next(os.walk(folder))[1]
+    ```
 
 3. Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:
-  ```python
-  import matplotlib.pyplot as plt
-  plt.imshow(data, interpolation='spline16')
-  ```
-  Then we need to save the smoothed image (vector) in a vector image format (.pdf, .eps, .svg), using the following command:
-  ```python
-  plt.savefig(r'I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf', format='pdf')
-  ```
-  This is the image where I compare original, pdf and svg savefig outcome:
-  [compare](/assets/images/2022/01/svg-pdf-compare.pdf)
+    ```python
+    import matplotlib.pyplot as plt
+    plt.imshow(data, interpolation='spline16')
+    ```
+    Then we need to save the smoothed image (vector) in a vector image format (.pdf, .eps, .svg), using the following command:
+    ```python
+    plt.savefig(r'I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf', format='pdf')
+    ```
+    This is the image where I compare original, pdf and svg savefig outcome:
+    [compare](/assets/images/2022/01/svg-pdf-compare.pdf)
 
-4. **Matplotlib colormap:** mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
+4. Matplotlib colormap: mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
 
     ```python
     from matplotlib import cm
@@ -86,51 +81,15 @@ title: Code notes
     the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the
     plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
 
+7. A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
 
-
-## Atom configs
-
-1. Keymap.cson
-
-    ```CSON
-    ".platform-win32 atom-text-editor:not([mini])":
-    "shift-ctrl-K": "markdown-writer:insert-link"
-    "shift-ctrl-I": "markdown-writer:insert-image"
-    "shift-ctrl-X": "markdown-writer:toggle-taskdone"
-    "ctrl-i": "markdown-writer:toggle-italic-text"
-    "ctrl-b": "markdown-writer:toggle-bold-text"
-    "ctrl-'": "markdown-writer:toggle-code-text"
-    "ctrl-h": "markdown-writer:toggle-strikethrough-text"
-    "ctrl-1": "markdown-writer:toggle-h1"
-    "ctrl-2": "markdown-writer:toggle-h2"
-    "ctrl-3": "markdown-writer:toggle-h3"
-    "ctrl-4": "markdown-writer:toggle-h4"
-    "ctrl-5": "markdown-writer:toggle-h5"
-
-    "atom-text-editor":
-    "alt-o": "document-outline:toggle"
+    ```
+    import matplotlib
+    matplotlib.rcParams["font.family"] = "STIXGeneral"
+    matplotlib.rcParams['mathtext.fontset'] = 'stix'
     ```
 
-2. Markdown-preview-enhanced customized style
-
-    ```less
-    .markdown-preview.markdown-preview {
-    @page{
-    size: A4;
-    }
-    @titlecolor:#707fbaff;
-    @bodycolor: #111111;
-
-    color: @bodycolor;
-    font-family: helvetica;
-
-    h1,h2,h3,h4,h5 {
-    font-family: Arial '[-]';
-    color: @titlecolor;
-    font-weight: light;
-    }
-    }
-    ```
+    Note that both the regular text and the math text need to be configured. 
 
 ## Linux
 
