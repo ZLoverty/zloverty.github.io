@@ -159,6 +159,10 @@ optional setting called "Globbing" that can be switched on by passing `-pattern_
 included on Windows `ffmpeg`.
 [Source](https://video.stackexchange.com/questions/7300/how-to-get-ffmpeg-to-join-non-sequential-image-files-skip-by-3s/7320#7320)
 
+3. To convert an image sequence (where the numbering does not start from 0-4) to a video, use the option `-start_number` before input `-i`. For example:
+```bash
+ffmpeg -framerate 25 -start_number 1001 -i %04d.jpg out.avi
+```
 ## Cloud Storage
 
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
