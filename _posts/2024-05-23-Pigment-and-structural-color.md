@@ -1,6 +1,6 @@
 ---
-date: 2023-03-10
-title: Principle Componenets Analysis
+date: 2024-05-23
+title: Pigment and structural color
 tag: learn
 language: en
 ---
