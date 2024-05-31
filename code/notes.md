@@ -163,6 +163,12 @@ included on Windows `ffmpeg`.
 ```bash
 ffmpeg -framerate 25 -start_number 1001 -i %04d.jpg out.avi
 ```
+
+4. To trim a video, use (time is hh:mm:ss)
+```bash
+ffmpeg -i input.mp4 -ss 00:05:20 -t 00:10:00 -c:v copy -c:a copy out.avi
+```
+
 ## Cloud Storage
 
 1. Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.
