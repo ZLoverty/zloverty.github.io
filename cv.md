@@ -7,13 +7,14 @@ prepath: /assets/presentations/
 # Zhengyang Liu
 
 <div id="webaddress">
-<a href="zhengyang.liu@espci.fr">zhengyang.liu@espci.fr</a>
-| <a href="https://zloverty.github.io/">My personal page</a>
+    <a href="zhengyang.liu@espci.fr">zl948@cornell.edu</a> | 
+    <a href="zhengyang.liu@espci.fr">liuzy19911112@gmail.com</a> | 
+    <a href="https://zloverty.github.io/">My personal page</a> 
 </div>
 
 ## Currently
 
-Postdoctoral associate at Gulliver, ESPCI Paris
+Postdoctoral associate at the Jung Lab, Department of Biological and Environmental Engineering, Cornell University
 
 <!-- ### Research experience
 
@@ -43,6 +44,11 @@ active matter, microfluidic design & fabrication, rheology, microscopy, molecula
 
 ## Appointments
 
+`2024-present`
+__Biological and Environmental Engineering, Cornell University__
+
+- Postdoctoral associate, advised by Sunghwan Jung
+
 `2022-2023`
 __Gulliver, ESPCI Paris__
 
@@ -71,12 +77,16 @@ __Polymer Material and Engineering, Tsinghua University__
 
 ### Journals
 
+`2023`
+__Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping__
+- Y Qiao, _Liu Z_, Ma X, Keim NC, Cheng X. [Langmuir. 39(34):12032–12040](https://pubs.acs.org/doi/full/10.1021/acs.langmuir.3c01085)
+
 `2022`
 __Crack patterns of drying dense bacterial suspensions__
 - Ma X, _Liu Z_, Zeng W, Lin T, Tian X, Cheng X. [Soft Matter. 18(28):5239–5248](https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm00012a)
 
 __Tuning the rheology and microstructure of particle-laden fluid interfaces with Janus particles__
-- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. 2022.  [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246)
+- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246)
 
 `2021`
 
