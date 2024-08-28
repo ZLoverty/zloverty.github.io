@@ -6,6 +6,7 @@ title: Code notes
 ## Python
 
 1. Show all available font families in Python:
+ 
     ```python
     import matplotlib.font_manager
     from IPython.core.display import HTML
@@ -15,18 +16,19 @@ title: Code notes
     code = "\n".join([make_html(font) for font in sorted(set([f.name for f in matplotlib.font_manager.fontManager.ttflist]))])
     HTML("<div style='column-count: 2;'>{}</div>".format(code))
     ```
+
     To see just the names of available font families:
-    ```
+    ```python
     sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
     ```
-2. Get immediate subfolders (next function):
+1. Get immediate subfolders (next function):
     ```python
     import os
     folder = '~'
     sfL = next(os.walk(folder))[1]
     ```
 
-3. Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:
+2. Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:
     ```python
     import matplotlib.pyplot as plt
     plt.imshow(data, interpolation='spline16')
@@ -38,7 +40,7 @@ title: Code notes
     This is the image where I compare original, pdf and svg savefig outcome:
     [compare](/assets/images/2022/01/svg-pdf-compare.pdf)
 
-4. Matplotlib colormap: mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
+3. Matplotlib colormap: mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
 
     ```python
     from matplotlib import cm
@@ -60,7 +62,7 @@ title: Code notes
 
     ![set3 cmap](/assets/images/2022/01/set3-cmap.png)
 
-5. Convert date object to formatted string: ([reference](https://docs.python.org/3/library/datetime.html))
+4. Convert date object to formatted string: ([reference](https://docs.python.org/3/library/datetime.html))
 
     ```python
     Timestamp('2022-01-17 00:00:00') -> '01172022'
@@ -70,7 +72,7 @@ title: Code notes
     date.strftime("%m%d%Y")
     ```
 
-6. To "stuff" a `pandas.DataFrame` with `np.nan`: when calculating MSD from particle trajectories, we want to have `frame` column to be continuous integer array. However, sometimes in the data, we have `frame = [0, 50, 100, ...]`. To fill all the frames without position data with `np.nan`, we can set `frame` as the index of the DataFrame, then reindex the DataFrame with continuous integers `np.arange(...)`. This creates a trajectory data with continuous frames:
+5. To "stuff" a `pandas.DataFrame` with `np.nan`: when calculating MSD from particle trajectories, we want to have `frame` column to be continuous integer array. However, sometimes in the data, we have `frame = [0, 50, 100, ...]`. To fill all the frames without position data with `np.nan`, we can set `frame` as the index of the DataFrame, then reindex the DataFrame with continuous integers `np.arange(...)`. This creates a trajectory data with continuous frames:
 
     ```python
     pos = traj.set_index('frame')[pos_columns]
@@ -81,7 +83,7 @@ title: Code notes
     the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the
     plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
 
-7. A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
+6. A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
 
     ```
     import matplotlib

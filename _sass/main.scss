@@ -1,8 +1,9 @@
 :root {
 	--background: #f5ebeb;
 	--foreground: #304156;
-	--headerfont: "Copperplate Gothic Light";
-	--bodyfont: "Century Gothic";
+	--headerfont: "Roboto", sans-serif;
+	--bodyfont: "Helvetica", sans-serif; 
+
 }
 
 
@@ -21,7 +22,8 @@ h2, h3, h4, h5, #blog-title {
 
 p {
 	line-height: 1.5;
-	// font-family: 'source han serif cn', Georgia, serif;
+	font-family: "Segoe UI";
+	// var(--bodyfont);
 }
 body {
 	display: flex;
@@ -250,7 +252,6 @@ background-color: red;
 	background: none;
 	display: flex;
 	width: 100%;
-	font-family: sans-serif;
 }
 .prog-content{
 	border-style: solid;
@@ -258,7 +259,6 @@ background-color: red;
 	border-color: black;
 	border-width: 2px;
 	font-size: 30px;
-	font-family: sans-serif;
 	text-align: center;
 	margin: 10px 0px 10px 0px;
 }
@@ -277,7 +277,6 @@ background-color: red;
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
-	font-family: helvetica;
 	width: 100%;
 }
 #nav{
@@ -328,12 +327,10 @@ background-color: red;
 	width: 70%;
 	font-size: 17px;
 	align-items: center;
-	font-family: sans-serif;;
 }
 
 #myparagraph {
 	font-size: 20px;
-	font-family: sans-serif;
 	line-height: 1.5;
 }
 
@@ -382,8 +379,7 @@ background-color: red;
 }
 
 .center {
-	font-family: sans-serif;
-  text-align: center;
+  	text-align: center;
 }
 
 #hline{
@@ -442,9 +438,4 @@ background-color: red;
 	text-decoration-color: #524358;
 }
 
-.code{
-	background-color:#DDDDDD;
-	font-family: "Courier New";
-	font-size: 14px;
-}
 

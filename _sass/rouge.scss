@@ -1,0 +1,151 @@
+/* Atom One Dark theme for Rouge syntax highlighting */
+pre {
+    background-color: #282c34;
+    /* Background color for code blocks */
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #abb2bf;
+}
+
+code {
+    background-color: #282c34;
+    /* Background color for inline code */
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #abb2bf;
+    /* Default text color */
+}
+
+/* Highlight class styles */
+.highlight pre {
+    background-color: #282c34;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #abb2bf;
+}
+
+.highlight code {
+    background-color: #282c34;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #abb2bf;
+}
+
+/* Custom styles for code blocks */
+pre, code {
+    font-family: "Consolas", "Menlo", "Monaco", monospace;
+}
+
+/* General styles */
+.highlight-code {
+    color: #abb2bf;
+}
+
+/* Keyword styles */
+.highlight .k {
+    color: #c678dd;
+    /* Keywords */
+    font-weight: bold;
+}
+
+.highlight .kn {
+    color: #c678dd;
+    /* Keywords */
+    font-weight: bold;
+}
+
+/* String styles */
+.highlight .s {
+    color: #98c379;
+    /* Strings */
+}
+
+/* Comment styles */
+.highlight .c {
+    color: #5c6370;
+    /* Comments */
+    font-style: italic;
+}
+
+/* Number styles */
+.highlight .m {
+    color: #d19a66;
+    /* Numbers */
+}
+
+/* Function name styles */
+.highlight .nf {
+    color: #61afef;
+    /* Function names */
+}
+
+/* Class name styles */
+.highlight .nc {
+    color: #e5c07b;
+    /* Class names */
+    font-weight: bold;
+}
+
+/* Operator styles */
+.highlight .o {
+    color: #56b6c2;
+    /* Operators */
+}
+
+/* Punctuation styles */
+.highlight .p {
+    color: #abb2bf;
+    /* Punctuation */
+}
+
+/* Variable styles */
+.highlight .nv {
+    color: #e06c75;
+    /* Variables */
+}
+
+/* Attribute name styles */
+.highlight .na {
+    color: #d19a66;
+    /* Attribute names */
+}
+
+/* Tag styles */
+.highlight .nt {
+    color: #e06c75;
+    /* Tags */
+    font-weight: bold;
+}
+
+/* Built-in name styles */
+.highlight .nb {
+    color: #56b6c2;
+    /* Built-in names */
+}
+
+/* Literal styles */
+.highlight .l {
+    color: #d19a66;
+    /* Literals */
+}
+
+/* Decorator styles */
+.highlight .nd {
+    color: #61afef;
+    /* Decorators */
+}
+
+/* Error styles */
+.highlight .err {
+    color: #e06c75;
+    /* Errors */
+    background-color: #3b4252;
+}
