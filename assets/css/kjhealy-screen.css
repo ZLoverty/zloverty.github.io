@@ -71,7 +71,7 @@ p {
 
 code {
 	font: normal normal;
-	font-size: 60%;
+	font-size: 100%;
 	/*line-height: 1em;*/
 	font-family: Menlo,monospace,sans-serif;
 	color: #aaa;
@@ -79,7 +79,8 @@ code {
 
 p code {
 	position: absolute;
-	left: -14%;
+	left: -13%;
+	width: 5%;
 }
 
 
@@ -103,7 +104,7 @@ li ul {
 	position: relative;
 	left: 0;
 	width: 100%;
-	margin-top: 0.25em;
+	margin-top: 0.20em;
 }
 
 h1,h2,h3,h4 {
@@ -164,7 +165,7 @@ a:hover {
 }
 
 #webaddress a {
-	/* text-decoration: none; */
+	text-decoration: none;
 }
 
 em {

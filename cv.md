@@ -40,7 +40,7 @@ Such knowledge can help us understand how bacteria provide structure to the extr
 
 ### Specialized in 
 
-active matter, microfluidic design & fabrication, rheology, microscopy, molecular biology, image analysis 
+fluid mechanics, active matter, microfluidic design & fabrication, rheology, microscopy, molecular biology, image analysis 
 
 ## Appointments
 
@@ -75,11 +75,21 @@ __Polymer Material and Engineering, Tsinghua University__
 
 <!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
 
+### Submitted
+
+`2024`
+__Active Bacterial Baths in Droplets__
+- Cristian Villalobos C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. 
+
+`2024`
+__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
+- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. 
+
 ### Journals
 
 `2023`
 __Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping__
-- Y Qiao, _Liu Z_, Ma X, Keim NC, Cheng X. [Langmuir. 39(34):12032–12040](https://pubs.acs.org/doi/full/10.1021/acs.langmuir.3c01085)
+- Qiao Y, _Liu Z_, Ma X, Keim NC, Cheng X. [Langmuir. 39(34):12032–12040](https://pubs.acs.org/doi/full/10.1021/acs.langmuir.3c01085)
 
 `2022`
 __Crack patterns of drying dense bacterial suspensions__
@@ -107,12 +117,12 @@ __Rheology of bacterial suspensions under confinement__
 `2016`
 
 __Dynamics of ellipsoidal tracers in swimming algal suspensions__
-- Yang O, Peng Y, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601)
+- Yang O\*, Peng Y\*, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601)
 
 `2014`
 
 __Entropy-Mediated Mechanical Response of the Interfacial Nanoparticle Patterning__
-- _Liu Z_, Guo R, Xu G, Huang Z, Yan L-T.  [Nano Lett. 14(12):6910–6916](https://pubs.acs.org/doi/abs/10.1021/nl5029396)
+- _Liu Z\*_, Guo R\*, Xu G, Huang Z, Yan L-T.  [Nano Lett. 14(12):6910–6916](https://pubs.acs.org/doi/abs/10.1021/nl5029396)
 
 `2013`
 
@@ -126,6 +136,10 @@ __Novel Properties and Emergent Collective Phenomena of Active Fluids__
 - _Liu Z_. [PhD thesis](https://conservancy.umn.edu/handle/11299/219307)
 
 ## Conferences and Workshops
+
+`2024`
+__Fringe around a beet slice__
+- American Physical Society Division of Fluid Dynamics (APS-DFD), Salt Lake City. [Oral presentation](https://docs.google.com/presentation/d/1yhSAJb_s5hPg7i-JsvLw4tsoSxmCTT8icr6oRAvLXgY/edit?usp=sharing)
 
 `2023`
 __Active Nematics in Channel Networks__ 
@@ -144,10 +158,10 @@ __Swimming in a 2D Porous Media__
 
 `2020`
 __Imaging the Swarming Transition Using Light-Controlled Bacteria__
-- American Physical Society (APS) March Meeting 2020 (online). [Oral presentation]({{ page.prepath }}APS2020.pdf)
+- American Physical Society (APS) March Meeting (online). [Oral presentation]({{ page.prepath }}APS2020.pdf)
 
 __Giant Number Fluctuations in 3D Bacterial Active Turbulence__
-- APS Division of Fluid Dynamics (DFD) Meeting 2020 (online). [Oral presentation]({{ page.prepath }}DFD2020.pdf)
+- American Physical Society Division of Fluid Dynamics (APS-DFD) (online). [Oral presentation]({{ page.prepath }}DFD2020.pdf)
 
 `2019`
 __Rheology of Confined Bacterial Suspensions__
@@ -162,8 +176,26 @@ __Viscosity of confined bacterial suspensions__
 __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 - Georgetown Active Matter Summer School, Washington DC
 
+## Teaching
 
+### Short course
 
+`2024`
+__3D Drawing with Blender__
+- Cornell University [slides](https://docs.google.com/presentation/d/1fb9z60vj05tX2_QHgaUssJubWhJRR593XBDpax1Yx6Q/edit?usp=sharing)
+
+### Teaching assistant
+`2019`
+__Senior chemical engineering lab__
+- University of Minnesota
+
+`2018`
+__Biochemical engineering__
+- University of Minnesota
+
+`2016`
+__Transport phenomena__
+- University of Minnesota
 
 ## Awards
 
@@ -182,7 +214,8 @@ __Eric Clement__
 __Teresa Lopez-Leon__
 - Postdoc advisor, <a href="Teresa.Lopez-Leon@espci.fr">teresa.Lopez-Leon@espci.fr</a>
 
-
+__Sunghwan Jung__
+- Postdoc advisor, <a href="sj737@cornell.edu">sj737@cornell.edu</a>
 
 <!-- ### Footer
 
