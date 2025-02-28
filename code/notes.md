@@ -5,7 +5,7 @@ title: Code notes
 
 ## Python
 
-1. Show all available font families in Python:
+1. **Available fonts.** Show all available font families in Python:
  
     ```python
     import matplotlib.font_manager
@@ -21,14 +21,15 @@ title: Code notes
     ```python
     sorted([f.name for f in matplotlib.font_manager.fontManager.ttflist])
     ```
-1. Get immediate subfolders (next function):
+2. **Get immediate subfolders.**
+   
     ```python
     import os
     folder = '~'
     sfL = next(os.walk(folder))[1]
     ```
 
-2. Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:
+3. **Interpolated bitmap.** Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:
     ```python
     import matplotlib.pyplot as plt
     plt.imshow(data, interpolation='spline16')
@@ -40,7 +41,7 @@ title: Code notes
     This is the image where I compare original, pdf and svg savefig outcome:
     [compare](/assets/images/2022/01/svg-pdf-compare.pdf)
 
-3. Matplotlib colormap: mpl has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
+4. **Matplotlib colormap.** `matplotlib` has a convenient way of creating discrete colormap for curves. [more info](https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html)
 
     ```python
     from matplotlib import cm
@@ -62,7 +63,7 @@ title: Code notes
 
     ![set3 cmap](/assets/images/2022/01/set3-cmap.png)
 
-4. Convert date object to formatted string: ([reference](https://docs.python.org/3/library/datetime.html))
+5. Convert date object to formatted string: ([reference](https://docs.python.org/3/library/datetime.html))
 
     ```python
     Timestamp('2022-01-17 00:00:00') -> '01172022'
@@ -72,18 +73,16 @@ title: Code notes
     date.strftime("%m%d%Y")
     ```
 
-5. To "stuff" a `pandas.DataFrame` with `np.nan`: when calculating MSD from particle trajectories, we want to have `frame` column to be continuous integer array. However, sometimes in the data, we have `frame = [0, 50, 100, ...]`. To fill all the frames without position data with `np.nan`, we can set `frame` as the index of the DataFrame, then reindex the DataFrame with continuous integers `np.arange(...)`. This creates a trajectory data with continuous frames:
+6. **To "stuff" a `pandas.DataFrame` with `np.nan`.** When calculating MSD from particle trajectories, we want to have `frame` column to be continuous integer array. However, sometimes in the data, we have `frame = [0, 50, 100, ...]`. To fill all the frames without position data with `np.nan`, we can set `frame` as the index of the DataFrame, then reindex the DataFrame with continuous integers `np.arange(...)`. This creates a trajectory data with continuous frames:
 
     ```python
     pos = traj.set_index('frame')[pos_columns]
     pos = pos.reindex(np.arange(pos.index[0], 1 + pos.index[-1]))
     ```
 
-    NOTE: I found this method in the `trackpy` function `_msd_gaps()`. This has led to a problem when I try to `plt.plot`
-    the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the
-    plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
+    NOTE: I found this method in the `trackpy` function `_msd_gaps()`. This has led to a problem when I try to `plt.plot` the MSD data, because there are many `np.nan` in the data, and `plt.plot` cannot show a continuous line. To make the    plot out of the MSD data stuffed with `np.nan`, we need to `dropna()` first.
 
-6. A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
+7. **Good font.** A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
 
     ```
     import matplotlib
@@ -93,9 +92,33 @@ title: Code notes
 
     Note that both the regular text and the math text need to be configured. 
 
-## Linux
+8. **Download test images from cloud.** In image processing code demos, it is neater to download test images when needed, compared to saving the test images in the same code repo. This can be done using the `requests` module. The following code snippet downloads my Google user profile picture to a python variable, ready for test image processing tools. 
 
-1. Disk activity monitor: `sudo iotop`
+    ```python
+    import requests
+    from io import BytesIO
+    from skimage.io import imread
+    url = r"https://lh3.googleusercontent.com/ogw/AF2bZyjdOibobKWEbcNNmziQ6CB2ilMepItpdY6Ila0R6d09Bjc=s32-c-mo"
+    response = requests.get(url, stream=True)
+    img = imread(BytesIO(response.content))
+    ```
+
+    Google Drive is a good place to save test images. However, when I tried to use the share link as the `url` for accessing the images in Python, it did not work. It turned out that the direct link to the actual images is a little different from the share link. Fortunately, we can convert a share link to a direct link easily. Here is how:
+    
+    A share link looks like this:
+    ```
+    https://drive.google.com/file/d/1LFRt5ozQjJ_WVrWBoPQOFVNl5ZWb8ytP/view?usp=drive_link
+    ```
+
+    the part after `d/` and before `/view` is the file identifier. To construct a direct link, we can put this file identifier to the following format:
+    ```
+    https://drive.google.com/uc?export=download&id=[file identifier]
+    ```
+
+9. **Manage PyPI project.** 
+   a. For a step-by-step instruction to create a package from scratch, refer to the [Packaging Python Projects tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+   b. Token: a token is required when uploading new packages to PyPI. To generate a new token, log in PyPI, go to account settings, scroll down to API tokens, add API token. Put this token in `~/.pypirc` file to give the local machine permission to upload. 
+   c. Documentation: Refer to [my separate note](https://docs.google.com/document/d/1sNDHH9UfD_wMfBXWdngnzknsCyTdGqPLBM2WBwILZ7U/edit?usp=sharing).
 
 ## Git (GitHub)
 
@@ -111,8 +134,7 @@ git add .
 ```
 This adds everything back, but according to the updated `.gitignore`. Commit this change and it's done.
 
-2. Command line authentication: starting from summer 2021, GitHub no longer allow username and password authentication
-from command line interface. Token authentication becomes required for git operations ([original blog](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)). With this requirement implemented, when I try to clone my repositories using `git clone` on a new, unauthenticated computer, access is denied.
+1. Command line authentication: starting from summer 2021, GitHub no longer allow username and password authentication from command line interface. Token authentication becomes required for git operations ([original blog](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/)). With this requirement implemented, when I try to clone my repositories using `git clone` on a new, unauthenticated computer, access is denied.
 
     ![denied access](/assets/images/2022/01/denied-access.png)
 
