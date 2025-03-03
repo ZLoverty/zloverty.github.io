@@ -79,7 +79,7 @@ __Polymer Material and Engineering, Tsinghua University__
 
 `2024`
 __Active Bacterial Baths in Droplets__
-- Cristian Villalobos C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. 
+- Cristian Villalobos C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
 
 `2024`
 __Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
