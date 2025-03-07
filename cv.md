@@ -9,6 +9,7 @@ prepath: /assets/presentations/
 <div id="webaddress">
     <a href="zhengyang.liu@espci.fr">zl948@cornell.edu</a> | 
     <a href="zhengyang.liu@espci.fr">liuzy19911112@gmail.com</a> | 
+    <a href="https://scholar.google.com/citations?user=V-TRm_4AAAAJ&hl=en">Google Scholar</a> |
     <a href="https://zloverty.github.io/">My personal page</a> 
 </div>
 
