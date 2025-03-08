@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Porous media
+title: Active nematics
 ---
 
-### Overview
+# Overview
 
 We study active nematics under confinement.
