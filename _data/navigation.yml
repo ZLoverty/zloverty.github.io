@@ -1,12 +1,12 @@
-- name: Particle tracking
-  link: /particle_tracking.html
-- name: Code
-  link: /code.html
+# - name: Particle tracking
+#   link: /particle_tracking.html
+- name: 中文
+  link: /zh.html
 - name: Blog
   link: /blog.html
+- name: Code
+  link: /code.html
 - name: Research
   link: /research.html
 - name: CV
   link: /cv.html
-- name: 中文
-  link: /zh.html
