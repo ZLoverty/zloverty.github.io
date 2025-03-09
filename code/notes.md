@@ -84,7 +84,7 @@ title: Code notes
 
 7. **Good font.** A good serif font for plot labels: `stix`. To apply to all `matplotlib` text:
 
-    ```
+    ```python
     import matplotlib
     matplotlib.rcParams["font.family"] = "STIXGeneral"
     matplotlib.rcParams['mathtext.fontset'] = 'stix'
@@ -116,9 +116,9 @@ title: Code notes
     ```
 
 9. **Manage PyPI project.** 
-   a. For a step-by-step instruction to create a package from scratch, refer to the [Packaging Python Projects tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
-   b. Token: a token is required when uploading new packages to PyPI. To generate a new token, log in PyPI, go to account settings, scroll down to API tokens, add API token. Put this token in `~/.pypirc` file to give the local machine permission to upload. 
-   c. Documentation: Refer to [my separate note](https://docs.google.com/document/d/1sNDHH9UfD_wMfBXWdngnzknsCyTdGqPLBM2WBwILZ7U/edit?usp=sharing).
+   1. For a step-by-step instruction to create a package from scratch, refer to the [Packaging Python Projects tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+   2. Token: a token is required when uploading new packages to PyPI. To generate a new token, log in PyPI, go to account settings, scroll down to API tokens, add API token. Put this token in `~/.pypirc` file to give the local machine permission to upload. 
+   3. Documentation: Refer to [my separate note](https://docs.google.com/document/d/1sNDHH9UfD_wMfBXWdngnzknsCyTdGqPLBM2WBwILZ7U/edit?usp=sharing).
 
 ## Git (GitHub)
 
