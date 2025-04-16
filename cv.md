@@ -84,7 +84,7 @@ __Active Bacterial Baths in Droplets__
 
 `2024`
 __Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
-- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. 
+- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. [arXiv](https://arxiv.org/abs/2504.08092)
 
 ### Journals
 
