@@ -77,10 +77,13 @@ __Polymer Material and Engineering, Tsinghua University__
 <!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
 
 ### Submitted
+`2025`
+__Vortex transition and thermal mixing by pitching a perforated flexible panel__
+- Fu Y, _Liu Z_, Tandon S, Gelfand J, Jung S. [arXiv](https://www.arxiv.org/abs/2504.03987)
 
 `2024`
 __Active Bacterial Baths in Droplets__
-- Cristian Villalobos C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
+- Villalobos Cristian C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
 
 `2024`
 __Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
@@ -186,6 +189,9 @@ __3D Drawing with Blender__
 - Cornell University [slides](https://docs.google.com/presentation/d/1fb9z60vj05tX2_QHgaUssJubWhJRR593XBDpax1Yx6Q/edit?usp=sharing)
 
 ### Teaching assistant
+`2024` __Biorobotics__
+- Cornell University
+
 `2019`
 __Senior chemical engineering lab__
 - University of Minnesota
@@ -211,6 +217,9 @@ __Xiang Cheng__
 
 __Eric Clement__
 - Postdoc advisor, <a href="eric.clement@upmc.fr">eric.clement@upmc.fr</a>
+
+__Anke Lindner__
+- Postdoc advisor, <a href="eric.clement@upmc.fr">anke.lindner@espci.fr</a>
 
 __Teresa Lopez-Leon__
 - Postdoc advisor, <a href="Teresa.Lopez-Leon@espci.fr">teresa.Lopez-Leon@espci.fr</a>
