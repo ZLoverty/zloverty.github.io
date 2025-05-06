@@ -85,11 +85,13 @@ __Vortex transition and thermal mixing by pitching a perforated flexible panel__
 __Active Bacterial Baths in Droplets__
 - Villalobos Cristian C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
 
-`2024`
-__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
-- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. [arXiv](https://arxiv.org/abs/2504.08092)
+
 
 ### Journals
+
+`2025`
+__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
+- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. Accepted by *PRFluids* [arXiv](https://arxiv.org/abs/2504.08092)
 
 `2023`
 __Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping__
@@ -97,18 +99,18 @@ __Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus P
 
 `2022`
 __Crack patterns of drying dense bacterial suspensions__
-- Ma X, _Liu Z_, Zeng W, Lin T, Tian X, Cheng X. [Soft Matter. 18(28):5239–5248](https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm00012a)
+- Ma X, _Liu Z_, Zeng W, Lin T, Tian X, Cheng X. [Soft Matter. 18(28):5239–5248](https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm00012a) [arXiv](https://arxiv.org/abs/2201.00441)
 
 __Tuning the rheology and microstructure of particle-laden fluid interfaces with Janus particles__
-- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246)
+- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246) [arXiv](https://arxiv.org/abs/2202.02288)
 
 `2021`
 
 __Density fluctuations and energy spectra of 3D bacterial suspensions__
-- _Liu Z_, Zeng W, Ma X, Cheng X. [Soft Matter. 17(48):10806–10817](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm01183a)
+- _Liu Z_, Zeng W, Ma X, Cheng X. [Soft Matter. 17(48):10806–10817](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm01183a) [arXiv](https://arxiv.org/abs/2012.13680)
 
 __Imaging the emergence of bacterial turbulence: Phase diagram and transition kinetics__
-- Peng Y, _Liu Z_, Cheng X.  [Sci. Adv. 7(17):eabd1240](https://www.science.org/doi/10.1126/sciadv.abd1240)
+- Peng Y, _Liu Z_, Cheng X.  [Sci. Adv. 7(17):eabd1240](https://www.science.org/doi/10.1126/sciadv.abd1240) [arXiv](https://arxiv.org/abs/2003.12399)
 
 __Miniature magnetic rod interfacial stress rheometer for general-purpose microscopes__
 - Qiao Y, Fan C, _Liu Z_, Medina D, Keim NC, Cheng X.  [Journal of Rheology. 65(6):1103–1110](https://sor.scitation.org/doi/10.1122/8.0000263)
@@ -116,12 +118,12 @@ __Miniature magnetic rod interfacial stress rheometer for general-purpose micros
 `2019`
 
 __Rheology of bacterial suspensions under confinement__
-- _Liu Z_, Zhang K, Cheng X. [Rheol Acta. 58(8):439–451](https://link.springer.com/article/10.1007/s00397-019-01155-x)
+- _Liu Z_, Zhang K, Cheng X. [Rheol Acta. 58(8):439–451](https://link.springer.com/article/10.1007/s00397-019-01155-x) [arXiv](https://arxiv.org/abs/1906.04054)
 
 `2016`
 
 __Dynamics of ellipsoidal tracers in swimming algal suspensions__
-- Yang O\*, Peng Y\*, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601)
+- Yang O\*, Peng Y\*, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601) [arXiv](https://arxiv.org/abs/1610.01641)
 
 `2014`
 
