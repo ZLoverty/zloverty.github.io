@@ -2,14 +2,14 @@
   link: /code/notes.html
   img_link: /assets/images/icons/notes.png
 - name: myimagelib
-  link: https://zloverty.github.io/mylib/myImageLib.html
+  link: /mylib/myImageLib.html
   img_link: /assets/images/icons/myImageLib.png 
 - name: manTrack
-  link: https://zloverty.github.io/manTrack
+  link: /manTrack
   img_link: /assets/images/icons/libraries.png
 - name: bwtrack
-  link: https://zloverty.github.io/bwtrack
+  link: /bwtrack
   img_link: /assets/images/icons/libraries.png
 - name: script
-  link: https://zloverty.github.io/script
+  link: /script
   img_link: /assets/images/icons/script.png 
