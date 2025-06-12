@@ -77,7 +77,11 @@ __Polymer Material and Engineering, Tsinghua University__
 <!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
 
 ### Submitted
+
 `2025`
+__Acoustic-Driven Surface Cleaning with Millimeter-Sized Bubbles at Translational Resonance__
+- Lin Y, _Liu Z_, Jung S. [arXiv](https://arxiv.org/abs/2506.06581)
+
 __Vortex transition and thermal mixing by pitching a perforated flexible panel__
 - Fu Y, _Liu Z_, Tandon S, Gelfand J, Jung S. [arXiv](https://www.arxiv.org/abs/2504.03987)
 

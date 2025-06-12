@@ -4,7 +4,7 @@ title: 刘政阳
 prepath: /assets/presentations/
 ---
 
-# 刘政阳 简历
+# 刘政阳，博士
 
 <div id="webaddress">
 <a href="liuzy19911112@gmail.com">liuzy19911112@gmail.com</a>
@@ -13,9 +13,51 @@ prepath: /assets/presentations/
 
 ## 目前职位
 
-博士后研究员，Gulliver 实验室，巴黎高等物理化工学院
+博士后研究员，生物与环境工程系，康奈尔大学
 
+## 关键技能
 
+__流变学，流体力学__
+- 博士研究课题，有使用自制流变仪的研究经历。
+
+__化工工艺，高分子材料__
+- 本科及博士专业，学习过传递现象原理、流体力学、高分子物理、高分子化学、高分子成型加工、生物化工等多门专业课程，理论基础扎实。
+
+__微流体和微加工__
+- 博士研究中常自制微流体管道研究流体性质，熟悉微流体管道设计及CAD软件的使用，熟悉光刻和 3D 打印机的使用。
+
+<!-- __微生物学，基因编辑__
+- 博士研究中为实现用光控制细菌游动，熟悉基因编辑技术和基因数据库的使用。 -->
+
+__图像处理，颗粒追踪__
+- 博士研究中的核心技术，精通 Python 和其科学计算包如 numpy，scipy，scikit-image，opencv，pandas，matplotlib 的使用。
+
+__仿真建模__
+- 本科研究中做过以颗粒为基础的高分子材料仿真（BD，DPD），博士后研究中使用了连续相流体仿真。
+
+<!-- __人工智能__
+- 博士期间选修过人工智能课程，做过一个 [简单的项目实践](https://github.com/ZLoverty/Python/tree/master/ForFun/Reversi-AI) ，也在 coursera 平台上学习了机器学习、深度学习和神经网络的基础理论，从零搭建过 [简单的神经网络](https://github.com/ZLoverty/Python/blob/master/ForFun/Machine_learning/NN-1HL.ipynb) ，对 TensorFlow 框架有基本了解。 -->
+
+__编程语言__
+
+精通 Python、Matlab，对 C、JAVA、Fortran、C++ 也有一定了解和使用经验。
+
+## 工作经历
+
+`2024 至今`
+__生物与环境工程系，康奈尔大学__
+
+- 博士后研究院，由 Sunghwan Jung 教授指导
+
+`2022-2023`
+__Gulliver实验室，巴黎高等物理化工学院__
+
+- 博士后研究员, 由 Teresa Lopez-Leon 教授指导
+
+`2021-2022`
+__异介质物理与力学实验室 (PMMH), 巴黎高等物理化工学院__
+
+- 博士后研究员, 由 Eric Clement, Anke Lindner 和 Teresa Lopez-Leon 教授指导
 
 ## 教育经历
 
@@ -30,42 +72,49 @@ __高分子材料与工程专业，清华大学__
 - 学士，由燕立唐教授指导
 
 
-## 工作经历
-
-`2022 至今`
-__Gulliver实验室，巴黎高等物理化工学院__
-
-- 博士后研究员, 由 Teresa Lopez-Leon 教授指导
-
-`2021-2022`
-__异介质物理与力学实验室 (PMMH), 巴黎高等物理化工学院__
-
-- 博士后研究员, 由 Eric Clement, Anke Lindner 和 Teresa Lopez-Leon 教授指导
-
-
-
-
 
 ## 发表成果
 
 <!-- A list is also available [online](https://scholar.google.com/citations?user=3j7-27AAAAAJ&hl=en) -->
 
+### 正在投稿
+
+`2025`
+__Acoustic-Driven Surface Cleaning with Millimeter-Sized Bubbles at Translational Resonance__
+- Lin Y, _Liu Z_, Jung S. [arXiv](https://arxiv.org/abs/2506.06581)
+
+__Vortex transition and thermal mixing by pitching a perforated flexible panel__
+- Fu Y, _Liu Z_, Tandon S, Gelfand J, Jung S. [arXiv](https://www.arxiv.org/abs/2504.03987)
+
+
+`2024`
+__Active Bacterial Baths in Droplets__
+- Villalobos Cristian C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
+
 ### 期刊文章
+
+`2025`
+__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
+- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. Accepted by *PRFluids* [arXiv](https://arxiv.org/abs/2504.08092)
+
+`2023`
+__Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping__
+- Qiao Y, _Liu Z_, Ma X, Keim NC, Cheng X. [Langmuir. 39(34):12032–12040](https://pubs.acs.org/doi/full/10.1021/acs.langmuir.3c01085)
 
 `2022`
 __Crack patterns of drying dense bacterial suspensions__
-- Ma X, _Liu Z_, Zeng W, Lin T, Tian X, Cheng X. [Soft Matter. 18(28):5239–5248](https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm00012a)
+- Ma X, _Liu Z_, Zeng W, Lin T, Tian X, Cheng X. [Soft Matter. 18(28):5239–5248](https://pubs.rsc.org/en/content/articlelanding/2022/sm/d2sm00012a) [arXiv](https://arxiv.org/abs/2201.00441)
 
 __Tuning the rheology and microstructure of particle-laden fluid interfaces with Janus particles__
-- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. 2022.  [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246)
+- Qiao Y, Ma X, _Liu Z_, Manno MA, Keim NC, Cheng X. 2022.  [Journal of Colloid and Interface Science. 618:241–247](https://www.sciencedirect.com/science/article/abs/pii/S0021979722004246) [arXiv](https://arxiv.org/abs/2202.02288)
 
 `2021`
 
 __Density fluctuations and energy spectra of 3D bacterial suspensions__
-- _Liu Z_, Zeng W, Ma X, Cheng X. [Soft Matter. 17(48):10806–10817](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm01183a)
+- _Liu Z_, Zeng W, Ma X, Cheng X. [Soft Matter. 17(48):10806–10817](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm01183a) [arXiv](https://arxiv.org/abs/2012.13680)
 
 __Imaging the emergence of bacterial turbulence: Phase diagram and transition kinetics__
-- Peng Y, _Liu Z_, Cheng X.  [Sci. Adv. 7(17):eabd1240](https://www.science.org/doi/10.1126/sciadv.abd1240)
+- Peng Y, _Liu Z_, Cheng X.  [Sci. Adv. 7(17):eabd1240](https://www.science.org/doi/10.1126/sciadv.abd1240) [arXiv](https://arxiv.org/abs/2003.12399)
 
 __Miniature magnetic rod interfacial stress rheometer for general-purpose microscopes__
 - Qiao Y, Fan C, _Liu Z_, Medina D, Keim NC, Cheng X.  [Journal of Rheology. 65(6):1103–1110](https://sor.scitation.org/doi/10.1122/8.0000263)
@@ -73,12 +122,12 @@ __Miniature magnetic rod interfacial stress rheometer for general-purpose micros
 `2019`
 
 __Rheology of bacterial suspensions under confinement__
-- _Liu Z_, Zhang K, Cheng X. [Rheol Acta. 58(8):439–451](https://link.springer.com/article/10.1007/s00397-019-01155-x)
+- _Liu Z_, Zhang K, Cheng X. [Rheol Acta. 58(8):439–451](https://link.springer.com/article/10.1007/s00397-019-01155-x) [arXiv](https://arxiv.org/abs/1906.04054)
 
 `2016`
 
 __Dynamics of ellipsoidal tracers in swimming algal suspensions__
-- Yang O, Peng Y, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601)
+- Yang O, Peng Y, _Liu Z_, Tang C, Xu X, Cheng X.  [Phys. Rev. E. 94(4):042601](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.94.042601) [arXiv](https://arxiv.org/abs/1610.01641)
 
 `2014`
 
@@ -97,6 +146,10 @@ __Novel Properties and Emergent Collective Phenomena of Active Fluids__
 - _Liu Z_. [博士论文](https://conservancy.umn.edu/handle/11299/219307)
 
 ### 会议展示
+
+`2024`
+__Fringe around a beet slice__
+- American Physical Society Division of Fluid Dynamics (APS-DFD), Salt Lake City. [Oral presentation](https://docs.google.com/presentation/d/1yhSAJb_s5hPg7i-JsvLw4tsoSxmCTT8icr6oRAvLXgY/edit?usp=sharing)
 
 `2023`
 __Active Nematics in Channel Networks__ 
@@ -133,35 +186,7 @@ __Viscosity of confined bacterial suspensions__
 __Diffusion, Viscosity and Collective Motions in Bacterial Suspensions__
 - Georgetown Active Matter Summer School, Washington DC
 
-## 专精领域
 
-__生物物理，活性物质__
-- 博士研究课题，对领域内的实验和理论都有深入了解。
-
-__流变学，流体力学__
-- 博士研究课题，有使用自制流变仪的研究经历。
-
-__化工工艺，高分子材料__
-- 本科及博士专业，学习过传递现象原理、流体力学、高分子物理、高分子化学、高分子成型加工、生物化工等多门专业课程。
-
-__微流体和微加工__
-- 博士研究中常自制微流体管道研究流体性质，熟悉微流体管道设计及CAD软件的使用，熟悉光刻和 3D 打印机的使用。
-
-__微生物学，基因编辑__
-- 博士研究中为实现用光控制细菌游动，熟悉基因编辑技术和基因数据库的使用。
-
-__图像处理，颗粒追踪__
-- 博士研究中的核心技术，精通 Python 和其科学计算包如 numpy，scipy，scikit-image，opencv，pandas，matplotlib 的使用。
-
-__仿真建模__
-- 本科研究中做过以颗粒为基础的流体仿真（BD，DPD），博士后研究中也接触了连续相流体仿真。
-
-__人工智能__
-- 博士期间选修过人工智能课程，做过一个 [简单的项目实践](https://github.com/ZLoverty/Python/tree/master/ForFun/Reversi-AI) ，也在 coursera 平台上学习了机器学习、深度学习和神经网络的基础理论，从零搭建过 [简单的神经网络](https://github.com/ZLoverty/Python/blob/master/ForFun/Machine_learning/NN-1HL.ipynb) ，对 TensorFlow 框架有基本了解。
-
-__编程语言__
-
-精通 Python、Matlab，对 C、JAVA、Fortran、C++ 也有一定了解和使用经验。
 
 ## 语言能力
 
@@ -173,13 +198,13 @@ __编程语言__
 __Frank & Janis Bates 研究奖学金__
 - 明尼苏达大学
 
-## 业余爱好
+<!-- ## 业余爱好
 
 __制作个人网站__
 - [个人网站](https://zloverty.github.io/) 像是网络中的自家小院，可以凭自己喜好随意装饰摆放。最初制作是为了方便查看自己代码的 [文档](https://zloverty.github.io/code/libraries.html) 和 [笔记](https://zloverty.github.io/code/notes.html) ，属于工作相关，现在偶尔也会写写 [生活随笔](https://zloverty.github.io/blog.html) 。
 
 __写点兴趣代码__
-- 用代码解决生活问题是件很有成就感的事，在这方面我有些有趣的尝试，比如 [制作电子相册](https://github.com/ZLoverty/Python/blob/master/ForFun/Tools/collage_maker.ipynb) 和 [日期可视化](https://github.com/ZLoverty/Period-visualizer)。
+- 用代码解决生活问题是件很有成就感的事，在这方面我有些有趣的尝试，比如 [制作电子相册](https://github.com/ZLoverty/Python/blob/master/ForFun/Tools/collage_maker.ipynb) 和 [日期可视化](https://github.com/ZLoverty/Period-visualizer)。 -->
 
 <!-- ### Footer
 
