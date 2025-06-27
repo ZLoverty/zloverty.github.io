@@ -9,7 +9,7 @@ title: Zhengyang Liu
 
 Highly accomplished Postdoctoral Associate with expertise in polymer physics, soft matter and fluid mechanics, and a strong record of original research (14 publications in prestigious scientific journals like *Nano Letters* [IF~11] and *Science Advances* [IF~12]). Seeking a materials research / development position to leverage my research skills.
 
-## Key Skills
+## Transferable Skills
 
 * Independently led research and development projects and authored technical documentation
 * Laboratory skills: Modification and characterization of polymer materials (rheology, microscopic imaging, etc.), micro/nanofabrication
