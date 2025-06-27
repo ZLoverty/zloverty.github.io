@@ -17,31 +17,9 @@ prepath: /assets/presentations/
 
 Postdoctoral associate at the Jung Lab, Department of Biological and Environmental Engineering, Cornell University
 
-<!-- ### Research experience
-
-__Biological systems: bacteria and algae__
-- I use microscopy, rheometry and microfluidic devices to study the transport properties, locomotion and collective motion of biological systems in controlled environments. Specifically, I have uncovered the confinement effect on the rheology of bacterial suspensions, the enhanced diffusivity in algal suspensions, and have characterized the kinetic pathways into collective motion and the flow-energy coupling in active turbulence. Currently, I'm studying the bacterial dynamics in curved spaces and the locomotion of bacteria in porous media.
-
-__Active matter logic: microtubule-kinesin at bifurcation__
-- I'm currently studying the behavior of microtubule-kinesin active matter system in microchannels with branches, as a prerequisite to achieve active matter logic. 
-
-### Research interests
-
-__Collective motion in complex environment__
-- Some of my preliminary experiments show that bacteria exhibit oscillatory-like collective motion in spherical emulsion droplets. Similar observation in active nematic droplet suggests that topological constraints rectify the chaotic turbulence into a more regular form. Uncovering the interplay between confinement, topology and collective motion can help us understand real biological processes such as infection. 
-
-__Active polars and nematics in experiment__
-- In theoretical models, active particles can be either polars or nematics. In experiment, the categorization is not sufficient. For example, _E. coli_ bacteria are considered as polars because they always swim to the direction of their heads in dilute suspensions. However, in collective motion, they can also exhibit head-to-tail motion, and result in active turbulence that resembles their nematic counterpart. I'm interested in revealing how the polar-nematic transition happens and the new phases that could result from this transition.
-
-__Biofilm development characterization__
-- Understanding biofilm is critical to pathogen control, bioremediation of oil spill among other applications. 
-A remarkable feature of biofilm is the diversity of morphology and chemical composition. 
-I'm interested in how external physical parameters, such as flow and substrate properties, influence the biofilm development process.
-Such knowledge can help us understand how bacteria provide structure to the extracellular matrix and benefit from extracellular reactions. -->
-
 ### Specialized in 
 
-fluid mechanics, active matter, microfluidic design & fabrication, rheology, microscopy, molecular biology, image analysis 
+polymer physics, fluid mechanics, active matter, microfluidic design & fabrication, rheology, microscopy, molecular biology, image analysis 
 
 ## Appointments
 
@@ -90,12 +68,11 @@ __Active Bacterial Baths in Droplets__
 - Villalobos Cristian C\*, _Liu Z\*_, Ramos G, Goral M, Linder A, Lopez-León T, Clément E,  Soto R,  Cordero M L. [arXiv](https://arxiv.org/abs/2501.14088)
 
 
-
 ### Journals
 
 `2025`
-__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__
-- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. Accepted by *PRFluids* [arXiv](https://arxiv.org/abs/2504.08092)
+__Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film__ (Editors' Suggestion)
+- _Liu Z_, Kumar K, Fu Y, Maitra A, Chen J, Jung S. [Phys. Rev. Fluids 10, 064004](https://doi.org/10.1103/PhysRevFluids.10.064004) [arXiv](https://arxiv.org/abs/2504.08092)
 
 `2023`
 __Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping__
@@ -110,7 +87,7 @@ __Tuning the rheology and microstructure of particle-laden fluid interfaces with
 
 `2021`
 
-__Density fluctuations and energy spectra of 3D bacterial suspensions__
+__Density fluctuations and energy spectra of 3D bacterial suspensions__ (Cover)
 - _Liu Z_, Zeng W, Ma X, Cheng X. [Soft Matter. 17(48):10806–10817](https://pubs.rsc.org/en/content/articlelanding/2021/sm/d1sm01183a) [arXiv](https://arxiv.org/abs/2012.13680)
 
 __Imaging the emergence of bacterial turbulence: Phase diagram and transition kinetics__
