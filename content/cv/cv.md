@@ -11,7 +11,7 @@ info:
 
 ## SUMMARY
 
-Highly accomplished Postdoctoral Associate with expertise in soft matter physics and fluid mechanics, and a strong record of original research (15 publications, H-index 7). Seeking a material research and development position to leverage my extensive _experimental_ and _computational_ research skills.
+Highly accomplished Postdoctoral Associate with expertise in _experimental_ and _computational_ soft matter physics and fluid mechanics. Have a strong record of original research (15 publications including top journals like *Nano Letters*, *Science Advances* and *PNAS*, H-index 7), and a strong commitment to teaching and mentorship (mentored 10+ research students). Seeking a material research and development position / faculty position to leverage my research and teaching skills.
 
 ## APPOINTMENTS
 
@@ -89,14 +89,14 @@ __Research Assistant | Soft Matter Simulation Laboratory, THU__ {{< right-align 
 
 ## PUBLICATIONS
 
+- Villalobos C.\*, __Liu Z.__\*, Ramos G., Goral M., Linder A., Lopez-León T., Clément E.,  Soto R. & Cordero M.-L.(2024) Active Bacterial Baths in Droplets. Accepted by __*PNAS*__.
 - Lin Y.\*, __Liu Z.__\* & Jung S. (2025)  Acoustic-Driven Surface Cleaning with Millimeter-Sized Bubbles at Translational Resonance. __*preprint*__.
 - Fu Y., __Liu Z.__, Tandon S., Gelfand J. & Jung S. (2025)  Vortex transition and thermal mixing by pitching a perforated flexible panel. __*preprint*__.
-- __Liu Z.__,  Fu Y., Maitra A., Kumar K., Chen J. & Jung S. (2025) Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film. __*Physical Review Fluids*__ 10, 064004.
-- Villalobos C.\*, __Liu Z.__\*, Ramos G., Goral M., Linder A., Lopez-León T., Clément E.,  Soto R. & Cordero M.-L.(2024) Active Bacterial Baths in Droplets. __*preprint*__.
+- __Liu Z.__,  Fu Y., Maitra A., Kumar K., Chen J. & Jung S. (2025) Fringe around a Beet Slice: Wetting-induced Dimple in a Thin Liquid Film. __*Physical Review Fluids*__ 10, 064004. (Editors' Suggestion)
 - Qiao Y., __Liu Z.__, Ma X., Keim N. C. & Cheng X. (2023) Heterogeneous Dynamics of Sheared Particle-Laden Fluid Interfaces with Janus Particle Doping. __*Langmuir*__ 39(34):12032–12040.
 - Ma X., __Liu Z.__, Zeng W., Lin T., Tian X. & Cheng X.(2022) Crack patterns of drying dense bacterial suspensions __*Soft Matter*__ 18(28):5239–5248.
 - Qiao Y., Ma X., __Liu Z.__, Manno MA, Keim N. C. & Cheng X.(2022) Tuning the rheology and microstructure of particle-laden fluid interfaces with Janus particles __*Journal of Colloid and Interface Science*__ 618:241–247.
-- __Liu Z.__, Zeng W., Ma X. & Cheng X. (2021) Density fluctuations and energy spectra of 3D bacterial suspensions. __*Soft Matter*__ 17(48):10806–10817.
+- __Liu Z.__, Zeng W., Ma X. & Cheng X. (2021) Density fluctuations and energy spectra of 3D bacterial suspensions. __*Soft Matter*__ 17(48):10806–10817. (Cover)
 - Peng Y., __Liu Z.__ & Cheng X. (2021) Imaging the emergence of bacterial turbulence: Phase diagram and transition kinetics. __*Science Advances*__ 7(17):eabd1240.
 - Qiao Y., Fan C., __Liu Z.__, Medina D., Keim N. C. & Cheng X. (2021) Miniature magnetic rod interfacial stress rheometer for general-purpose microscopes. __*Journal of Rheology*__ 65(6):1103–1110.
 - __Liu Z.__. (2021)  Novel Properties and Emergent Collective Phenomena of Active Fluids. __PhD thesis__
