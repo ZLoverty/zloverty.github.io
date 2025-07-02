@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title> {{ .Title }} </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
+<script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
+<style>
+  body {
+    line-height: 1.15;
+    margin: auto;
+    padding: 3px;
+    max-width: 1024px;
+    display: none;
+    font-family: "Nimbus Roman", serif;
+  }
+
+  h1 {
+    font-size: 250%;
+    padding: 10px;
+    /* border: 1px solid lightgrey; */
+    /* BACKGROUND: #f0f0f0; */
+    font-family: "Source Han Serif CN,思源宋体 CN", "Nimbus Roman",  serif;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    border-bottom: 1px solid grey;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+ ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+</style>
+
+<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
+<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
+
+<!-- <img style="float:right;border-radius:50%;width:50px;padding:10px" src="{{ .Params.photo }}" /> -->
+<h1> {{ .Params.header }}</h1>
+<div style="text-align:center;padding:0px">
+  {{ range .Params.info }}<span style="margin-right:15px">{{ .name }}: {{ .value }}</span>{{ end }}
+</div>
+
+{{ .Content }}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Liu</title>
+    <link>http://localhost:44985/tags/research/</link>
+    <description>Recent content in Research on Liu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:44985/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2020-11-11-energy-spectrum-2-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2020-11-11-energy-spectrum-2-methods/</guid>
+      <description>&lt;p&gt;We have two methods for computing energy spectrum from spatial velocity data. In this post we should how they are related and point out quantitative details when converting between the results from these methods.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-two-methods&#34;&gt;1 Two methods&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-fftreal-real-part-of-standard-fft&#34;&gt;1.1 FFTreal: real part of standard fft&lt;/h3&gt;&#xA;&lt;p&gt;Energy spectrum function $$E(k)$$ is defined as&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;E(k) = \oint \frac{1}{2} \Phi_{ii}(k)d S(k)&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;where $$\Phi_{ii}(k)$$ is the diagonal term of velocity spectrum tensor, defined as&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

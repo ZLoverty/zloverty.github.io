@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title> Energy spectrum 2 methods </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h1> Energy spectrum 2 methods </h1>
+  <div id="post-date">2020-11-20</div>
+  <p>We have two methods for computing energy spectrum from spatial velocity data. In this post we should how they are related and point out quantitative details when converting between the results from these methods.</p>
+<h2 id="1-two-methods">1 Two methods</h2>
+<h3 id="11-fftreal-real-part-of-standard-fft">1.1 FFTreal: real part of standard fft</h3>
+<p>Energy spectrum function $$E(k)$$ is defined as</p>
+<p>$$
+E(k) = \oint \frac{1}{2} \Phi_{ii}(k)d S(k)
+$$</p>
+<p>where $$\Phi_{ii}(k)$$ is the diagonal term of velocity spectrum tensor, defined as</p>
+<p>$$
+\Phi_{ij}(k) = \iiint\limits_{-\infty}^{\infty} R_{ij}(r)e^{-ik\cdot r} dr
+$$</p>
+<p>here $$r$$ is position vector (x, y, z) and $$R_{ij}$$ is spatial velocity correlation of $$u_i$$, $$u_j$$ and $$u_k$$.</p>
+<p>It is not feasible to measure the full 3 dimensional flow simultaneous, so take a step back and measure $$R_{11}(x, y)$$, and thus $$\Phi_{11}(k_x, k_y)$$.</p>
+<p>One dimensional spectra $$E_{ij}(k_1)$$ are defined to be twice the one dimensional Fourier transform of $$R_{ij}(e_1r_1)$$:</p>
+<p>$$
+E_{ij}(k_1) \equiv \frac{1}{\pi}\int^\infty_{-\infty} R_{ij}(e_1r_1)e^{-ik_1r_1}d r_1
+$$</p>
+<p>Since the flow in the textbook is measured by hot wire, which is naturally 1D, whereas PIV is naturally 2D, I adapt the equation above to a 2D velocity correlation function version:</p>
+<p>$$
+E_{11}(k_x, k_y) \equiv \frac{1}{\pi}\int^\infty_{-\infty} R_{11}(x, y)e^{-ik\cdot r}d^2r
+$$</p>
+<h3 id="12-velft-yis-method">1.2 velFT: Yi&rsquo;s method</h3>
+<p>$$
+E(k_x, k_y) = \langle u_k(k_x, k_y)u^<em>_k(k_x, k_y)+v_k(k_x, k_y)v_k^</em>(k_x, k_y)\rangle/2
+$$</p>
+<p>The angle bracket $$\langle\rangle$$ denotes an average over consecutive frames.</p>
+<h3 id="13-how-they-are-related">1.3 How they are related?</h3>
+<p>The idea is to derive the energy spectrum definition in Yi&rsquo;s formula to the velocity correlation definition.</p>
+<p>$$
+E(k_x, k_y) = u_k(k_x, k_y)u_k^<em>(k_x, k_y)\
+= \iint u(x, y)e^{-ik_xx}e^{-k_yy}dxdy\left[\iint u(x&rsquo;, y&rsquo;)e^{-ik_xx&rsquo;}e^{-ik_yy&rsquo;}dx&rsquo;dy&rsquo;\right]^</em>\
+= \iint u(x, y)e^{-ik_xx}e^{-k_yy}dxdy\iint u^*(x&rsquo;, y&rsquo;)e^{ik_xx&rsquo;}e^{ik_yy&rsquo;}dx&rsquo;dy&rsquo;\
+= \iiiint u(x, y)u(x&rsquo;, y&rsquo;)e^{-ik_x(x-x&rsquo;)}e^{-k_y(y-y&rsquo;)}dxdydx&rsquo;dy&rsquo;\
+$$</p>
+<p>here, we change variable and let $$x&rsquo;&rsquo; = x - x&rsquo;$$ and $$y&rsquo;&rsquo; = y - y&rsquo;$$ the original expression can be rearranged into</p>
+<p>$$
+\iiiint u(x&rsquo;+x&rsquo;&rsquo;, y&rsquo;+y&rsquo;&rsquo;)u(x&rsquo;, y&rsquo;)e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;}d(x&rsquo;+x&rsquo;&rsquo;)d(y&rsquo;+y&rsquo;&rsquo;)dx&rsquo;dy&rsquo;\
+= \iint \left[\iint u(x&rsquo;+x&rsquo;&rsquo;, y&rsquo;+y&rsquo;&rsquo;)u(x&rsquo;, y&rsquo;)dx&rsquo;dy&rsquo;\right] e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;} d(x&rsquo;+x&rsquo;&rsquo;)d(y&rsquo;+y&rsquo;&rsquo;)
+$$</p>
+<p>using the definition of velocity correlation function (average all possible pairs over available space):</p>
+<p>$$
+\langle u(x, y)u(x+x&rsquo;&rsquo;, y+y&rsquo;&rsquo;) \rangle = \frac{\iint u(x&rsquo;+x&rsquo;&rsquo;, y&rsquo;+y&rsquo;&rsquo;)u(x&rsquo;, y&rsquo;)dx&rsquo;dy&rsquo;}{\iint dx&rsquo;dy&rsquo;}
+$$</p>
+<p>we obtain</p>
+<p>$$
+\iint dx&rsquo;dy&rsquo;\iint \langle u(x, y)u(x+x&rsquo;&rsquo;, y+y&rsquo;&rsquo;) \rangle e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;} dx&rsquo;&lsquo;dy&rsquo;&rsquo;\
+$$</p>
+<p>the first integration is the available space size of velocity field, in this case the size of field of view $$A$$. In the code, $$A$$ should be step size $$s$$ times the row number $$r$$ and column number $$c$$ of velocity matrix size:</p>
+<p>$$
+A = rcss
+$$</p>
+<p>Note that $$r$$ and $$s$$ should have no unit and $$s$$ should have unit um.</p>
+<p>Let&rsquo;s draw a comparison between the two methods. Method I:</p>
+<p>$$
+E_1(k_x, k_y) = \iint \langle u(x, y)u(x+x&rsquo;&rsquo;, y+y&rsquo;&rsquo;) \rangle e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;} dx&rsquo;&lsquo;dy&rsquo;&rsquo;
+$$</p>
+<p>Method II:</p>
+<p>$$
+E_2(k_x, k_y) = \iint dx&rsquo;dy&rsquo; \iint \langle u(x, y)u(x+x&rsquo;&rsquo;, y+y&rsquo;&rsquo;) \rangle e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;} dx&rsquo;&lsquo;dy&rsquo;&rsquo;\
+= A  \iint \langle u(x, y)u(x+x&rsquo;&rsquo;, y+y&rsquo;&rsquo;) \rangle e^{-ik_xx&rsquo;&rsquo;}e^{-k_yy&rsquo;&rsquo;} dx&rsquo;&lsquo;dy&rsquo;&rsquo;
+$$</p>
+<p>Thus</p>
+<p>$$
+E_1(k_x, k_y) = \frac{E_2(k_x, k_y)}{A}
+$$</p>
+<p>We show that the two methods are equivalent mathematically. Next, we test this equivalence using experimental data.</p>
+<p><img src="/assets/images/2020/12/energy_spectrum_derivation_1.jpg" alt="xiang1">{:width=&ldquo;600px&rdquo;}
+<img src="/assets/images/2020/12/energy_spectrum_derivation_2.jpg" alt="xiang2">{:width=&ldquo;600px&rdquo;}</p>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

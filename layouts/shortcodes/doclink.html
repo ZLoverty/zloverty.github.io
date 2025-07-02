@@ -1,0 +1,3 @@
+{{- $folder := .Page.Params.folder | strings.TrimSuffix "/" -}}
+{{- $filename := .Get "filename" | strings.TrimPrefix "/" -}}
+{{- printf "/%s/%s" $folder $filename -}}

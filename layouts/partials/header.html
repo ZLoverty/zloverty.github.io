@@ -1,0 +1,10 @@
+<nav class="navbar">
+  {{ range .Site.Data.navigation }}
+    <a href="{{ .link }}" id="nbelement" {{ if eq $.RelPermalink .link }}class="current"{{ end }}>
+      {{ .name }}</a>
+  {{ end }}
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg1963"
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   sodipodi:docname="particle_tracking.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata1969">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1967" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview1965"
+     showgrid="false"
+     inkscape:zoom="6.1164737"
+     inkscape:cx="26.024421"
+     inkscape:cy="67.314493"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1963" />
+  <path
+     style="fill:#f40000;fill-opacity:1;stroke-width:0.99749547;stroke-miterlimit:4;stroke-dasharray:5.98497271, 5.98497271;stroke-dashoffset:5.6692915;paint-order:stroke markers fill"
+     d="M 50 0 A 50 50 0 0 0 0 50 A 50 50 0 0 0 50 100 A 50 50 0 0 0 100 50 A 50 50 0 0 0 50 0 z M 50 6.8203125 A 43.179192 43.179192 0 0 1 93.179688 50 A 43.179192 43.179192 0 0 1 50 93.179688 A 43.179192 43.179192 0 0 1 6.8203125 50 A 43.179192 43.179192 0 0 1 50 6.8203125 z "
+     id="path3103" />
+  <circle
+     style="fill:#4cd8fc;fill-opacity:1;stroke-width:12.12018204;stroke-miterlimit:4;stroke-dasharray:72.72108922, 72.72108922;stroke-dashoffset:5.6692915;paint-order:stroke markers fill"
+     id="path3123"
+     cx="50"
+     cy="50"
+     r="40" />
+</svg>

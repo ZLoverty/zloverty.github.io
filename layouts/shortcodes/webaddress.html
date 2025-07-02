@@ -1,0 +1,8 @@
+{{ $raw := .Get "data" }}
+{{ $map := transform.Unmarshal $raw }}
+
+<div id="webaddress">
+    {{ range $k, $v := $map }}
+    <a href="{{ $v }}">{{ $k }}</a> |
+    {{ end }}
+</div>

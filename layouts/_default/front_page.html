@@ -1,0 +1,19 @@
+{{ define "main"}}
+<div id="main">
+    <div id="profile-picture-box">
+        <div id="narrative-box">
+            This is a binarized photo of me in 2022. I first binarized a real photo using ImageJ, then trace bit map in
+            Inkscape to make it a vector graph. The graph contains some 100 nodes on the path, resulting an .svg file of
+            11 kb. It is hard to tell this is a photo of a man at the first glance, but if you move your mouse over the
+            picture to activate a dark background, you can see my face, seemingly smiling.
+        </div>
+        <img id='profile-pic' src="/images/simplified_me.svg" alt="pic">
+        <div id="narrative-box">
+            这是一张我的二值化照片。我把彩色照片在 ImageJ 中二值化后，又在 Inkscape 中描绘位图为矢量图并简化。这张矢量图是一个包含几百个节点的路径，SVG 文件有 11 kb
+            大。这张图初看不像人像，但如果把鼠标移到图上激活深色背景，你（应该）能看到我的（笑）脸。
+        </div>
+    </div>
+</div>
+
+{{ .Content }}
+{{ end }}

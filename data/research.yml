@@ -1,0 +1,30 @@
+- name: Rheology
+  link: /research/rheology
+  img_link: /images/icons/rheology.gif
+- name: GNF
+  link: /research/gnf
+  img_link: /images/icons/gnf.gif
+- name: turbulence
+  link: /research/turbulence
+  img_link: /images/icons/turbulence.png
+- name: Crack
+  link: /research/crack
+  img_link: /images/icons/crack.gif
+- name: Double emulsion
+  link: /research/double_emulsion
+  img_link: /images/icons/double_emulsion.gif
+- name: Porous media
+  link: /research/porous_media
+  img_link: /images/icons/porous_media.gif
+- name: Active nematics
+  link: /research/active_nematics
+  img_link: /images/icons/bifurcations.gif
+- name: Beet fringe
+  link: /research/beet_fringe
+  img_link: /images/icons/beet.gif
+- name: Bubble cleaning
+  link: /research/bubble_cleaning
+  img_link: /images/icons/bubble.gif
+- name: Condensation
+  link: /research/condensation
+  img_link: /images/icons/condensation.gif

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title> Youtube audio prep </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h1> Youtube audio prep </h1>
+  <div id="post-date">0001-01-01</div>
+  <p>Recently, I got interested in listening to history lectures on Youtube. Since many of the lectures are long and the video part is usually unimportant, I start to conceive a more portable format of lecture, which is ad-free and does not require Internet access. This leads to the idea of downloading the videos and converting them to audios came up.</p>
+<h2 id="batch-download">Batch download</h2>
+<p>I started with websites like <em>y2mate</em>. They worked, but when I want to download a series of videos, they are not satisfactory because I have to wait for the first one to complete before starting the second one. Ideally, I should be able to make a list of videos I want to download and to have a software keep downloading according to the list &ndash; to enable batch download.</p>
+<p>This led me to the software <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>. It is a command line tool which download Youtube videos with a one-line command. The command typically looks like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>yt-dlp [--options] URL
+</span></span></code></pre></div><p>Batch download is simple:</p>
+<ul>
+<li>create a .bat file</li>
+<li>in a text editor, repeat the command with different URLs</li>
+</ul>
+<pre tabindex="0"><code># batch-download.bat
+
+yt-dlp [--options] URL1
+yt-dlp [--options] URL2
+yt-dlp [--options] URL3
+yt-dlp [--options] URL4
+</code></pre><p>When execute the <em>batch-download.bat</em> file in a terminal, all the videos will be downloaded.</p>
+<h2 id="audio">Audio</h2>
+<p>By default, <em>yt-dlp</em> downlaods videos. To download audio only, the <code>--options</code> need to be configured correctly. Here&rsquo;s an example:</p>
+<pre tabindex="0"><code>yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 URL
+</code></pre><h2 id="member-only-content">Member-only content</h2>
+<p>Some videos require subscription to the channel to view/download. To make <em>yt-dlp</em> authorized to download member-only content, we need to pass the cookies of the browser as an argument in the command. First, download the cookies using the chrome extension <a href="https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc">Get cookies.txt LOCALLY</a>. The cookies txt file looks like this:</p>
+<pre tabindex="0"><code># Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.youtube.com	TRUE	/	TRUE	1751208406	LOGIN_INFO	AFmmF2swRAIgbOeLIrLuxRY6YyAL9bauDQXDbVxJdIt_xa1t7RM-HjwCIAM1viLjg9sWq_Qc4y1_mPQZYFW6Jfx_7FM_X2gkoblx:QUQ3MjNmek1nd0hvUGFGdDRoRXEyRWNudW1XdEh6Z3Rhb1VNTnhCdE0zRXozSzRjZk5qOGtvX24wQk1DTUlDRnJET055cHN0SW9RUlByZUpJOE9yaTdvRnhOUENUMHFxTTg0Wm5zR2RIU25qbkhfRHVYd0hpZmpmOEgyaS0xR1RtWDhfa2VOZGQ4ZDlTTmZTd0RTeng3WDFXZzZVSkZkaUJR
+.youtube.com	TRUE	/	FALSE	1769051874	HSID	A-iCb3kDOJnG5AD6S
+.youtube.com	TRUE	/	TRUE	1769051874	SSID	AV_KZaPZG2UsQDFu4
+.youtube.com	TRUE	/	FALSE	1769051874	APISID	qlZgHSCBNqOiSYjk/AbEDyy7SdG_vUo0EM
+.youtube.com	TRUE	/	TRUE	1769051874	SAPISID	z9PnNR9VFR5N3Jf4/AgcS_3AQA9DbPWNeU
+.youtube.com	TRUE	/	TRUE	1769051874	__Secure-1PAPISID	z9PnNR9VFR5N3Jf4/AgcS_3AQA9DbPWNeU
+.youtube.com	TRUE	/	TRUE	1769051874	__Secure-3PAPISID	z9PnNR9VFR5N3Jf4/AgcS_3AQA9DbPWNeU
+</code></pre><p>Then, put this .txt file in the same directory as the .bat file and the <em>yt-dlp</em> executable. Lastly, add the cookies argument to the command. The final command looks like:</p>
+<pre tabindex="0"><code>yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 URL --cookies cookies.txt
+</code></pre><h2 id="concatenate-audios">Concatenate audios</h2>
+<p>A complete long lecture are usually divided into small segments for easier browsing on Youtube. For listening, I&rsquo;d prefer to group the same topic in one audio file. A good way to concatenate audio files is the linux software <code>sox</code>. First, put the audio files from one lecture into a same master folder. Then, run WSL, navigate to this folder (<code>/mnt/c/Users/...</code>), run the following command:</p>
+<pre tabindex="0"><code>$ sox *.mp3 out.mp3
+</code></pre><p>This creates an all-in-one lecture. Happy learning!</p>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

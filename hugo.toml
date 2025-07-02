@@ -1,0 +1,6 @@
+baseURL = 'https://zloverty.github.io/'
+languageCode = 'en-us'
+title = 'Liu'
+
+[markup.goldmark.renderer]
+  unsafe = true

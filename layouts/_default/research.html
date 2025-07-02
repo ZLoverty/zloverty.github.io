@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div id='libs-panel'>
+    {{ range .Site.Data.research }}
+        {{ partial "galleryitem.html" . }}
+    {{ end }}
+</div>
+{{ end }}

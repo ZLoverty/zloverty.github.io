@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title>  </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h1>  </h1>
+  <div id="post-date">0001-01-01</div>
+  <p>Recently, I start to reorganize my personal website with <a href="https://jekyllrb.com/">Jekyll</a>. I knew this tool from the first day I tried GitHub Pages (perhaps in 2018). At that time, I did not read through the documentation and thought this is only a &ldquo;theme&rdquo; tool, which modifies my website to a look I don&rsquo;t like. So I did not use it, but started from scratch to build an HTML + CSS static site. It was a happy learning process. I started to learn using the <a href="https://freecodecamp.org">freecodecamp online app</a>, and got good understanding of the web development basics. With some practice, I eventually was able to tune my website front page to the way I wanted.</p>
+<p>After making the front page successfully, I got more ambitious: I want the website to be more informative about who I am and what I do. In particular, I wanted to make my website a portal for all my research activities, where my ideas, data, thoughts and nice visuals were organized together. Although this sounds like a good idea, when I really went about to do it, it soon got very painful because the number of .html files grew very quickly. I was very frustrated when I updated the &ldquo;Last edited: xxx&rdquo; string in the footer of my site, because every time I needed to modify all the .html files.</p>
+<p>Because of that, I stopped working on the website for a while. And only recently, when I use sphinx to build code documentations, I start to think that there should be a tool like sphinx, which translate simple markup language to html. Interestingly, this tool is Jekyll, which I overlooked (or underestimated) 5 years ago! After reading through the documentations, I am very sure that this is the tool I am looking for. I can customize the templates freely, write normal content in Markdown, and use .yml text file to serve as database. At the moment of writing, I am still working on the framework of the website (creating templates and tuning css). But I can already see that in the near future, I can maintain the website just by adding a simple entry in the data file.</p>
+<p>Read the documents, at least to know what the tool is designed for. This is the lesson I learn from this experience.</p>
+<h3 id="update-feb-11-2023">Update Feb 11, 2023</h3>
+<p>While migrating my earlier blog posts and research notes to this new system, a problem I encounter is the link to image files. In the past, I use the <em>Markdown-writer</em> add-on in Atom, which generates an images folder in the project root folder, then followed by year and month, and finally the image file. For example, an image added today will be saved as <code>/images/2023/02/xxx.jpg</code>. In the .md file, the string to invoke this image would be <code>![](../images/2023/02/xxx.jpg)</code>, since all my notes/posts are in immediate subfolders of root folder, e.g. <code>/Notes</code> or <code>/Blog</code>. However, in <em>Jekyll</em> system, images are saved in <code>/assets/images/{year}/{month}/</code> by default. As a result, the relative path from the .md file is different. If I want to migrate a post, I will have to manually edit all the links to images. This is tedious, but still possible to do since I only have less than 50 posts from the past. However, it will be nice if I can use some sort of &ldquo;absolute&rdquo; path to link images, so that even I change the location of the post, the links still work. If a solution is found, I will post an update here.</p>
+<h3 id="update-feb-12-2023">Update Feb 12, 2023</h3>
+<p>In the end, I manually updated the relative paths to absolute path, so that I don&rsquo;t have to worry about bad links now. The website has a shape now, and the current goal is to fill in stuff to eliminate bad link (which links to nowhere).</p>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

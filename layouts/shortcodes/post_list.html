@@ -1,0 +1,5 @@
+{{ range (.Site.RegularPages.ByDate) }}
+    {{ if eq .Params.language "en" }}
+        {{ partial "post_item.html" .}}
+    {{ end }}
+{{ end }}

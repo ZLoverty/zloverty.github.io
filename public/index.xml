@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhengyang Liu on Liu</title>
+    <link>http://localhost:44985/</link>
+    <description>Recent content in Zhengyang Liu on Liu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:44985/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Academic research</title>
+      <link>http://localhost:44985/posts/academic-research/</link>
+      <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/academic-research/</guid>
+      <description>&lt;p&gt;Today I had a chat with friends about the importance of academic research.&lt;/p&gt;&#xA;&lt;p&gt;We are in a revolutionizing era. Scientific advancements frequently appear in headlines. AI, robots, VR, a lot of them have already found applications in our daily life. Even rockets, as SpaceX envisions, will make space traveling as easy as taking a flight on the earth some day.&lt;/p&gt;&#xA;&lt;p&gt;As a researcher myself, who also wants to contribute to the scientific world, I find my projects fall far behind the news headlines. When everybody talks about chatbots and image generations, my field of research seems not relevant and fading out.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/01082022-french-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/01082022-french-notes/</guid>
+      <description>&lt;h1 id=&#34;french-learning-notes&#34;&gt;French Learning Notes&lt;/h1&gt;&#xA;&lt;h2 id=&#34;i-pronunciation&#34;&gt;I. Pronunciation&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;There is an international phonetic alphabet (IPA), which provides phonetic notations for every French words (and words in other languages too) using the same standard.&lt;/strong&gt; It&amp;rsquo;s similar to the English phonetic notations, except that it has some special ones that English does not have, e.g. /ʀ/ for letter &lt;em&gt;r&lt;/em&gt;. Note that /ʀ/ is smaller than the regular R. &lt;strong&gt;To learn the pronunciations of French words correctly in the beginning, I will learn each word together with their phonetic notations.&lt;/strong&gt; &lt;a href=&#34;https://www.collinsdictionary.com/dictionary/french-english&#34;&gt;Collins dictionary&lt;/a&gt; provides very good phonetic notation resources, as well as good explanations and examples. So look up words there when learning vocabulary.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2019-06-01-chiral-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2019-06-01-chiral-overview/</guid>
+      <description>&lt;p&gt;Chiral particles drift in shear flows because of their asymmetric shape. A simple case that helps to understand this drift is provided by Marcos et al. (PRL 2009) where a helical particle is aligned with a simple shear flow.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:44985/assets/images/2019/06/0.png&#34; alt=&#34;&#34;&gt;{:width=&amp;ldquo;300px&amp;rdquo;}&lt;/p&gt;&#xA;&lt;p&gt;The segments perpendicular to the flow direction have greater resistance than those parallel to the flow. Since the top (red) and bottom (black) halves experience different external flow velocity in a shear flow, there is a net force acting perpendicularly to the axis of the helical particle. In the case shown in the schematic above, the net force on the particle results in a drift to -z direction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2020-07-07-gnf-evolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2020-07-07-gnf-evolution/</guid>
+      <description>&lt;p&gt;Giant number fluctuation (GNF) is a key distinction of active matter compared to systems in equilibrium. Theories have predicted the deviation of number fluctuations in active matter in a quantitative way. Later on, the predictions are tested in experiment and were mostly true. Despite the success of the theories, the underlying mechanism of GNF still remains to be a hypothesis due to the difficulty of resolving individual active units and the interaction between individual active units in a crowded collection. A recent work by Peng et al. shows that in the transition to active turbulence, flow order and flow energy grow with different time scale. GNF also grows during the course of active turbulence transition, by look at the time scale of this transition, we could gain more insight into the mechanism of GNF.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2020-11-11-energy-spectrum-2-methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2020-11-11-energy-spectrum-2-methods/</guid>
+      <description>&lt;p&gt;We have two methods for computing energy spectrum from spatial velocity data. In this post we should how they are related and point out quantitative details when converting between the results from these methods.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-two-methods&#34;&gt;1 Two methods&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-fftreal-real-part-of-standard-fft&#34;&gt;1.1 FFTreal: real part of standard fft&lt;/h3&gt;&#xA;&lt;p&gt;Energy spectrum function $$E(k)$$ is defined as&lt;/p&gt;&#xA;&lt;p&gt;$$&#xA;E(k) = \oint \frac{1}{2} \Phi_{ii}(k)d S(k)&#xA;$$&lt;/p&gt;&#xA;&lt;p&gt;where $$\Phi_{ii}(k)$$ is the diagonal term of velocity spectrum tensor, defined as&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2021-01-01-linux-study-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2021-01-01-linux-study-notes/</guid>
+      <description>&lt;p&gt;Linux has two main branches: &lt;strong&gt;Debian and RedHat&lt;/strong&gt;. Debian is meant for personal use, with a popular example Ubuntu. RedHat is meant for server use, with a popular example of CentOS. I&amp;rsquo;m going to learn the basics of servers, so the distro of interest here will be &lt;strong&gt;CentOS&lt;/strong&gt;. The reference of this note is &lt;a href=&#34;https://www.bilibili.com/video/BV1zL411T7YY&#34;&gt;this video course&lt;/a&gt;. This course is intent for server setup.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i-virtual-machine&#34;&gt;I. Virtual Machine&lt;/h2&gt;&#xA;&lt;p&gt;I used to think only when I have many computers can I test out a server. In fact, it only requires a virtual machine, or several virtual machines. I&amp;rsquo;ve already set up &lt;strong&gt;VMware&lt;/strong&gt; on my laptop.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2021-12-01-focusing-prioritizing-and-being-realistic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2021-12-01-focusing-prioritizing-and-being-realistic/</guid>
+      <description>&lt;p&gt;How many things can I do a day?&#xA;I used to think I can read two papers in the morning.&#xA;In the mean time, I can prepare the experiment in the afternoon.&#xA;After the experiment, I can analyze all the data with my &amp;ldquo;miraculous&amp;rdquo; code with just a click.&#xA;I can even have fun in the evening!&#xA;It looks like, I can have such a &amp;ldquo;fruitful&amp;rdquo; day as a researcher, without spending much time.&#xA;However, this was just a daydream which I had from time to time in the past several years.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2021-12-10-personal-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2021-12-10-personal-server/</guid>
+      <description>&lt;p&gt;Since 2013, when I was an undergrad working on nanoparticle simulations, I was fascinated by sending the code to a server cluster to execute. The cluster was not faraway at all, like most servers in the world we are interacting with. Instead, they were just ~20 normal computers sitting in a small chamber in our office. They were running all day and all night and produce results silently.&lt;/p&gt;&#xA;&lt;p&gt;During my PhD at the University of Minnesota, this experience drove me to try out the Minnesota Supercomputing Institute (MSI), a much larger computing server that serves the whole university. Frankly speaking, MSI is no much different than the &amp;ldquo;next door&amp;rdquo; server I used before. After logging into the linux commandline, everything is so familiar. The only difference is I was not allowed to execute my code directly. Instead, I had to submit a job file to &amp;ldquo;queue&amp;rdquo; my commands, and the system will decide when my code are executed. I understand that for a server of this scale (for 10,000s people), this &amp;ldquo;queue&amp;rdquo; mechanism makes the system more stable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2021-12-30-mendeley-to-zotero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2021-12-30-mendeley-to-zotero/</guid>
+      <description>&lt;p&gt;I quit Mendeley today, after 5 years of use, because there are serious problems with duplicated files, lack of support for mobile platforms, small cloud drive and poor syncing quality. Solving these problems has been distracting me from focusing on reading, so that I decide to try out some alternatives and leave Mendeley.&lt;/p&gt;&#xA;&lt;p&gt;After reviewing many alternatives I decided to try &lt;strong&gt;Zotero&lt;/strong&gt;, an open-source software that should be able to connect with google drive, so I don&amp;rsquo;t have to pay for cloud storage one more time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2021-12-30-mold-on-wall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2021-12-30-mold-on-wall/</guid>
+      <description>&lt;p&gt;Here are some pictures of the apartment at 24 Boulevard Arago Paris 75013 during our stay, mainly taken in November and December 2021. The pictures show that there was a large fraction of wall surface covered by green and black mold colonies, likely caused by high humidity. We open all the windows for about 8 hours in the day, despite the cold weather in November, and use extra electricity to heat up the chamber, the mold problem persisted. We suspect that the apartment we stayed was not properly moisture proofed. Consequently, the walls of the apartment (at least the wall paper) were damaged and the apartment was humid, cold and had unpleasant smells, hence not suitable for accommodate people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2023-02-09-jekyll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2023-02-09-jekyll/</guid>
+      <description>&lt;p&gt;Recently, I start to reorganize my personal website with &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;. I knew this tool from the first day I tried GitHub Pages (perhaps in 2018). At that time, I did not read through the documentation and thought this is only a &amp;ldquo;theme&amp;rdquo; tool, which modifies my website to a look I don&amp;rsquo;t like. So I did not use it, but started from scratch to build an HTML + CSS static site. It was a happy learning process. I started to learn using the &lt;a href=&#34;https://freecodecamp.org&#34;&gt;freecodecamp online app&lt;/a&gt;, and got good understanding of the web development basics. With some practice, I eventually was able to tune my website front page to the way I wanted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2023-02-13-my-competencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2023-02-13-my-competencies/</guid>
+      <description>&lt;p&gt;While searching for a job, I find it useful to outline my competencies and weaknesses, so that I can quickly compare with the qualifications of the jobs and assess my fit. The content of this post would be very much aligned with a cover letter of a job application. Hence, it could be reused in the near future!&lt;/p&gt;&#xA;&lt;p&gt;I got my batchelor&amp;rsquo;s degree from the Polymer Material and Engineering Department at Tsinghua University. In an undergraduate research training program, I took on a computational study of a nanoparticle system which is responsive to external mechanical stimuli. Despite of the short time, this training left me with great values: (i) curiosity for scientific research, (ii) solid coding skills.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Active nematics</title>
+      <link>http://localhost:44985/research/active_nematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/active_nematics/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;We study active nematics under confinement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Active turbulence</title>
+      <link>http://localhost:44985/research/turbulence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/turbulence/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;Active turbulence refers to the turbulent-like flows induced by a large number of self-propelling agents, such as bacteria. Although such phenomenon has been discovered for serveral decades, the process of the transition to turbulence is not well characterized. In this work, we measured the evolution of both the flow order and mean flow velocity, and identified two kinetic pathways. Which pathway a system chooses depends on the concentration of bacteria.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beet fringe</title>
+      <link>http://localhost:44985/research/beet_fringe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/beet_fringe/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;We study the cause of the fringe formation around a beet slice when it&amp;rsquo;s put on a thin liquid film.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bubble cleaning</title>
+      <link>http://localhost:44985/research/bubble_cleaning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/bubble_cleaning/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;We aim to develop a novel, environmental friendly technique for cleaning fresh produce.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Code notes</title>
+      <link>http://localhost:44985/code/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/code/notes/</guid>
+      <description>&lt;h2 id=&#34;python&#34;&gt;Python&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Available fonts.&lt;/strong&gt; Show all available font families in Python:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.font_manager&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; IPython.core.display &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; HTML&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;make_html&lt;/span&gt;(fontname):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{font}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;: &amp;lt;span style=&amp;#39;font-family:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{font}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;; font-size: 24px;&amp;#39;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{font}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;/p&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(font&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fontname)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;join([make_html(font) &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; font &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; sorted(set([f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; f &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; matplotlib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;font_manager&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fontManager&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ttflist]))])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HTML(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;div style=&amp;#39;column-count: 2;&amp;#39;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;/div&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;format(code))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To see just the names of available font families:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sorted([f&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; f &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; matplotlib&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;font_manager&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fontManager&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ttflist])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Get immediate subfolders.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; os&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;folder &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;~&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sfL &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; next(os&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;walk(folder))[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interpolated bitmap.&lt;/strong&gt; Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Condensation</title>
+      <link>http://localhost:44985/research/condensation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/condensation/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;We study the condensation vapor flux around a porous material, such as a fungal colony.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Double emulsions</title>
+      <link>http://localhost:44985/research/double_emulsion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/double_emulsion/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;The interplay between complex environments and active matter suggests a possibility to control and engineer active matter by carefully designing the confinement structures.&#xA;It is now well established that confinement may influence transport, rheology, pressure, spatial distribution and collective motion of active matter.&#xA;Curved confining walls, which are ubiquitous in biological systems, show their own, specific rich and intriguing effects on active matter.&#xA;Here, using a double emulsion system, where the inner and outer droplet sizes can be independently controlled, we experimentally investigate the influence of curved confinement on an active bath of &lt;em&gt;E. coli&lt;/em&gt; bacteria.&#xA;In particular, we analyze the fluctuations of the inner droplet using the framework of a stochastic &amp;ldquo;active noise&amp;rdquo; model, and show that the strength of active noise is not an intrinsic property of an active bath, but depends on the confinement curvature.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drying crack of bacterial droplets</title>
+      <link>http://localhost:44985/research/crack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/crack/</guid>
+      <description>&lt;p&gt;Particulate suspensions form cracks when desicated. This is a very ubiquitous phenomenon, with examples ranging from mud cracks in a dried river bed to a dried blood droplet. The mechanism behind this phenomenon is usually the same: the top layer of the drying suspension lose suspending liquid and tend to contract, while the bottom material stays the same size. However, the resulting crack patterns can be very different for different materials. Understanding crack patterns has potential applications, for example in blood diagnostics. We find an interesting and aesthetically pleasing crack pattern formed by drying &lt;em&gt;E. coli&lt;/em&gt; suspensions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giant number fluctuations</title>
+      <link>http://localhost:44985/research/gnf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/gnf/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;Giant number fluctuations (GNF) is one of the key differences between active systems and equilibrium systems, characterized by the number fluctuations scaling with system size. I experimentally investigate the number fluctuations in 3D bacterial suspensions, and its correlation with the flow field. We find an interesting correspondence between number fluctuations and energy spectra, which is scale-invariant and concentration-independent.&lt;/p&gt;&#xA;&lt;h3 id=&#34;related-stuff&#34;&gt;Related stuff&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:44985/presentations/DFD2020.pdf&#34;&gt;DFD 2020 slides&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>How to construct pandas DataFrame efficiently</title>
+      <link>http://localhost:44985/posts/2023-03-09-construct-dataframe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2023-03-09-construct-dataframe/</guid>
+      <description>&lt;p&gt;Today, I was reviewing my &lt;a href=&#34;https://github.com/ZLoverty/DE/blob/main/Code/HoughCircles-DE.ipynb&#34;&gt;droplet tracking code&lt;/a&gt; and saw an interesting way to construct &lt;code&gt;pandas.DataFrame&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Construct a list of DataFrame, each representing a row: &lt;code&gt;row_list = [pd.DataFrame({&amp;quot;a&amp;quot;: i, &amp;quot;b&amp;quot;: 2*i} for i in range(100))]&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Concatenate the list into a bigger DataFrame: &lt;code&gt;df = pd.concat(row_list)&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This is not what I normally do, and that&amp;rsquo;s probably why I find it interesting. Normally, I would&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;populate two lists for &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt;: &lt;code&gt;a_list = [i for i in range(100)]; b_list = [2*i for i in range(100)]&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;use the lists to initiate DataFrame: &lt;code&gt;df = pd.DataFrame({&amp;quot;a&amp;quot;: a_list, &amp;quot;b&amp;quot;: b_list})&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Intuitively, the second way is faster, because it involves less DataFrame construction. But I do like the first way, in that I do not have to initiate many temporary lists. So I Google it and find &lt;a href=&#34;https://stackoverflow.com/questions/17091769/python-pandas-fill-a-dataframe-row-by-row&#34;&gt;this question&lt;/a&gt;, which gives another intuitive way to do this:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pigment and structural color</title>
+      <link>http://localhost:44985/posts/2024-05-23-pigment-and-structural-color/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2024-05-23-pigment-and-structural-color/</guid>
+      <description>&lt;p&gt;Today when I listened to the podcast about “blueberry is not blue”, I recalled the question I heard a few years ago “what is the difference between colloid color and dye color”. Even to this day, I still don’t have a solid understanding of the physics of color, but rather some scattered pieces of knowledge with terminologies that do not necessarily make sense, such as Rayleigh scattering and absorption by chemical bonds. But the question is still there: is there a unified framework to understand color?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Porous media</title>
+      <link>http://localhost:44985/research/porous_media/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/porous_media/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;Bacteria are microswimmers commonly found in complex environments, such as substrate surface, porous media and external flows. How they adapt to these environments is not only crucial to their suvival, but also important for the biological processes they are involved in, such as biofilm formation and infection. Due to the ecological and medical relevance of bacterial motility in complex environments, it has been investigated in more detail, thanks to the development of fast video microscopy. Here, we study the motility of the model microswimmer &lt;em&gt;E. coli&lt;/em&gt; near glass surface, in the presence of a layer of oil droplets (3 um and 10 um in diameter). This droplet system simulates a soft tissue surface, while permitting direct and simultaneous imaging of both bacteria and obstacles.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Principle Componenets Analysis</title>
+      <link>http://localhost:44985/posts/2023-03-10-principle-component-analysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2023-03-10-principle-component-analysis/</guid>
+      <description>&lt;p&gt;I have tried to learn machine learning a few times. However, I never find the chance to implement any machine learning algorithm in my research. Here, I want to revisit the subject by reading Goodfellow&amp;rsquo;s book. I like simple things, because they help me understand the basic concept and gain intuition to the abstract math. Principle componenets analysis is such a simple thing, which I shall take some notes here to try to understand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rheology</title>
+      <link>http://localhost:44985/research/rheology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/research/rheology/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;This is my first research project in my PhD program at Minnesota, studying the confinement effect on the rheology of bacterial suspensions. Back then, I did not have the habit of writing notes and blogs for specific problems or findings, so there is not many records of how the project evolved over time. However, there are slides and posters I made back then on this project, which hopefully provide a good overview.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Youtube audio prep</title>
+      <link>http://localhost:44985/posts/2024-12-27-youtube-audio-prep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2024-12-27-youtube-audio-prep/</guid>
+      <description>&lt;p&gt;Recently, I got interested in listening to history lectures on Youtube. Since many of the lectures are long and the video part is usually unimportant, I start to conceive a more portable format of lecture, which is ad-free and does not require Internet access. This leads to the idea of downloading the videos and converting them to audios came up.&lt;/p&gt;&#xA;&lt;h2 id=&#34;batch-download&#34;&gt;Batch download&lt;/h2&gt;&#xA;&lt;p&gt;I started with websites like &lt;em&gt;y2mate&lt;/em&gt;. They worked, but when I want to download a series of videos, they are not satisfactory because I have to wait for the first one to complete before starting the second one. Ideally, I should be able to make a list of videos I want to download and to have a software keep downloading according to the list &amp;ndash; to enable batch download.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zhengyang Liu</title>
+      <link>http://localhost:44985/cv/acv-zh-mateng/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/cv/acv-zh-mateng/</guid>
+      <description>&lt;h1 id=&#34;刘政阳-博士&#34;&gt;刘政阳， 博士&lt;/h1&gt;&#xA;&lt;h2 id=&#34;总结-summary&#34;&gt;总结 (Summary)&lt;/h2&gt;&#xA;&lt;p&gt;经验丰富的博士后研究员，专注于柔性材料领域的研究。熟悉柔性材料的改性和表征方法，拥有卓越的原创研究记录（发表论文13篇，H指数为7，总引用328次）。目前寻求在材料工程师岗位，以运用自身的研究技能。&lt;/p&gt;&#xA;&lt;h2 id=&#34;关键技能-key-skills&#34;&gt;关键技能 (Key Skills)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;独立负责研发项目，撰写技术文档&lt;/li&gt;&#xA;&lt;li&gt;实验室技能：高分子材料的改性与表征（流变学，显微成像等），微纳加工&lt;/li&gt;&#xA;&lt;li&gt;理论技能：高分子仿真，流体力学仿真，解释流变曲线等&lt;/li&gt;&#xA;&lt;li&gt;软件技能：MATLAB，Python 数据分析&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;工作经历-appointments&#34;&gt;工作经历 (Appointments)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士后研究员&lt;/strong&gt; | 康奈尔大学 (Cornell University) | (2024年3月 - 至今)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;主导3项关于流体输运的研究项目。&lt;/li&gt;&#xA;&lt;li&gt;指导7名研究学生并协助生物机器人课程的教学工作。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士后研究员&lt;/strong&gt; | 巴黎高等物理化工学院 (ESPCI Paris) | (2021年4月 - 2023年6月)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;主导2项关于仿生材料物质输运的研究项目。&lt;/li&gt;&#xA;&lt;li&gt;使用飞秒激光直写系统 (NanoScribe)、共聚焦显微镜和高速摄像机。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;教育背景-education&#34;&gt;教育背景 (Education)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士 (Ph.D.)&lt;/strong&gt;，明尼苏达大学 (University of Minnesota)，2021年&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;学士 (B.S.)&lt;/strong&gt;，清华大学 (Tsinghua University)，2014年&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zhengyang Liu</title>
+      <link>http://localhost:44985/cv/acv-zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/cv/acv-zh/</guid>
+      <description>&lt;h1 id=&#34;刘政阳-博士&#34;&gt;刘政阳， 博士&lt;/h1&gt;&#xA;&lt;h2 id=&#34;总结-summary&#34;&gt;总结 (Summary)&lt;/h2&gt;&#xA;&lt;p&gt;经验丰富的博士后研究员，专注于流体输运和活性物质领域的研究。拥有卓越的原创研究记录（发表论文13篇，H指数为7，总引用328次），并积极投入指导工作（指导超过10名学生）。目前寻求在活性/响应材料领域的教职，以运用自身的研究与教学技能。&lt;/p&gt;&#xA;&lt;h2 id=&#34;关键技能-key-skills&#34;&gt;关键技能 (Key Skills)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;原创研究 (流体动力学，活性物质)&lt;/li&gt;&#xA;&lt;li&gt;同行评审 (PRL, Science Advances, JNNFM)&lt;/li&gt;&#xA;&lt;li&gt;教学与学生指导&lt;/li&gt;&#xA;&lt;li&gt;科研交流 (学术出版物，超过10次学术会议报告)&lt;/li&gt;&#xA;&lt;li&gt;实验室技能：显微镜技术 (共聚焦，高速摄像)，微纳加工 (NanoScribe)，微生物学等&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;工作经历-appointments&#34;&gt;工作经历 (Appointments)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士后研究员&lt;/strong&gt;  康奈尔大学 (Cornell University) | (2024年3月 - 至今)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;主导3项关于流体输运的研究项目。&lt;/li&gt;&#xA;&lt;li&gt;指导7名研究学生并协助生物机器人课程的教学工作。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士后研究员&lt;/strong&gt; | 巴黎高等物理化工学院 (ESPCI Paris) | (2021年4月 - 2023年6月)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;主导2项关于活性物质的研究项目。&lt;/li&gt;&#xA;&lt;li&gt;使用飞秒激光直写系统 (NanoScribe)、共聚焦显微镜和高速摄像机。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;教育背景-education&#34;&gt;教育背景 (Education)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;博士 (Ph.D.)&lt;/strong&gt;，明尼苏达大学 (University of Minnesota)，2021年&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;学士 (B.S.)&lt;/strong&gt;，清华大学 (Tsinghua University)，2014年&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zhengyang Liu - Curriculum Vitae</title>
+      <link>http://localhost:44985/cv/acv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/cv/acv/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;SUMMARY&lt;/h2&gt;&#xA;&lt;p&gt;Highly accomplished Postdoctoral Associate with expertise in soft matter physics and fluid mechanics, and a strong record of original research (15 publications, H-index 7). Seeking a material research and development position to leverage my extensive &lt;em&gt;experimental&lt;/em&gt; and &lt;em&gt;computational&lt;/em&gt; research skills.&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments&#34;&gt;APPOINTMENTS&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cornell University&lt;/strong&gt;. Postdoctoral Associate &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Mar. 2024 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Present &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ESPCI Paris&lt;/strong&gt;. Postdoctoral Associate &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Apr. 2021 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jun. 2023 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;EDUCATION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;University of Minnesota, Twin Cities&lt;/strong&gt;.  Chemical Engineering &lt;strong&gt;Ph.D.&lt;/strong&gt; &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Aug. 2015 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jan. 2021 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zhengyang Liu - Curriculum Vitae</title>
+      <link>http://localhost:44985/cv/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/cv/cv/</guid>
+      <description>&lt;h2 id=&#34;summary&#34;&gt;SUMMARY&lt;/h2&gt;&#xA;&lt;p&gt;Highly accomplished Postdoctoral Associate with expertise in soft matter physics and fluid mechanics, and a strong record of original research (15 publications, H-index 7). Seeking a material research and development position to leverage my extensive &lt;em&gt;experimental&lt;/em&gt; and &lt;em&gt;computational&lt;/em&gt; research skills.&lt;/p&gt;&#xA;&lt;h2 id=&#34;appointments&#34;&gt;APPOINTMENTS&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Cornell University&lt;/strong&gt;. Postdoctoral Associate &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Mar. 2024 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Present &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;ESPCI Paris&lt;/strong&gt;. Postdoctoral Associate &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Apr. 2021 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jun. 2023 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;education&#34;&gt;EDUCATION&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;University of Minnesota, Twin Cities&lt;/strong&gt;.  Chemical Engineering &lt;strong&gt;Ph.D.&lt;/strong&gt; &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Aug. 2015 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jan. 2021 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>中文日志</title>
+      <link>http://localhost:44985/posts/2023-03-05-%E4%B8%AD%E6%96%87%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2023-03-05-%E4%B8%AD%E6%96%87%E6%97%A5%E5%BF%97/</guid>
+      <description>&lt;p&gt;这是我在这个网站上写的第一篇中文日志。&lt;/p&gt;&#xA;&lt;p&gt;说起我写日志，最早可以追溯到高中时期的 QQ 空间。当时临近高考，似乎是人生中第一次感受到压力，却又不想让太多人分担压力，便开始以文字为倾诉对象。到了大学，我慢慢放弃了 QQ 空间，一是因为它不再流行，二是因为有些日志更为隐私不愿公开，所以开始用纸笔记录生活和思考。在美国读博士期间，不知是不是生活压力小了，五年时间也没有再写几篇，如今想来还是比较遗憾。直到临近毕业，又感受到压力时，才有了倾诉的冲动，在 iPad 上写下寥寥几笔。来到法国之后，由于[在租公寓上踩了大坑]({% post_url 2021-12-30-Mold-on-wall %})，以及遇到了居留许可、医保等等问题，我又重拾日志开始倾诉。当时由于需要频繁插图，所以没有手写，而是用 &lt;a href=&#34;https://obsidian.md/&#34;&gt;Obsidian&lt;/a&gt;，一个 markdown 笔记软件。当时我已经开始在 GitHub 上用 markdown 笔记记录研究进展几个月，不愿意用 GitHub 写日志是想把工作和生活分开。从 2021 年年底至今，那篇 Obsidian 里题为“在法国工作生活中的一些问题”的日志已经更新了十次有余，记录了痛苦的找房过程，难忘的坐船经历，以及第一次感染新冠的体验。虽然我记事多是波澜不惊的流水账，但如今再读，还是有些感触，也觉得那些文字对自己颇为珍贵。&lt;/p&gt;&#xA;&lt;p&gt;最近偶然读到&lt;a href=&#34;https://yihui.org/&#34;&gt;谢益辉&lt;/a&gt;的博客，看到一些有共鸣的观点。最突出的一条出自&lt;a href=&#34;https://yihui.org/cn/2020/07/silence/&#34;&gt;万言万当，不如一默&lt;/a&gt;：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;最后，我大学本科读到过一首诗，里面有一句“跳舞吧，像没有人会欣赏一样”。年少时读它，觉得它的意旨是鼓励人们勇敢追求。现在读它，觉得是在劝人把生活的重心从外移到内，逐渐学会不假外求、反求诸己。所以“写日志吧，就像没有人会阅读一样”。于是现在我写日志时，都倾向于写给自己看，只有少数时候应和一下其它博主或读者。等它们发布出来时，我自己可能已经读了百十来遍了。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;我不善于在他人面前展现自我，不论是真实的自我，还是我想维持的人设。现实中，我是个孤独的人，或许在别人眼中是个怪人。我抗拒微博、朋友圈等社交网络，用微信也是为了联系家人朋友，看到别人的动态或多或少心烦，一方面看到同龄人过得比我好而感到压力，另一方面又会觉得别人过得好坏与我何干。所以我也不分享自己的动态，因为我做什么与绝大多数人，也毫不相干。但是，我也常常有记录生活的冲动和需要，所以我选择写日志，之所以发在网上，是因为我也时不时回看自己以前写的东西，而写在网上就方便我随时随地回看。&lt;/p&gt;&#xA;&lt;p&gt;刚出国时有些文化自卑，很少在公开网络上写中文内容，但最近读了一些中文博客，感觉中文毕竟是母语，读写起来都更有味道，所以决定同时维护一个中文日志。或许以后会搬运一些写在别处的老日志，也会写些新的，希望多年以后，这些日志能在喧闹的世界中为我创造一片安宁。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>刘政阳 - 个人简历</title>
+      <link>http://localhost:44985/cv/cv-zh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/cv/cv-zh/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;&#xA;&lt;p&gt;软物质物理与流体力学领域经验丰富的博士后研究员，具备扎实的实验与计算能力。已发表 15 篇论文（H 指数 7），现寻求材料研发方向的职位，以充分发挥我的实验与建模能力。&lt;/p&gt;&#xA;&lt;h2 id=&#34;工作经历&#34;&gt;工作经历&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;康奈尔大学&lt;/strong&gt; 博士后研究员 &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Mar. 2024 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Present &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目：&lt;strong&gt;&lt;em&gt;甜菜片边缘结构形成机制研究&lt;/em&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用 &lt;strong&gt;Keyence 共聚焦位移传感器&lt;/strong&gt; 精确测量液体表面轮廓；利用 &lt;strong&gt;Arduino 微控制器&lt;/strong&gt; 和步进电机搭建定制扫描仪；使用 &lt;strong&gt;张力计&lt;/strong&gt; 和 &lt;strong&gt;振动黏度计&lt;/strong&gt; 表征液体表面张力与黏度；使用 &lt;strong&gt;Python&lt;/strong&gt; 和 &lt;strong&gt;ImageJ&lt;/strong&gt; 进行数据分析与图像处理；基于 &lt;strong&gt;有限差分法（FDM）&lt;/strong&gt; 在 Python 中建立薄膜松弛的数值模型。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;项目：&lt;strong&gt;&lt;em&gt;声驱动气泡共振清洗研究&lt;/em&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用 &lt;strong&gt;Photron 高速相机&lt;/strong&gt; 拍摄气泡动态行为；使用 &lt;strong&gt;MATLAB&lt;/strong&gt; 与 &lt;strong&gt;Python&lt;/strong&gt; 进行图像识别与统计分析；构建 &lt;strong&gt;理论模型&lt;/strong&gt;，预测最优声频及其对气泡尺寸和流体性质的依赖性。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;项目：&lt;strong&gt;&lt;em&gt;真菌斑块周围的蒸汽传输通量分析&lt;/em&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;搭建包含 &lt;strong&gt;Arduino 控制器&lt;/strong&gt; 和湿度/温度传感器的定制环境舱；&lt;/li&gt;&#xA;&lt;li&gt;优化光照条件以提升后续图像分析中的液滴识别；使用 &lt;strong&gt;Python&lt;/strong&gt; 编写液滴检测与人工修正程序；定量测量真菌诱导冷凝过程中的空间蒸汽通量分布。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;ESPCI Paris PMMH &amp;amp; Gulliver 实验室&lt;/strong&gt; 博士后研究员 &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Apr. 2021 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jun. 2023 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目：&lt;strong&gt;&lt;em&gt;活性向列液晶在微通道网络中的流动&lt;/em&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用 &lt;strong&gt;Nanoscribe 3D 打印机&lt;/strong&gt; 制备微通道网络；优化表面涂层工艺以构建活性向列液晶系统；使用 &lt;strong&gt;尼康共聚焦显微镜&lt;/strong&gt; 进行图像采集；利用 &lt;strong&gt;PIV&lt;/strong&gt; 和 &lt;strong&gt;结构张量分析&lt;/strong&gt; 提取速度和取向场（基于 ImageJ 与 Python）；在 Python 中实现基于 &lt;strong&gt;有限元法（FEM）&lt;/strong&gt; 的数值模拟。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;项目：&lt;strong&gt;&lt;em&gt;细菌液滴中的活性噪声研究&lt;/em&gt;&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用 &lt;strong&gt;Sutter 微管拉制仪&lt;/strong&gt; 制备流体聚焦微流控装置；使用 &lt;strong&gt;L3TM 三维追踪显微镜&lt;/strong&gt; 捕捉示踪粒子轨迹；使用 &lt;strong&gt;Python&lt;/strong&gt; 进行液滴检测与图像数据分析。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;明尼苏达大学软物质实验室&lt;/strong&gt; 研究助理 &lt;span style=&#34;float:right&#34;&gt;   &lt;span style=&#34;display:inline-block;width:70px&#34;&gt; Sept. 2015 &lt;/span&gt; - &lt;span style=&#34;display:inline-block;width:70px;text-align:left;padding-left:4px&#34;&gt; Jan. 2021 &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

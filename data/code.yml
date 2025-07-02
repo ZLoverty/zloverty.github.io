@@ -1,0 +1,15 @@
+- name: Notes
+  link: /code/notes.html
+  img_link: /images/icons/notes.png
+- name: myimagelib
+  link: /mylib/myImageLib.html
+  img_link: /images/icons/myImageLib.png 
+- name: manTrack
+  link: /manTrack
+  img_link: /images/icons/libraries.png
+- name: bwtrack
+  link: /bwtrack
+  img_link: /images/icons/libraries.png
+- name: script
+  link: /script
+  img_link: /images/icons/script.png 

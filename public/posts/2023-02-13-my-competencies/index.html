@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title>  </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h1>  </h1>
+  <div id="post-date">0001-01-01</div>
+  <p>While searching for a job, I find it useful to outline my competencies and weaknesses, so that I can quickly compare with the qualifications of the jobs and assess my fit. The content of this post would be very much aligned with a cover letter of a job application. Hence, it could be reused in the near future!</p>
+<p>I got my batchelor&rsquo;s degree from the Polymer Material and Engineering Department at Tsinghua University. In an undergraduate research training program, I took on a computational study of a nanoparticle system which is responsive to external mechanical stimuli. Despite of the short time, this training left me with great values: (i) curiosity for scientific research, (ii) solid coding skills.</p>
+<p>To advance in the field of research, I applied for PhD programs in the United States, and was admitted to the Chemical Engineering program at the University of Minnesota. There, I made an important transition in my research career: I joined an experimental group and discontinued computational study. Back then, my motivation was the regret that throughout my undergraduate study, apart from courses, I never worked in a real &ldquo;lab&rdquo;, where I could manipulate real devices and materials. This led me to the field of soft / active matter, not too far away from polymer science, but with a physical bend. In my first days in the lab, I joined a project, where the experimental part was almost finished. The purpose of joining the project was &ldquo;just to get my hands dirty&rdquo;, according to my advisor. The only missing part was the image analysis &ndash; to extract the positions and orientations of ellipsoidal particles in each frame. At that time, we had a program for this purpose. However, it was based on the principle of finding and linking spherical particles, which turned out to be slow and prone to error. So I started to google &ldquo;how to track ellipsoidal particle&rdquo;. My memory of those days was: this was a challenging task, not only because back then there were not so many great tools as today, but also that I was not very familiar with the topic of either image processing / particle tracking / data visualization. In the end, what saved my day was <a href="http://soft-matter.github.io/trackpy/v0.5.0/tutorial/custom-feature-detection.html">a tutorial in the trackpy documentation</a>. It slowly guided me through the procedures of detecting foam bubbles of ununiform shapes and sizes, and extract their positions and motions from the images. I found later on that the tutorial was based on a scentific research published in 2015, which was the year I was learning this! It felt like I was keeping up with the cutting edge technique! At the time of writing, I am going through this tutorial again, trying to recall how mysterious all these tools were to me back in those days, and how they gradually became part of my everyday toolbox.</p>
+<p>Despite of being in a chemical engineering program, my research was hardly anything related to chemical engineering. I was working in an emerging field of active matter, which is a derivative of nonequilibrium statistical physics and biology. My PhD objective was to investigate the novel properties of active matter, using <em>E. coli</em> suspensions as a model system. During this investigation, many new experimental techniques were introduced to my brain: microbiology, optical imaging, photolithography, microfluidics, and even machining. All of these were really fun! I could spend several weeks in the biology lab trying to insert an artificial DNA into <em>E. coli</em> to make it behave differently. I could also go to the machine shop to fabricate a part. All these experience reminded me of my childhood playing with a variety of toys, but just a lot more complicated.</p>
+<p>Toys were just toys. At the end of the day, I found myself more serious and more passionate about my code. As my tracking code was used by other members of the group, I got suggestions for improvement, such as adding a preprocessing routine, or adding the capability of finding particles of other shapes. These suggestions led me to modify my code quite a few times. At some point, I started to wonder: as the code grows bulky, it is harder to keep track of changes by my own memory, and reverting a change becomes more difficult, and is likely to cause error. How is large code project managed? This question led me to the version control system &ndash; Git and GitHub. In my previous post [Focusing Prioritizing And Being Realistic]({{ site.url }}{% post_url 2021-12-01-Focusing-prioritizing-and-being-realistic %}), I mentioned one of my recent improvement of using GitHub: write more specific and informative commit messages. Such practice, I believe, makes my code <strong>maintainable and extensible</strong>.</p>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

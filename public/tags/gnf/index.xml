@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gnf on Liu</title>
+    <link>http://localhost:44985/tags/gnf/</link>
+    <description>Recent content in Gnf on Liu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:44985/tags/gnf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:44985/posts/2020-07-07-gnf-evolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:44985/posts/2020-07-07-gnf-evolution/</guid>
+      <description>&lt;p&gt;Giant number fluctuation (GNF) is a key distinction of active matter compared to systems in equilibrium. Theories have predicted the deviation of number fluctuations in active matter in a quantitative way. Later on, the predictions are tested in experiment and were mostly true. Despite the success of the theories, the underlying mechanism of GNF still remains to be a hypothesis due to the difficulty of resolving individual active units and the interaction between individual active units in a crowded collection. A recent work by Peng et al. shows that in the transition to active turbulence, flow order and flow energy grow with different time scale. GNF also grows during the course of active turbulence transition, by look at the time scale of this transition, we could gain more insight into the mechanism of GNF.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

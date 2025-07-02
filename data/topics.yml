@@ -1,0 +1,15 @@
+- name: Research
+  link: /research.html
+  img_link: /assets/images/icons/research.svg
+- name: Learn
+  link: /learn.html
+  img_link: /assets/images/icons/learn.svg
+- name: Code
+  link: /code.html
+  img_link: /assets/images/icons/code.png
+- name: Particle tracking
+  link: /particle_tracking.html
+  img_link: /assets/images/icons/particle_tracking.svg
+- name: Blog
+  link: /blog.html
+  img_link: /assets/images/icons/blog.svg

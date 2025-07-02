@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title> Code notes </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h2 id="python">Python</h2>
+<ol>
+<li>
+<p><strong>Available fonts.</strong> Show all available font families in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.font_manager
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> IPython.core.display <span style="color:#f92672">import</span> HTML
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">make_html</span>(fontname):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&lt;p&gt;</span><span style="color:#e6db74">{font}</span><span style="color:#e6db74">: &lt;span style=&#39;font-family:</span><span style="color:#e6db74">{font}</span><span style="color:#e6db74">; font-size: 24px;&#39;&gt;</span><span style="color:#e6db74">{font}</span><span style="color:#e6db74">&lt;/p&gt;&#34;</span><span style="color:#f92672">.</span>format(font<span style="color:#f92672">=</span>fontname)
+</span></span><span style="display:flex;"><span>code <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join([make_html(font) <span style="color:#66d9ef">for</span> font <span style="color:#f92672">in</span> sorted(set([f<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> matplotlib<span style="color:#f92672">.</span>font_manager<span style="color:#f92672">.</span>fontManager<span style="color:#f92672">.</span>ttflist]))])
+</span></span><span style="display:flex;"><span>HTML(<span style="color:#e6db74">&#34;&lt;div style=&#39;column-count: 2;&#39;&gt;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&lt;/div&gt;&#34;</span><span style="color:#f92672">.</span>format(code))
+</span></span></code></pre></div><p>To see just the names of available font families:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sorted([f<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> f <span style="color:#f92672">in</span> matplotlib<span style="color:#f92672">.</span>font_manager<span style="color:#f92672">.</span>fontManager<span style="color:#f92672">.</span>ttflist])
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Get immediate subfolders.</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>folder <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;~&#39;</span>
+</span></span><span style="display:flex;"><span>sfL <span style="color:#f92672">=</span> next(os<span style="color:#f92672">.</span>walk(folder))[<span style="color:#ae81ff">1</span>]
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Interpolated bitmap.</strong> Bitmap image can be converted to SMOOTH vector image easily using Python. The original image shown below can be smoothed by the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>imshow(data, interpolation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;spline16&#39;</span>)
+</span></span></code></pre></div><p>Then we need to save the smoothed image (vector) in a vector image format (.pdf, .eps, .svg), using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;I:\Github\Python\ForFun\Peng\OP\OP_pdf.pdf&#39;</span>, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;pdf&#39;</span>)
+</span></span></code></pre></div><p>This is the image where I compare original, pdf and svg savefig outcome:
+<a href="/assets/images/2022/01/svg-pdf-compare.pdf">compare</a></p>
+</li>
+<li>
+<p><strong>Matplotlib colormap.</strong> <code>matplotlib</code> has a convenient way of creating discrete colormap for curves. <a href="https://matplotlib.org/stable/tutorials/colors/colormap-manipulation.html">more info</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> matplotlib <span style="color:#f92672">import</span> cm
+</span></span><span style="display:flex;"><span>viridis <span style="color:#f92672">=</span> cm<span style="color:#f92672">.</span>get_cmap(<span style="color:#e6db74">&#39;viridis&#39;</span>, <span style="color:#ae81ff">8</span>)
+</span></span></code></pre></div><p>Then the colors in the colormap <code>viridis</code> can be accessed by <code>viridis(x)</code>, where <code>x</code> takes value between 0 and 1. For
+example, <code>viridis(0.5)</code> is <code>(0.122312, 0.633153, 0.530398, 1.0)</code> in RGBA. All colors can bee seen by calling <code>viridis</code>:</p>
+<p><img src="/assets/images/2023/02/viridis.png" alt="picture 2"></p>
+<p>There is no need to import <code>cm</code> again, since it&rsquo;s already included in <code>matplotlib.pyplot</code>, which I almost import every time. An example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>set3 <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>cm<span style="color:#f92672">.</span>get_cmap(<span style="color:#e6db74">&#34;Set3&#34;</span>)
+</span></span></code></pre></div><p>The &ldquo;Set3&rdquo; colormap is created where colors can be accessed by <code>set3()</code>.</p>
+<p><img src="/assets/images/2022/01/set3-cmap.png" alt="set3 cmap"></p>
+</li>
+<li>
+<p>Convert date object to formatted string: (<a href="https://docs.python.org/3/library/datetime.html">reference</a>)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Timestamp(<span style="color:#e6db74">&#39;2022-01-17 00:00:00&#39;</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#39;01172022&#39;</span>
+</span></span></code></pre></div><p>use</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>date<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">%Y&#34;</span>)
+</span></span></code></pre></div></li>
+<li>
+<p><strong>To &ldquo;stuff&rdquo; a <code>pandas.DataFrame</code> with <code>np.nan</code>.</strong> When calculating MSD from particle trajectories, we want to have <code>frame</code> column to be continuous integer array. However, sometimes in the data, we have <code>frame = [0, 50, 100, ...]</code>. To fill all the frames without position data with <code>np.nan</code>, we can set <code>frame</code> as the index of the DataFrame, then reindex the DataFrame with continuous integers <code>np.arange(...)</code>. This creates a trajectory data with continuous frames:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pos <span style="color:#f92672">=</span> traj<span style="color:#f92672">.</span>set_index(<span style="color:#e6db74">&#39;frame&#39;</span>)[pos_columns]
+</span></span><span style="display:flex;"><span>pos <span style="color:#f92672">=</span> pos<span style="color:#f92672">.</span>reindex(np<span style="color:#f92672">.</span>arange(pos<span style="color:#f92672">.</span>index[<span style="color:#ae81ff">0</span>], <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> pos<span style="color:#f92672">.</span>index[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]))
+</span></span></code></pre></div><p>NOTE: I found this method in the <code>trackpy</code> function <code>_msd_gaps()</code>. This has led to a problem when I try to <code>plt.plot</code> the MSD data, because there are many <code>np.nan</code> in the data, and <code>plt.plot</code> cannot show a continuous line. To make the    plot out of the MSD data stuffed with <code>np.nan</code>, we need to <code>dropna()</code> first.</p>
+</li>
+<li>
+<p><strong>Good font.</strong> A good serif font for plot labels: <code>stix</code>. To apply to all <code>matplotlib</code> text:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib
+</span></span><span style="display:flex;"><span>matplotlib<span style="color:#f92672">.</span>rcParams[<span style="color:#e6db74">&#34;font.family&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;STIXGeneral&#34;</span>
+</span></span><span style="display:flex;"><span>matplotlib<span style="color:#f92672">.</span>rcParams[<span style="color:#e6db74">&#39;mathtext.fontset&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;stix&#39;</span>
+</span></span></code></pre></div><p>Note that both the regular text and the math text need to be configured.</p>
+</li>
+<li>
+<p><strong>Download test images from cloud.</strong> In image processing code demos, it is neater to download test images when needed, compared to saving the test images in the same code repo. This can be done using the <code>requests</code> module. The following code snippet downloads my Google user profile picture to a python variable, ready for test image processing tools.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> io <span style="color:#f92672">import</span> BytesIO
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> skimage.io <span style="color:#f92672">import</span> imread
+</span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;https://lh3.googleusercontent.com/ogw/AF2bZyjdOibobKWEbcNNmziQ6CB2ilMepItpdY6Ila0R6d09Bjc=s32-c-mo&#34;</span>
+</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url, stream<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>img <span style="color:#f92672">=</span> imread(BytesIO(response<span style="color:#f92672">.</span>content))
+</span></span></code></pre></div><p>Google Drive is a good place to save test images. However, when I tried to use the share link as the <code>url</code> for accessing the images in Python, it did not work. It turned out that the direct link to the actual images is a little different from the share link. Fortunately, we can convert a share link to a direct link easily. Here is how:</p>
+<p>A share link looks like this:</p>
+<pre tabindex="0"><code>https://drive.google.com/file/d/1LFRt5ozQjJ_WVrWBoPQOFVNl5ZWb8ytP/view?usp=drive_link
+</code></pre><p>the part after <code>d/</code> and before <code>/view</code> is the file identifier. To construct a direct link, we can put this file identifier to the following format:</p>
+<pre tabindex="0"><code>https://drive.google.com/uc?export=download&amp;id=[file identifier]
+</code></pre></li>
+<li>
+<p><strong>Manage PyPI project.</strong></p>
+<ol>
+<li>For a step-by-step instruction to create a package from scratch, refer to the <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Packaging Python Projects tutorial</a>.</li>
+<li>Token: a token is required when uploading new packages to PyPI. To generate a new token, log in PyPI, go to account settings, scroll down to API tokens, add API token. Put this token in <code>~/.pypirc</code> file to give the local machine permission to upload.</li>
+<li>Documentation: Refer to <a href="https://docs.google.com/document/d/1sNDHH9UfD_wMfBXWdngnzknsCyTdGqPLBM2WBwILZ7U/edit?usp=sharing">my separate note</a>.</li>
+</ol>
+</li>
+</ol>
+<h2 id="git-github">Git (GitHub)</h2>
+<ol>
+<li>To reset <code>.git</code>: sometimes you want to ignore certain files, which are already tracked in the repository. At times
+like this, you need to reset the <code>.git</code>, which contains the tracking information. First, untrack everything by typing
+(this removes any changed files from the index(staging area))</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -r --cached .
+</span></span></code></pre></div><p>then run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span></code></pre></div><p>This adds everything back, but according to the updated <code>.gitignore</code>. Commit this change and it&rsquo;s done.</p>
+<ol>
+<li>
+<p>Command line authentication: starting from summer 2021, GitHub no longer allow username and password authentication from command line interface. Token authentication becomes required for git operations (<a href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">original blog</a>). With this requirement implemented, when I try to clone my repositories using <code>git clone</code> on a new, unauthenticated computer, access is denied.</p>
+<p><img src="/assets/images/2022/01/denied-access.png" alt="denied access"></p>
+<p>It&rsquo;s possible to get around this problem with a GUI. In my memory, it was just a set of well-guided steps, involving
+some clicks in a web browser, and that&rsquo;s it. However, when a GUI is not available, setting up the authentication is not
+so straightforward.</p>
+<p>One way to do it when only command line interface is available, is to generate a pair of SSH keys using <code>ssh-keygen</code>.
+This will generate a pair of key files with encrypted strings.</p>
+<p><img src="/assets/images/2022/01/example-key-files.png" alt="example key files"></p>
+<p>Paste the content of the pub-key (id_rsa.pub) to the &ldquo;SSH and GPG keys&rdquo; tab in GitHub account settings page.</p>
+<p><img src="/assets/images/2022/01/ssh-keys-page.png" alt="ssh keys page"></p>
+<p>Click on &ldquo;New SSH key&rdquo; and paste the pub key in the blank. Now, try to clone the repo again with <code>git clone ssh@url.copied.from.github</code>.</p>
+<p><img src="/assets/images/2022/01/it-works.png" alt="it works"></p>
+</li>
+</ol>
+<h2 id="ssh">SSH</h2>
+<ol>
+<li>
+<p><code>ssh</code> works when the device you are connecting to is in the same private network.</p>
+</li>
+<li>
+<p>VPN tools, such as OpenVPN, can create a virtual private network, allowing connection from outside a private network.</p>
+</li>
+<li>
+<p>By default, closing a ssh session kills any user programs. To keep programs running after closing a session, we can install a software <code>screen</code> on the Linux system.</p>
+</li>
+<li>
+<p>Virtual machines can be used to test server behavior.</p>
+</li>
+</ol>
+<h2 id="ffmpeg">ffmpeg</h2>
+<ol>
+<li>Quick start</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -y -framerate <span style="color:#ae81ff">50</span> -i %05d.jpg -vcodec h264 output.avi
+</span></span></code></pre></div><p><code>-y</code> means automatically replace existing file without asking. <code>-i</code> specifies input images. <em>Note that input images can
+be an image sequence with C style formatted strings as names.</em> <code>-vcodec</code> provides a lot of options of different
+encoders, among which <code>h264</code> is usually a safe choice. <em>Not many encoders does black and white encodings.</em> The last
+argument is always the output file name.</p>
+<ol start="2">
+<li>
+<p><code>ffmpeg</code> image sequence formatted input only supports consecutive names, e.g. image0, image1, image2, &hellip;
+Inconsecutive names such as image0, image2, image4 cannot be converted by default settings. On Linux build, there is an
+optional setting called &ldquo;Globbing&rdquo; that can be switched on by passing <code>-pattern_type glob</code>. However, such option is not
+included on Windows <code>ffmpeg</code>.
+<a href="https://video.stackexchange.com/questions/7300/how-to-get-ffmpeg-to-join-non-sequential-image-files-skip-by-3s/7320#7320">Source</a></p>
+</li>
+<li>
+<p>To convert an image sequence (where the numbering does not start from 0-4) to a video, use the option <code>-start_number</code> before input <code>-i</code>. For example:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -framerate <span style="color:#ae81ff">25</span> -start_number <span style="color:#ae81ff">1001</span> -i %04d.jpg out.avi
+</span></span></code></pre></div><ol start="4">
+<li>To trim a video, use (time is hh:mm:ss)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ffmpeg -i input.mp4 -ss 00:05:20 -t 00:10:00 -c:v copy -c:a copy out.avi
+</span></span></code></pre></div><h2 id="cloud-storage">Cloud Storage</h2>
+<ol>
+<li>Globus file transfer supports command line interface (CLI). Batch transfer with custom filtering can be achieved.</li>
+</ol>
+<ul>
+<li><a href="https://docs.globus.org/cli/reference/">CLI reference</a></li>
+<li><a href="https://www.globus.org/blog/globus-cli-batch-transfer-recipe">Globus CLI Batch Transfer Recipe</a></li>
+<li><a href="https://github.com/globus/automation-examples#getting-started">Automation examples</a></li>
+</ul>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

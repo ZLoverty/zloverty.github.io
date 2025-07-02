@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=44985&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <title>  </title>
+	<link rel="stylesheet" href="/css/main.css">
+  
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']],
+        processEscapes: true,
+        tags: 'ams'
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  
+  </head>
+  <body>
+
+    <nav class="navbar">
+  
+    <a href="/zh" id="nbelement" >
+      中文</a>
+  
+    <a href="/posts" id="nbelement" >
+      Blog</a>
+  
+    <a href="/code" id="nbelement" >
+      Code</a>
+  
+    <a href="/research" id="nbelement" >
+      Research</a>
+  
+    <a href="/cv" id="nbelement" >
+      CV</a>
+  
+    <div id="spaceholder"></div>
+    <a href='/index.html' id="home-icon">
+      <img src="/images/icons/icon.svg" height="100%">
+    </a>
+</nav>
+
+  <div id="main">
+    <div id="main-column-mid">
+      
+  <h1>  </h1>
+  <div id="post-date">0001-01-01</div>
+  <p>I quit Mendeley today, after 5 years of use, because there are serious problems with duplicated files, lack of support for mobile platforms, small cloud drive and poor syncing quality. Solving these problems has been distracting me from focusing on reading, so that I decide to try out some alternatives and leave Mendeley.</p>
+<p>After reviewing many alternatives I decided to try <strong>Zotero</strong>, an open-source software that should be able to connect with google drive, so I don&rsquo;t have to pay for cloud storage one more time.</p>
+<p>I&rsquo;ve realized some advantages of Zotero already in this first minute of use, for example this standalone note functionality. I can just write a single piece of note here with a paper open beside.</p>
+<p>There might be more to discover in Zotero. Let&rsquo;s see if this Zotero is a better tool.</p>
+<h2 id="1-setup-zotero--google-drive">1. Setup Zotero + Google Drive</h2>
+<h3 id="a-batch-import-from-files">A. Batch import from files</h3>
+<ul>
+<li>Edit -&gt; Preference</li>
+</ul>
+<p><img src="/assets/images/2021/12/preference.png" alt="preference">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Uncheck file sync</li>
+</ul>
+<p><img src="/assets/images/2021/12/file-sync-off.png" alt="file sync off">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Set base folder to google drive folder</li>
+</ul>
+<p><img src="/assets/images/2021/12/base-folder.png" alt="base folder">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Copy .pdf files to google drive folder</li>
+</ul>
+<p><img src="/assets/images/2021/12/gd-folder.png" alt="gd folder">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Create linked attachments in Zotero</li>
+</ul>
+<p><img src="/assets/images/2021/12/link-to-fiel.png" alt="link to fiel">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Import all the files</li>
+</ul>
+<p><img src="/assets/images/2021/12/import-all.png" alt="import all">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>Zotero will automatically analyze the metadata of .pdf files and put them into parent items</li>
+</ul>
+<p><img src="/assets/images/2021/12/analyzed-items.png" alt="analyzed items">{:width=&ldquo;600px&rdquo;}</p>
+<ul>
+<li>From now on, we have transferred all the references from Mendeley to Zotero.</li>
+</ul>
+<h3 id="b-daily-use">B. Daily use</h3>
+<p>If we only want to add one reference to our library when browsing the Internet, we can in principle do the same things as in the batch import guide: download the .pdf file to google drive folder and then add linked files. However, there are easier ways to do it. That is to use the chrome extension <strong>Zotero Connector</strong>. We first add the extension to Chrome by clicking the button on Zotero&rsquo;s official website.</p>
+<p><img src="/assets/images/2021/12/download-connector.png" alt="download connector">{:width=&ldquo;600px&rdquo;}</p>
+<p>Then we can access the extension at the upper right corner of Chrome. For example, we want to add a reference <em>Frangipane, G., Vizsnyiczai, G., Maggi, C., Savo, R., Sciortino, A., Gigan, S., et al. (2019). Invariance properties of bacterial random walks in complex structures. Nat. Commun. 10:2442.</em>. We first go to the website of the paper, then click the <strong>Zotero Connector</strong> extension.</p>
+<p><img src="/assets/images/2021/12/chrome-extension-example.png" alt="chrome extension example">{:width=&ldquo;600px&rdquo;}</p>
+<p>The following window will show us the files to be downloaded. In this case, it&rsquo;s a full text pdf and a snapshot of the website where I download the paper. I can also specify where to put this paper, so that we can skip the <em>undefined</em> folder.</p>
+<p><img src="/assets/images/2021/12/zotero-connector.png" alt="zotero connector">{:width=&ldquo;600px&rdquo;}</p>
+<p>Now in the Papers folder, we can find the item we just created, with exactly the same attachments we just saw in the Chrome extension: a full text pdf and a snapshot.</p>
+<p>Where are the files saved locally though? If we right click on the attachment and click <em>show file</em>, we can see that this paper is put in the google drive Zotero folder, just as we expect.</p>
+<p><img src="/assets/images/2021/12/gd-folder-connector.png" alt="gd folder connector">{:width=&ldquo;600px&rdquo;}</p>
+<p>Notice that this is not the default behavior&hellip; This is achieved by a Zotero third-party plugin <a href="http://zotfile.com/">ZotFile</a>. After installation, we can modify the settings of <strong>ZotFile</strong> at Tools -&gt; ZotFile preferences</p>
+<p><img src="/assets/images/2021/12/zotfile-pref.png" alt="zotfile pref">{:width=&ldquo;600px&rdquo;}</p>
+<p>Set the <em>Location of Files</em> to he google drive Zotero folder. Done!</p>
+<p><img src="/assets/images/2021/12/set-file-dir.png" alt="set file dir">{:width=&ldquo;600px&rdquo;}</p>
+<p>We can also change the naming rules to make it consistent with all other attachment files.</p>
+<p><img src="/assets/images/2021/12/naming-rules.png" alt="naming rules">{:width=&ldquo;600px&rdquo;}</p>
+<h2 id="2-mobile-compatibility-esp-annotations">2. Mobile compatibility, esp. annotations</h2>
+<ol>
+<li>Open a document on my cell phone using Foxit Reader</li>
+</ol>
+<p><img src="/assets/images/2021/12/IMG_8094.PNG" alt="IMG_8094">{:width=&ldquo;600px&rdquo;}</p>
+<ol start="2">
+<li>Add a text comment</li>
+</ol>
+<p><img src="/assets/images/2021/12/IMG_8095.PNG" alt="IMG_8095">{:width=&ldquo;600px&rdquo;}</p>
+<ol start="3">
+<li>Save the document, choose <strong>PATH</strong> to be the google drive</li>
+</ol>
+<p><img src="/assets/images/2021/12/IMG_8096.PNG" alt="IMG_8096">{:width=&ldquo;600px&rdquo;}</p>
+<ol start="4">
+<li>Replace the original file</li>
+</ol>
+<p><img src="/assets/images/2021/12/IMG_8097.PNG" alt="IMG_8097">{:width=&ldquo;600px&rdquo;}</p>
+<ol start="5">
+<li>The annotation appears on my laptop Zotero file</li>
+</ol>
+<p><img src="/assets/images/2021/12/sync-annotation.png" alt="sync annotation">{:width=&ldquo;600px&rdquo;}</p>
+<p>This method works, though the operations are complicated. I&rsquo;m looking forward to the Zotero official iOS app, which should make this sync easier.</p>
+
+
+    </div>
+  </div>
+
+    <div class='footer'>	
+	<div id="footer-item">
+		Last edited: Jun 29, 2025
+	</div>
+	<div id="spaceholder"></div>
+	<div id="footer-item">liuzy19911112@gmail.com</div>
+</div>
+
+  </body>
+</html>

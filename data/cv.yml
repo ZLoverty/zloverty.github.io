@@ -1,0 +1,8 @@
+- name: CV
+  link: /cv/cv
+- name: Resume
+  link: /cv/acv
+- name: 中文简历
+  link: /cv/cv-zh
+- name: 中文简历（短）
+  link: /cv/acv-zh
