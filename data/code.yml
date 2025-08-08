@@ -2,7 +2,7 @@
   link: /code/notes.html
   img_link: /images/icons/notes.png
 - name: myimagelib
-  link: /mylib/myImageLib.html
+  link: /mylib
   img_link: /images/icons/myImageLib.png 
 - name: manTrack
   link: /manTrack
